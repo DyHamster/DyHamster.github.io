@@ -7,9 +7,9 @@ layout: null
 
 <div class="container">
 
-# WELCOM TO MY CYBER WORLD
+WELCOM TO MY CYBER WORLD
 
-<button onclick="window.location.href='theme one/theme-one.md'">THEME ONE：My Profile</button>
+<button onclick="window.location.href='theme_one/theme-one.md'">THEME ONE：My Profile</button>
 <button onclick="window.location.href='https://oi-wiki.org/'">THEME TWO：My Computer Science Study</button>
 <button onclick="window.location.href='https://oi-wiki.org/'">THEME THREE：Else</button>
 
