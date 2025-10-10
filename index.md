@@ -1,6 +1,6 @@
 ---
 title: This is DyHAmster's World!
-layout: default
+layout: null
 ---
 
 <link rel="stylesheet" href="assets/style.css">
