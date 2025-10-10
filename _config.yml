@@ -1,0 +1,8 @@
+title: 我的 Minecraft 世界
+description: 用 Markdown 写的 Minecraft 风格主页
+theme: null   # 不使用 GitHub 默认主题
+markdown: kramdown
+
+# 告诉 GitHub 使用自定义样式
+include:
+  - assets
