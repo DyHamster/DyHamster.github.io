@@ -2,12 +2,12 @@
 
 body {
   margin: 0;
-  background: url('assets/images/background.jpg') no-repeat center center fixed;
+  padding: 0;
+  background: url("images/background.jpg") no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Minecraftia", sans-serif;
   color: #fff;
-  text-align: center;
-  line-height: 1.6;
+  text-shadow: 2px 2px 4px #000;
 }
 
 .container {
