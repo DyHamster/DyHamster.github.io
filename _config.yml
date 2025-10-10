@@ -1,5 +1,0 @@
-theme: jekyll-theme-cayman
-# 个人推荐的亮色主题
-theme: jekyll-theme-hacker
-# 个人推荐的暗色主题
-# 注意（避坑指南）：不要输入类似 theme: cayman 的配置，因为这是错误的，jekyll无法找到对应的主题
