@@ -19,7 +19,14 @@ body {
   box-shadow: 8px 8px 0 #000;
 }
 
-h1, h2, h3 {
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 48px;
+  text-align: center;
+  text-shadow: 4px 4px 0 #000;
+}
+
+h2, h3 {
   text-shadow: 4px 4px #3b3b3b;
 }
 
