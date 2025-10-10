@@ -1,5 +1,5 @@
 ---
-title: Theme one: My Profile
+title: Theme_one:My_Profile
 layout: wiki_page
 ---
 
