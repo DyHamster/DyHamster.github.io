@@ -8,5 +8,5 @@ layout: wiki_page
 Wait for something Greater
 
 ## 目录
-- [名字](#Name)
+- [My Name](#Name)
 - [Profile](#Profile)
