@@ -1,0 +1,26 @@
+{
+  "name": "DyHamster 的个人主页",
+  "short_name": "DyHamster",
+  "description": "DyHamster 的个人主页 - 分享技术文章、项目作品和个人经历",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["personal", "blog", "technology"],
+  "lang": "zh-CN"
+}

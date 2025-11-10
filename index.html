@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DyHamster 的个人主页 - 分享技术文章、项目作品和个人经历" />
+    <meta name="keywords" content="个人主页, 技术博客, 前端开发, React, TypeScript, JavaScript" />
+    <meta name="author" content="DyHamster" />
+    <meta name="robots" content="index,follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DyHamster 的个人主页" />
+    <meta property="og:title" content="DyHamster 的个人主页" />
+    <meta property="og:description" content="欢迎来到我的个人主页，这里分享我的技术文章、项目作品和个人经历。" />
+    <meta property="og:url" content="https://your-domain.com" />
+    <meta property="og:image" content="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=Personal%20homepage%20hero%20image%20with%20modern%20minimalist%20design%2C%20clean%20layout%2C%20professional%20tech%20theme&image_size=landscape_16_9" />
+    <meta property="og:locale" content="zh_CN" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DyHamster 的个人主页" />
+    <meta name="twitter:description" content="欢迎来到我的个人主页，这里分享我的技术文章、项目作品和个人经历。" />
+    <meta name="twitter:image" content="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=Personal%20homepage%20hero%20image%20with%20modern%20minimalist%20design%2C%20clean%20layout%2C%20professional%20tech%20theme&image_size=landscape_16_9" />
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="DyHamster" />
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <title>DyHamster 的个人主页</title>
+    <script type="module">
+      if (import.meta.hot?.on) {
+        import.meta.hot.on('vite:error', (error) => {
+          if (error.err) {
+            console.error(
+              [error.err.message, error.err.frame].filter(Boolean).join('\n'),
+            )
+          }
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
