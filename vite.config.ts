@@ -44,7 +44,7 @@ export default defineConfig({
       position: 'bottom-right',
       prodOnly: true,
       clickable: true,
-      clickUrl: 'https://www.trae.ai/solo?showJoin=1',
+      clickUrl: 'https://github.com/DyHamster/DyHamster.github.io/',
       autoTheme: true,
       autoThemeTarget: '#root'
     }), 
