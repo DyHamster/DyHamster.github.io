@@ -40,7 +40,7 @@ const Home = () => {
           </p>
           
           <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-            {siteConfig.bio}
+            {siteConfig.description}
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
