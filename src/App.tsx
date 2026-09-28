@@ -1,57 +1,26 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
-import { useEffect } from 'react'
+import { sections } from './config/sections'
+import { HashRouter, Routes, Route, Navigate, useLocation, Link } from 'react-router-dom'
+import { useEffect, lazy, Suspense } from 'react'
 import Home from './pages/Home'
 import Posts from './pages/Posts'
-import PostDetail from './pages/PostDetail'
-import Projects from './pages/Projects'
+const PostDetail = lazy(() => import('./pages/PostDetail'))
 import About from './pages/About'
 import Header from './components/Header'
 import Footer from './components/Footer'
-
-function App() {
-  useEffect(() => {
-    // 检查系统主题偏好
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-    const savedTheme = localStorage.getItem('theme')
-    
-    if (savedTheme) {
-      document.documentElement.classList.toggle('dark', savedTheme === 'dark')
-    } else if (mediaQuery.matches) {
-      document.documentElement.classList.add('dark')
-      localStorage.setItem('theme', 'dark')
-    }
-    
-    // 监听系统主题变化
-    const handleChange = (e: MediaQueryListEvent) => {
-      if (!localStorage.getItem('theme')) {
-        document.documentElement.classList.toggle('dark', e.matches)
-      }
-    }
-    
-    mediaQuery.addEventListener('change', handleChange)
-    
-    return () => {
-      mediaQuery.removeEventListener('change', handleChange)
-    }
-  }, [])
-
-  return (
-    <Router>
-      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-        <Header />
-        <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/posts" element={<Posts />} />
-            <Route path="/posts/:slug" element={<PostDetail />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
-  )
+import SEO from './components/SEO'
+function ScrollReset() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
 }
-
+function App() {
+  return <HashRouter><ScrollReset /><a className="skip-link" href="#main" onClick={event => { event.preventDefault(); document.getElementById('main')?.focus() }}>跳到正文</a><div className="site-layout"><Header /><main className="shell site-main" id="main" tabIndex={-1}><Suspense fallback={<p className="page-heading" role="status">正在打开记录…</p>}><Routes>
+    <Route path="/" element={<Home />} />
+    {sections.map(section => <Route key={section.id} path={`/${section.id}`} element={<Posts kind={section.id} />} />)}
+    {sections.map(section => <Route key={section.id + '-entry'} path={`/${section.id}/*`} element={<PostDetail kind={section.id} />} />)}
+    {sections.flatMap(section => (section.aliases ?? []).map(alias => <Route key={alias} path={`/${alias}`} element={<Navigate to={`/${section.id}`} replace />} />))}
+    <Route path="/about" element={<About />} />
+    <Route path="*" element={<div className="page-heading"><SEO title="页面未找到" noindex /><span className="eyebrow">404</span><h1>这里暂时没有内容。</h1><Link className="text-link" to="/">返回首页 ↗</Link></div>} />
+  </Routes></Suspense></main><Footer /></div></HashRouter>
+}
 export default App

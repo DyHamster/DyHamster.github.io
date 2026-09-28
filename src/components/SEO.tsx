@@ -15,9 +15,9 @@ interface SEOProps {
 
 const SEO = ({
   title = '个人主页 - DyHamster',
-  description = '欢迎来到我的个人主页，这里分享我的技术文章、项目作品和个人经历。',
-  keywords = '个人主页, 技术博客, 前端开发, React, TypeScript, JavaScript',
-  image = 'https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=Personal%20homepage%20hero%20image%20with%20modern%20minimalist%20design%2C%20clean%20layout%2C%20professional%20tech%20theme&image_size=landscape_16_9',
+  description = '南京大学在读学生，记录强化学习、数学与阅读中的学习笔记、实验和思考。',
+  keywords = '学习笔记, 强化学习, 机器学习, 数学, 南京大学',
+  image,
   url = window.location.href,
   type = 'website',
   author = 'DyHamster',
@@ -44,16 +44,14 @@ const SEO = ({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
-      <meta property="og:image" content={image} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      {image && <meta property="og:image" content={image} />}
       <meta property="og:locale" content="zh_CN" />
       
       {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content={image ? "summary_large_image" : "summary"} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      {image && <meta name="twitter:image" content={image} />}
       <meta name="twitter:creator" content={`@${author.toLowerCase().replace(/\s+/g, '')}`} />
       
       {/* 文章特定 meta 标签 */}
@@ -93,9 +91,6 @@ const SEO = ({
       <meta name="msapplication-TileColor" content="#3b82f6" />
       <link rel="canonical" href={url} />
       
-      {/* 预加载关键资源 */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
     </Helmet>
   )
 }

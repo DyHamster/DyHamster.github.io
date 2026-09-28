@@ -1,9 +1,10 @@
 ---
+draft: true
 title: "你好，Markdown"
 date: "2025-01-01"
 tags: ["Markdown", "内容管理"]
 excerpt: "这是第一篇示例文章，演示如何直接上传 Markdown。"
-cover: "/images/example.png"
+cover: "/images/placeholder.svg"
 ---
 
 # 欢迎使用 Markdown 内容
@@ -16,7 +17,7 @@ cover: "/images/example.png"
 
 ## 图片示例
 
-![示例图片](/images/example.png)
+![示例图片](/images/placeholder.svg)
 
 ## 代码示例
 

@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="64" fill="#3b82f6"/>
-  <text x="256" y="320" font-family="Inter, sans-serif" font-size="240" font-weight="bold" text-anchor="middle" fill="white">HX</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#41634f"/>
+  <g fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round">
+    <path d="M12 20h6a12 12 0 0 1 0 24h-6Z"/>
+    <path d="M38 20v24m14-24v24M38 32h14"/>
+  </g>
 </svg>

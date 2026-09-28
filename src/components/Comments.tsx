@@ -18,10 +18,11 @@ const Comments = ({
   const commentsRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    if (!commentsRef.current) return
+    const container = commentsRef.current
+    if (!container) return
 
     // 清除之前的评论
-    commentsRef.current.innerHTML = ''
+    container.innerHTML = ''
 
     // 创建 utterances 脚本
     const script = document.createElement('script')
@@ -39,7 +40,7 @@ const Comments = ({
     loadingDiv.style.padding = '20px'
     loadingDiv.style.textAlign = 'center'
     loadingDiv.style.color = 'var(--color-text-secondary)'
-    commentsRef.current.appendChild(loadingDiv)
+    container.appendChild(loadingDiv)
 
     // 监听脚本加载完成
     script.onload = () => {
@@ -54,11 +55,11 @@ const Comments = ({
       loadingDiv.style.color = 'var(--color-danger)'
     }
 
-    commentsRef.current.appendChild(script)
+    container.appendChild(script)
 
     return () => {
-      if (commentsRef.current) {
-        commentsRef.current.innerHTML = ''
+      if (container) {
+        container.innerHTML = ''
       }
     }
   }, [repo, issueTerm, theme, label, loading])

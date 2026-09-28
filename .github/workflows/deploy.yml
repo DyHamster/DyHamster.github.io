@@ -33,8 +33,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
+      - name: Validate
+        run: npm run lint && npm test
+
       - name: Build
         run: npm run build
+
+      - name: Verify production entry
+        run: node scripts/verify-build.mjs
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
