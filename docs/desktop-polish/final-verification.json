@@ -1,0 +1,523 @@
+{
+  "checks": [
+    "home→notes: prepare, distance-driven walking frames, arrival and idle, continuous screencast",
+    "final build: all direct routes, settled dark palette, 1024 reading safe rails, guide collapse, basic mobile"
+  ],
+  "viewports": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "h1": {
+        "x": 96,
+        "y": 288.125,
+        "width": 600,
+        "height": 177.46875,
+        "bottom": 465.59375,
+        "right": 696
+      },
+      "copy": {
+        "x": 96,
+        "y": 244.328125,
+        "width": 600,
+        "height": 427.328125,
+        "bottom": 671.65625,
+        "right": 696
+      },
+      "actions": {
+        "x": 96,
+        "y": 620.15625,
+        "width": 600,
+        "height": 51.5,
+        "bottom": 671.65625,
+        "right": 696
+      },
+      "guide": {
+        "x": 1004.390625,
+        "y": 423,
+        "width": 324,
+        "height": 324,
+        "bottom": 747,
+        "right": 1328.390625
+      },
+      "hint": {
+        "x": 96,
+        "y": 828,
+        "width": 1248,
+        "height": 44,
+        "bottom": 872,
+        "right": 1344
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 89,
+        "bottom": 89,
+        "right": 1440
+      },
+      "overflow": false
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "h1": {
+        "x": 96,
+        "y": 249.71875,
+        "width": 600,
+        "height": 142.53125,
+        "bottom": 392.25,
+        "right": 696
+      },
+      "copy": {
+        "x": 96,
+        "y": 209.921875,
+        "width": 600,
+        "height": 372.140625,
+        "bottom": 582.0625,
+        "right": 696
+      },
+      "actions": {
+        "x": 96,
+        "y": 530.5625,
+        "width": 600,
+        "height": 51.5,
+        "bottom": 582.0625,
+        "right": 696
+      },
+      "guide": {
+        "x": 968.21875,
+        "y": 360.96875,
+        "width": 276.46875,
+        "height": 276.46875,
+        "bottom": 637.4375,
+        "right": 1244.6875
+      },
+      "hint": {
+        "x": 96,
+        "y": 704,
+        "width": 1174,
+        "height": 44,
+        "bottom": 748,
+        "right": 1270
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 89,
+        "bottom": 89,
+        "right": 1366
+      },
+      "overflow": false
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "h1": {
+        "x": 320,
+        "y": 363.515625,
+        "width": 600,
+        "height": 206.6875,
+        "bottom": 570.203125,
+        "right": 920
+      },
+      "copy": {
+        "x": 320,
+        "y": 319.71875,
+        "width": 600,
+        "height": 456.546875,
+        "bottom": 776.265625,
+        "right": 920
+      },
+      "actions": {
+        "x": 320,
+        "y": 724.765625,
+        "width": 600,
+        "height": 51.5,
+        "bottom": 776.265625,
+        "right": 920
+      },
+      "guide": {
+        "x": 1385.1875,
+        "y": 556.390625,
+        "width": 340,
+        "height": 340,
+        "bottom": 896.390625,
+        "right": 1725.1875
+      },
+      "hint": {
+        "x": 320,
+        "y": 1008,
+        "width": 1280,
+        "height": 44,
+        "bottom": 1052,
+        "right": 1600
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 89,
+        "bottom": 89,
+        "right": 1920
+      },
+      "overflow": false
+    },
+    {
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "h1": {
+        "x": 96,
+        "y": 248.484375,
+        "width": 499.1875,
+        "height": 145,
+        "bottom": 393.484375,
+        "right": 595.1875
+      },
+      "copy": {
+        "x": 96,
+        "y": 208.6875,
+        "width": 499.1875,
+        "height": 374.609375,
+        "bottom": 583.296875,
+        "right": 595.1875
+      },
+      "actions": {
+        "x": 96,
+        "y": 531.796875,
+        "width": 499.1875,
+        "height": 51.5,
+        "bottom": 583.296875,
+        "right": 595.1875
+      },
+      "guide": {
+        "x": 691.203125,
+        "y": 360.96875,
+        "width": 276.46875,
+        "height": 276.46875,
+        "bottom": 637.4375,
+        "right": 967.671875
+      },
+      "hint": {
+        "x": 96,
+        "y": 704,
+        "width": 832,
+        "height": 44,
+        "bottom": 748,
+        "right": 928
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 89,
+        "bottom": 89,
+        "right": 1024
+      },
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "colors": {
+    ".wordmark": "rgb(230, 236, 223)",
+    ".site-header nav a": "rgb(184, 200, 181)",
+    ".mailbox a": "rgb(230, 236, 223)",
+    ".page-heading>p": "rgb(184, 200, 181)"
+  },
+  "safeEdges": {
+    "guideLeft": 936,
+    "paperRight": 928,
+    "musicRight": 76,
+    "paperLeft": 96
+  },
+  "tabWalk": [
+    {
+      "tag": "A",
+      "text": "跳到正文",
+      "x": 80,
+      "y": 12,
+      "w": 96,
+      "h": 56.890625,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "DyHamster 首页",
+      "x": 96,
+      "y": 19.40625,
+      "w": 189.640625,
+      "h": 49.1875,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "首页",
+      "x": 990,
+      "y": 22,
+      "w": 30,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "笔记",
+      "x": 1052,
+      "y": 22,
+      "w": 30,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "文章",
+      "x": 1114,
+      "y": 22,
+      "w": 30,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "实验",
+      "x": 1176,
+      "y": 22,
+      "w": 30,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "关于",
+      "x": 1238,
+      "y": 22,
+      "w": 30,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "切换到深色模式",
+      "x": 1300,
+      "y": 22,
+      "w": 44,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "阅读笔记",
+      "x": 96,
+      "y": 620.15625,
+      "w": 163,
+      "h": 51.5,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "了解作者",
+      "x": 275,
+      "y": 620.15625,
+      "w": 134,
+      "h": 51.5,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "沿着小径，往里走走",
+      "x": 648.5,
+      "y": 828,
+      "w": 143,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "01NOTEBOOK笔记强化学习、数学基础与论文阅读，按主题持续整理。暂无公开记录",
+      "x": 96,
+      "y": 394.59375,
+      "w": 400,
+      "h": 273.28125,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "02ESSAYS文章围绕一个问题展开推导、分析和完整的思考。暂无公开记录",
+      "x": 520,
+      "y": 373.59375,
+      "w": 400,
+      "h": 273.28125,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "03EXPERIMENTS实验记录实现与复现过程，查看结果与可体验作品。暂无公开记录",
+      "x": 944,
+      "y": 373.59375,
+      "w": 400,
+      "h": 273.28125,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "去文章里看看",
+      "x": 1237,
+      "y": 719.671875,
+      "w": 107,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "强化学习 ↗",
+      "x": 121,
+      "y": 489.15625,
+      "w": 70.34375,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "机器学习 ↗",
+      "x": 215.34375,
+      "y": 488.15625,
+      "w": 70.34375,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "数学基础 ↗",
+      "x": 309.6875,
+      "y": 488.15625,
+      "w": 70.34375,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "论文与阅读 ↗",
+      "x": 404.03125,
+      "y": 488.15625,
+      "w": 84.34375,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "关于我",
+      "x": 1253,
+      "y": 442.90625,
+      "w": 66,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "了解作者",
+      "x": 96,
+      "y": 563.703125,
+      "w": 135,
+      "h": 51.5,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "GitHub ↗",
+      "x": 1215.703125,
+      "y": 792.15625,
+      "w": 55.84375,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "写封信 ↗",
+      "x": 1291.546875,
+      "y": 792.15625,
+      "w": 52.453125,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "播放背景音乐",
+      "x": 25,
+      "y": 781,
+      "w": 46,
+      "h": 46,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "打开音乐设置：天空之城",
+      "x": 25,
+      "y": 827,
+      "w": 46,
+      "h": 46,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "收起龙猫向导",
+      "x": 1380,
+      "y": 674,
+      "w": 44,
+      "h": 44,
+      "outline": "2px",
+      "visible": true
+    },
+    {
+      "tag": "BODY",
+      "text": "跳到正文DyHamster一处林间，慢慢生长首页笔记文章实验关于 DyHamster · 南京大",
+      "x": 0,
+      "y": -1524,
+      "w": 1440,
+      "h": 2424.15625,
+      "outline": "3px",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "跳到正文",
+      "x": 80,
+      "y": 12,
+      "w": 96,
+      "h": 56.890625,
+      "outline": "2px",
+      "visible": true
+    }
+  ]
+}

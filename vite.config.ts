@@ -42,7 +42,9 @@ export default defineConfig({
       enforce: 'pre',
       load(id) {
         if (id.includes('/src/content/') && id.endsWith('.md?raw')) {
-          const raw = readFileSync(id.slice(0, -4), 'utf8')
+          const file = id.slice(0, -4)
+          this.addWatchFile(file)
+          const raw = readFileSync(file, 'utf8')
           const { attributes } = fm<{ draft?: boolean }>(raw)
           return 'export default ' + JSON.stringify(attributes.draft === true ? '' : raw)
         }

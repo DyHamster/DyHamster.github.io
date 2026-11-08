@@ -12,4 +12,6 @@ export interface Post {
   topic: string
   status: string
   featured: boolean
+  demoUrl?: string
+  sourceUrl?: string
 }

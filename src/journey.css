@@ -1,0 +1,303 @@
+.journey-shell {
+  position: relative;
+  isolation: isolate;
+  min-height: 100svh;
+  background: var(--paper);
+}
+.world-stage {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  background: linear-gradient(145deg, #c7d5af, #768b5d 60%, #3c5d41);
+}
+.world-place {
+  position: absolute;
+  inset: -15px;
+  transition: opacity 0.06s linear;
+  overflow: hidden;
+  will-change: opacity;
+}
+.world-place picture,
+.world-place img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--focus);
+}
+.world-place picture {
+  transform: scale(var(--zoom));
+  transition: transform 0.9s cubic-bezier(0.22, 0.6, 0.3, 1);
+}
+.journey-active .world-place picture {
+  transform: scale(calc(var(--zoom) + 0.035))
+    translateX(calc(var(--direction) * -8px));
+}
+.world-soften {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--paper), transparent);
+  opacity: 0.8;
+}
+.world-reading.journey-idle .world-stage {
+  height: 570px;
+  mask-image: linear-gradient(#000 50%, transparent);
+}
+.world-home.journey-idle .world-stage {
+  opacity: 0;
+}
+.journey-active .world-stage {
+  z-index: 1;
+  opacity: 1;
+}
+.journey-active .world-soften {
+  opacity: 0.46;
+}
+.journey-shell > .site-layout {
+  background: none;
+}
+.journey-active .site-main {
+  position: relative;
+  z-index: 2;
+}
+.journey-active .site-footer {
+  position: relative;
+  z-index: 2;
+}
+.scene-content {
+  transition:
+    opacity 0.22s ease,
+    transform 0.3s ease;
+}
+.scene-content.content-leaving {
+  opacity: 0.35;
+  transform: translateY(-5px);
+}
+.scene-content .route-content {
+  animation: none;
+}
+.journey-mist {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 18;
+  background: linear-gradient(165deg, #e2e8d9, transparent 55%, #e2e8d966);
+  transition: opacity 0.08s linear;
+}
+.forest-guide {
+  position: fixed;
+  z-index: 24;
+  transform: translate(-50%, -100%);
+  pointer-events: none;
+  aspect-ratio: 1;
+  isolation: isolate;
+  filter: drop-shadow(0 5px 5px #293a2220);
+}
+.guide-resting {
+  transition:
+    left 0.55s ease,
+    top 0.55s ease,
+    width 0.55s ease;
+}
+.guide-figure {
+  position: absolute;
+  inset: 0;
+  transform: scaleX(var(--facing));
+  transform-origin: 50% 90%;
+}
+.totoro-sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url("/forest/guide/totoro-atlas.webp");
+  background-size: 400% 300%;
+  background-repeat: no-repeat;
+  image-rendering: auto;
+}
+.guide-shadow {
+  position: absolute;
+  left: 18%;
+  right: 13%;
+  height: 6%;
+  bottom: 1%;
+  background: #35472b30;
+  border-radius: 50%;
+  filter: blur(4px);
+}
+.guide-resting .guide-figure {
+  animation: guide-idle 5.5s ease-in-out infinite;
+  transform-origin: 50% 96%;
+}
+.guide-destination {
+  position: absolute;
+  bottom: calc(100% + 9px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 6px 12px;
+  border: 1px solid #c8d6b599;
+  background: #f8f8e9e8;
+  border-radius: 30px;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: #3a533d;
+  box-shadow: 0 3px 15px #25462b0a;
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  transition: opacity 0.18s;
+}
+.journey-active .guide-destination {
+  opacity: 1;
+}
+.guide-at-home .guide-destination {
+  bottom: 96%;
+}
+.guide-reading.guide-resting:hover .guide-destination {
+  opacity: 1;
+}
+.guide-rest-control {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--glass);
+  color: var(--accent);
+  font-size: 14px;
+  pointer-events: auto;
+}
+.guide-collapsed .guide-figure,
+.guide-collapsed .guide-shadow {
+  opacity: 0.25;
+}
+.guide-collapsed .guide-rest-control {
+  right: 8px;
+  top: 8px;
+}
+.guide-fallback {
+  width: 100%;
+  height: 100%;
+}
+.fallback-leg {
+  transform-box: fill-box;
+  transform-origin: 50% 0;
+}
+.is-walking .leg-left {
+  animation: fallback-step 0.42s linear infinite alternate;
+}
+.is-walking .leg-right {
+  animation: fallback-step 0.42s linear infinite alternate-reverse;
+}
+.scene-landmark {
+  position: absolute;
+  width: 330px;
+  right: 7%;
+  bottom: 21%;
+  filter: drop-shadow(0 12px 8px #22371d26);
+  opacity: 0.95;
+  transform: rotate(-2deg);
+}
+.landmark-experiments {
+  right: 15%;
+  bottom: 15%;
+  width: 370px;
+  transform: rotate(2deg);
+}
+.world-reading.journey-idle .scene-landmark {
+  width: 250px;
+  bottom: 12%;
+  right: 6%;
+  opacity: 0.45;
+}
+.dark .world-place img {
+  filter: brightness(0.72);
+}
+.dark .guide-figure {
+  filter: brightness(0.83) saturate(0.85);
+}
+@keyframes guide-idle {
+  0%,
+  100% {
+    transform: scaleX(var(--facing)) scaleY(1);
+  }
+  50% {
+    transform: scaleX(var(--facing)) scaleY(1.009);
+  }
+}
+@keyframes fallback-step {
+  from {
+    transform: rotate(-16deg) translateY(0);
+  }
+  to {
+    transform: rotate(20deg) translateY(-5px);
+  }
+}
+@media (max-width: 700px) {
+  .world-reading.journey-idle .world-stage {
+    height: 510px;
+  }
+  .world-soften {
+    opacity: 0.9;
+  }
+  .journey-active .world-soften {
+    opacity: 0.65;
+  }
+  .guide-destination {
+    font-size: 9px;
+    padding: 5px 10px;
+    max-width: 90vw;
+    letter-spacing: 0;
+  }
+  .guide-rest-control {
+    width: 22px;
+    height: 22px;
+    top: -5px;
+    right: -2px;
+  }
+  .scene-landmark {
+    width: 220px;
+    right: 0;
+    bottom: 20%;
+  }
+  .world-reading.journey-idle .scene-landmark {
+    width: 170px;
+    bottom: 25%;
+    right: -10px;
+    opacity: 0.3;
+  }
+  .guide-shadow {
+    filter: blur(2px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .world-place,
+  .world-place picture,
+  .scene-content,
+  .guide-resting {
+    transition: none !important;
+  }
+  .guide-figure,
+  .fallback-leg {
+    animation: none !important;
+  }
+  .journey-mist {
+    display: none;
+  }
+  .scene-content.content-leaving {
+    transform: none;
+    opacity: 0.7;
+  }
+}
+.journey-shell > .site-layout {
+  isolation: auto;
+}
+/* Keep the destination bubble inside the viewport, including at the reading edge. */
+.guide-destination {
+  left: auto;
+  right: 0;
+  transform: none;
+}

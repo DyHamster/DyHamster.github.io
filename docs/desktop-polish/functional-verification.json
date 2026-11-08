@@ -1,0 +1,230 @@
+{
+  "checks": [
+    "home→notes: prepare, distance-driven walking frames, arrival and idle, continuous screencast",
+    "all 20 directed routes; guide and audio DOM persist; music time continues",
+    "rapid retarget, history, direct refresh"
+  ],
+  "viewports": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "h1": {
+        "x": 96,
+        "y": 288.125,
+        "width": 600,
+        "height": 177.46875,
+        "bottom": 465.59375,
+        "right": 696
+      },
+      "copy": {
+        "x": 96,
+        "y": 244.328125,
+        "width": 600,
+        "height": 427.328125,
+        "bottom": 671.65625,
+        "right": 696
+      },
+      "actions": {
+        "x": 96,
+        "y": 620.15625,
+        "width": 600,
+        "height": 51.5,
+        "bottom": 671.65625,
+        "right": 696
+      },
+      "guide": {
+        "x": 1004.390625,
+        "y": 423,
+        "width": 324,
+        "height": 324,
+        "bottom": 747,
+        "right": 1328.390625
+      },
+      "hint": {
+        "x": 96,
+        "y": 828,
+        "width": 1248,
+        "height": 44,
+        "bottom": 872,
+        "right": 1344
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 89,
+        "bottom": 89,
+        "right": 1440
+      },
+      "overflow": false
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "h1": {
+        "x": 96,
+        "y": 249.71875,
+        "width": 600,
+        "height": 142.53125,
+        "bottom": 392.25,
+        "right": 696
+      },
+      "copy": {
+        "x": 96,
+        "y": 209.921875,
+        "width": 600,
+        "height": 372.140625,
+        "bottom": 582.0625,
+        "right": 696
+      },
+      "actions": {
+        "x": 96,
+        "y": 530.5625,
+        "width": 600,
+        "height": 51.5,
+        "bottom": 582.0625,
+        "right": 696
+      },
+      "guide": {
+        "x": 968.21875,
+        "y": 360.96875,
+        "width": 276.46875,
+        "height": 276.46875,
+        "bottom": 637.4375,
+        "right": 1244.6875
+      },
+      "hint": {
+        "x": 96,
+        "y": 704,
+        "width": 1174,
+        "height": 44,
+        "bottom": 748,
+        "right": 1270
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "height": 89,
+        "bottom": 89,
+        "right": 1366
+      },
+      "overflow": false
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "h1": {
+        "x": 320,
+        "y": 363.515625,
+        "width": 600,
+        "height": 206.6875,
+        "bottom": 570.203125,
+        "right": 920
+      },
+      "copy": {
+        "x": 320,
+        "y": 319.71875,
+        "width": 600,
+        "height": 456.546875,
+        "bottom": 776.265625,
+        "right": 920
+      },
+      "actions": {
+        "x": 320,
+        "y": 724.765625,
+        "width": 600,
+        "height": 51.5,
+        "bottom": 776.265625,
+        "right": 920
+      },
+      "guide": {
+        "x": 1385.1875,
+        "y": 556.390625,
+        "width": 340,
+        "height": 340,
+        "bottom": 896.390625,
+        "right": 1725.1875
+      },
+      "hint": {
+        "x": 320,
+        "y": 1008,
+        "width": 1280,
+        "height": 44,
+        "bottom": 1052,
+        "right": 1600
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 89,
+        "bottom": 89,
+        "right": 1920
+      },
+      "overflow": false
+    },
+    {
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "h1": {
+        "x": 96,
+        "y": 248.484375,
+        "width": 499.1875,
+        "height": 145,
+        "bottom": 393.484375,
+        "right": 595.1875
+      },
+      "copy": {
+        "x": 96,
+        "y": 208.6875,
+        "width": 499.1875,
+        "height": 374.609375,
+        "bottom": 583.296875,
+        "right": 595.1875
+      },
+      "actions": {
+        "x": 96,
+        "y": 531.796875,
+        "width": 499.1875,
+        "height": 51.5,
+        "bottom": 583.296875,
+        "right": 595.1875
+      },
+      "guide": {
+        "x": 691.203125,
+        "y": 360.96875,
+        "width": 276.46875,
+        "height": 276.46875,
+        "bottom": 637.4375,
+        "right": 967.671875
+      },
+      "hint": {
+        "x": 96,
+        "y": 704,
+        "width": 832,
+        "height": 44,
+        "bottom": 748,
+        "right": 928
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 89,
+        "bottom": 89,
+        "right": 1024
+      },
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

@@ -3,3 +3,10 @@ node_modules/
 *.tsbuildinfo
 .env.local
 .env.*.local
+# Intermediate frames from local browser recordings
+/docs/journey/frames/
+# Intermediate desktop screencast frames
+/docs/desktop-polish/frames/
+
+# Local design checker workspace
+.taste-skill/

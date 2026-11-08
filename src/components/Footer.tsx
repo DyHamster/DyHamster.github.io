@@ -1,4 +1,19 @@
-import { siteConfig } from '../config/site.config'
+import { Leaf } from "lucide-react";
+import { siteConfig } from "../config/site.config";
 export default function Footer() {
-  return <footer className="site-footer shell"><span>© {new Date().getFullYear()} DyHamster</span><span className="footer-note">学习、记录，慢慢理解。</span><a href={siteConfig.social.github} target="_blank" rel="noreferrer">GitHub ↗</a><a href={`mailto:${siteConfig.social.email}`}>联系</a></footer>
+  return (
+    <footer className="site-footer shell">
+      <div>
+        <Leaf size={16} />
+        <span>© {new Date().getFullYear()} DyHamster</span>
+        <span className="footer-note">愿每一次停留，都有一点收获。</span>
+      </div>
+      <div>
+        <a href={siteConfig.social.github} target="_blank" rel="noreferrer">
+          GitHub ↗
+        </a>
+        <a href={`mailto:${siteConfig.social.email}`}>写封信 ↗</a>
+      </div>
+    </footer>
+  );
 }

@@ -1,0 +1,94 @@
+{
+  "320": {
+    "brand": {
+      "left": 20,
+      "right": 128.03125,
+      "top": 12,
+      "bottom": 56,
+      "width": 108.03125,
+      "height": 44
+    },
+    "dock": {
+      "left": 158,
+      "right": 254,
+      "top": 12,
+      "bottom": 68,
+      "width": 96,
+      "height": 56
+    },
+    "theme": {
+      "left": 256,
+      "right": 300,
+      "top": 12,
+      "bottom": 56,
+      "width": 44,
+      "height": 44
+    },
+    "header": {
+      "left": 0,
+      "right": 320,
+      "top": 0,
+      "bottom": 121,
+      "width": 320,
+      "height": 121
+    },
+    "paper": {
+      "left": 20,
+      "right": 300,
+      "top": 392,
+      "bottom": 876.65625,
+      "width": 280,
+      "height": 484.65625
+    },
+    "scroll": 320
+  },
+  "390": {
+    "brand": {
+      "left": 20,
+      "right": 191.875,
+      "top": 12,
+      "bottom": 56,
+      "width": 171.875,
+      "height": 44
+    },
+    "dock": {
+      "left": 218,
+      "right": 322,
+      "top": 12,
+      "bottom": 68,
+      "width": 104,
+      "height": 56
+    },
+    "theme": {
+      "left": 326,
+      "right": 370,
+      "top": 12,
+      "bottom": 56,
+      "width": 44,
+      "height": 44
+    },
+    "header": {
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "bottom": 121,
+      "width": 390,
+      "height": 121
+    },
+    "paper": {
+      "left": 20,
+      "right": 370,
+      "top": 392,
+      "bottom": 812.171875,
+      "width": 350,
+      "height": 420.171875
+    },
+    "scroll": 390
+  },
+  "checks": [
+    "immediate keyboard focus and real 2px card hover",
+    "mobile dock fits brand/theme and header, controls remain usable, panel fits viewport, all routes"
+  ],
+  "errors": [],
+  "cardHoverPixels": -2
+}

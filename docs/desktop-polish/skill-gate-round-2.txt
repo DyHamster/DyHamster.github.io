@@ -1,0 +1,121 @@
+gate: checking dist/index.html (tech); this takes a few minutes on a CPU Chrome
+gate: 38 FAIL open
+  FAIL nav              div.site-layout > header.header-wrap > div.site-header.shell > a.wordmark "DyHamster 一处林间，  [1440]
+       nav link wraps to a second line
+       fix: make the nav one bar from the content's left edge to its right edge, with every link and action inside it
+  FAIL copy-headline    h1#home-title "把日子， 写进森林里。"  [1440]
+       "把日子， 写进森林里。" does not name what is sold (dyhamster, from the page title); only the line under it does
+       fix: put the category noun in the h1 (and who it is for, or where), in 2 to 8 words
+  FAIL copy-actions     div.route-content > section.cottage-section > div.shell.cottage-content > a.btn.button "了解  [1440, 390]
+       3 actions in the hero ("阅读笔记", "了解作者", "了解作者"); at most 2
+       fix: few actions, one wording: at most 2 in the hero, the main action word for word in nav, hero and close
+  FAIL links            div.site-layout > header.header-wrap > div.site-header.shell > a.wordmark "DyHamster 一处林间，  [1440]
+       "DyHamster 一处林间，慢慢生长" goes to #/, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            header.header-wrap > div.site-header.shell > nav > a.active "首页"  [1440]
+       "首页" goes to #/, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            header.header-wrap > div.site-header.shell > nav > a:nth-of-type(2) "笔记"  [1440]
+       "笔记" goes to #/notes, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            header.header-wrap > div.site-header.shell > nav > a:nth-of-type(3) "文章"  [1440]
+       "文章" goes to #/posts, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            header.header-wrap > div.site-header.shell > nav > a:nth-of-type(4) "实验"  [1440]
+       "实验" goes to #/experiments, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            header.header-wrap > div.site-header.shell > nav > a:nth-of-type(5) "关于"  [1440]
+       "关于" goes to #/about, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            div.hero-content.shell > div.hero-copy > div.hero-actions > a.btn.button:nth-of-type(1) "阅  [1440]
+       "阅读笔记" goes to #/notes, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            div.hero-content.shell > div.hero-copy > div.hero-actions > a.btn.button:nth-of-type(2) "了  [1440]
+       "了解作者" goes to #/about, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            section#forest-paths > div.path-grid > a.card.path-card:nth-of-type(1) "笔记 强化学习、数学基础与论文阅读，  [1440]
+       "笔记 强化学习、数学基础与论文阅读，按主题持续整理。 暂无公开记录" goes to #/notes, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            section#forest-paths > div.path-grid > a.card.path-card:nth-of-type(2) "文章 围绕一个问题展开推导、分析和完  [1440]
+       "文章 围绕一个问题展开推导、分析和完整的思考。 暂无公开记录" goes to #/posts, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            section#forest-paths > div.path-grid > a.card.path-card:nth-of-type(3) "实验 记录实现与复现过程，查看结果与  [1440]
+       "实验 记录实现与复现过程，查看结果与可体验作品。 暂无公开记录" goes to #/experiments, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            div.route-content > section.updates-section.shell > div.section-heading > a.text-link "去文章  [1440]
+       "去文章里看看" goes to #/posts, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            div.growth-empty > div > nav.focus-topics > a:nth-of-type(1) "强化学习 ↗"  [1440]
+       "强化学习 ↗" goes to #/notes?topic=%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            div.growth-empty > div > nav.focus-topics > a:nth-of-type(2) "机器学习 ↗"  [1440]
+       "机器学习 ↗" goes to #/notes?topic=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            div.growth-empty > div > nav.focus-topics > a:nth-of-type(3) "数学基础 ↗"  [1440]
+       "数学基础 ↗" goes to #/notes?topic=%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            div.growth-empty > div > nav.focus-topics > a:nth-of-type(4) "论文与阅读 ↗"  [1440]
+       "论文与阅读 ↗" goes to #/notes?topic=%E8%AE%BA%E6%96%87%E4%B8%8E%E9%98%85%E8%AF%BB, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            div.route-content > section.updates-section.shell > div.growth-empty > a.text-link "关于我"  [1440]
+       "关于我" goes to #/about, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            div.route-content > section.cottage-section > div.shell.cottage-content > a.btn.button "了解  [1440]
+       "了解作者" goes to #/about, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL moment-none      (the page)  [1440]
+       a tech page (--type) deals no moment: every kind carries one, two on a long page (moments.md)
+       fix: deal one (moments.mjs pick --page tech) and mount it in its own section
+  FAIL hero-screen      main#main > div.scene-content.content-arriving "DyHamster · 南京大学学生把日子，写进森林里。你好，我是 DyHams"  [1440]
+       the hero ends at 2299px on a 900px screen, 1399px below the fold: it ends at the fold, 1px either way (SR-1)
+       fix: make the hero exactly one screen (height: 100svh, its content fitted inside), never taller or shorter
+  FAIL section-height   div#root > div.journey-shell.journey-idle > div.site-layout > footer.site-footer.shell "©   [1440]
+       the section is 132px tall (0.1 screens), 768px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+       fix: set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit
+  FAIL one-section      div#root > div.journey-shell.journey-idle > div.site-layout > footer.site-footer.shell "©   [1440]
+       the screen at scroll 1531px (the top of section 2) shows 132px of section 2 and the content of 2 sections, over 24px each beside section 1: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+       fix: make each section exactly one screen or two, so a screen shows one section and no neighbour peeks
+  FAIL one-section      main#main > div.scene-content.content-arriving "DyHamster · 南京大学学生把日子，写进森林里。你好，我是 DyHams"  [1440]
+       a <div> sits directly in <main>: every part of <main> is a <section> (SR-4)
+       fix: put every block of <main> in a <section>, and give a band its own section instead of a ground inside one
+  FAIL one-heading      section#forest-paths > div.section-heading > div > h2 "笔记、文章与实验"  [1440]
+       the hero holds an h2 (3): its heading is the h1, and an h2 opens the next section (SR-5)
+       fix: give each section one h2, first in its .wrap, and the hero only its h1
+  FAIL container-edges  div#root "跳到正文DyHamster一处林间，慢慢生长首页笔记文章实验关于 DyHamst"  [1440]
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  main#main > div.scene-content.content-arriving "DyHamster · 南京大学学生把日子，写进森林里。你好，我是 DyHams"  [1440]
+       the section needs exactly one in-flow child .wrap (it has 1 in-flow child, 0 .wrap) (and 1 more like it: "© 2026 DyHamster愿每一次停留，都") (SR-6)
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  div.scene-content.content-arriving > div.route-content > section.cottage-section > div.for  [1440]
+       a box runs 0-1440px, outside the container lines of section 1 at 96-1344px: full width is for background layers and grounds only (SR-6)
+       fix: keep it inside the container lines (.wrap): full width is for background layers and grounds only
+  FAIL container-edges  div.route-content > section.cottage-section > div.forest-scene.cottage-clean > div.sun-haz  [1440]
+       a box runs 0-1440px, outside the container lines of section 1 at 96-1344px: full width is for background layers and grounds only (and 4 more like it: div.scene-content.content-arriving > div.route-content > section.cotta
+       fix: keep it inside the container lines (.wrap): full width is for background layers and grounds only
+  FAIL container-edges  div.site-layout > footer.site-footer.shell > div:nth-of-type(1) > span:nth-of-type(1) "© 2  [1440]
+       1 text block starts on a left line at x 132, 36px from the container's left: text starts on the container's left, or on one split line (x 626, 732, 838) (SR-6)
+       fix: start the text on the container's left, or on the one split line every split shares
+  FAIL container-edges  section.updates-section.shell > div.growth-empty > div > h3 "目前关注：强化学习、数学与论文阅读"  [1440]
+       2 text blocks start on a left line at x 121, 25px from the container's left: text starts on the container's left, or on one split line (x 626, 732, 838) (also "公开记录尚在整理。可以先按主题浏览，或了解我的学习方向。") (SR-6)
+       fix: start the text on the container's left, or on the one split line every split shares
+  FAIL container-edges  div.scene-content.content-arriving > div.route-content > section.cottage-section > div.cot  [1440]
+       a box over half the container wide runs 0-1440px, not on the container's lines at 96-1344px (and 2 more like it: div.scene-content.content-arriving > div.route-content > section.forest-hero.hero > div.forest-scene.aftern
+       fix: run the picture or box from the container's left line to its right line, or put it in a row or a split
+  FAIL collide          div#root > div.journey-shell.journey-idle > div.site-layout > header.header-wrap "DyHamste  [390]
+       at the top of the page the fixed bar covers the picture "img: afternoon-clean-small.webp": nothing scrolls it out from under the bar
+       fix: on a phone nothing lies on anything else: let the section grow with its content (min-height for its screens, never a fixed height; --hm: 2 when it needs two) or cut what it holds; keep pictures and cards off the buttons;
+  FAIL photo-upscale    section.forest-hero.hero > div.forest-scene.afternoon-clean > picture > img.scene-art "img  [390]
+       afternoon-clean-small.webp: 900x507 shown at 390x844, blown up 1.66x
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL menu-toggle      div.site-layout:nth-of-type(3) > header.header-wrap > div.site-header.shell > button.theme  [390]
+       the menu button ("切换到深色模式") has no aria-expanded: a screen reader cannot tell the menu is open or shut
+       fix: use the starter's button: <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">; system.js flips it
+  FAIL container        page  [1440, 390]
+       no .wrap
+       fix: put the content in one .wrap
+  WAIVED gaming-suspect dist/assets/index-CreFv7r2.js: the kit's motion.js shot() test, ported unchanged into the Vite bundle; no application-specific automation detection
+  WAIVED motion-layer html[data-motion]: The unchanged skill motion.css is imported through Vite and bundled in index CSS; actual button/card hover is active rather than a standalone link href.
+  13 WARN (not blocking), first: cut-text section.forest-hero.hero > div.hero-bott; button-styles (the page); copy-headline h1#home-title "把日子， 写进森林里。"; heading-scale section#forest-paths > div.path-grid > a; off-grid div.hero-content.shell > div.hero-copy >
+A FAIL you judge false: add {"check": "<id>", "target": "<its where, enough to name that one finding>", "reason": "<why, 12+ characters>"} to .taste-skill/waivers.json (one finding each, 5 at most, never for kit-edited or checker-gaming); it goes in your report. Never edit the kit's files or hide the page from the checker.
+GATE: FAIL 38 (round 2 of 3)

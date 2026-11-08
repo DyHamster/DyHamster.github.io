@@ -1,0 +1,95 @@
+{
+  "cell": 320,
+  "columns": 4,
+  "rows": 3,
+  "anchor": {
+    "x": 160,
+    "y": 315
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "sourceBottom": 310,
+      "dx": 2,
+      "dy": 5,
+      "baseline": 315
+    },
+    {
+      "frame": 1,
+      "sourceBottom": 305,
+      "dx": -6,
+      "dy": 10,
+      "baseline": 315
+    },
+    {
+      "frame": 2,
+      "sourceBottom": 306,
+      "dx": 0,
+      "dy": 9,
+      "baseline": 315
+    },
+    {
+      "frame": 3,
+      "sourceBottom": 306,
+      "dx": 0,
+      "dy": 9,
+      "baseline": 315
+    },
+    {
+      "frame": 4,
+      "sourceBottom": 313,
+      "dx": -2,
+      "dy": 2,
+      "baseline": 315
+    },
+    {
+      "frame": 5,
+      "sourceBottom": 309,
+      "dx": -5,
+      "dy": 6,
+      "baseline": 315
+    },
+    {
+      "frame": 6,
+      "sourceBottom": 306,
+      "dx": -3,
+      "dy": 9,
+      "baseline": 315
+    },
+    {
+      "frame": 7,
+      "sourceBottom": 309,
+      "dx": -9,
+      "dy": 6,
+      "baseline": 315
+    },
+    {
+      "frame": 8,
+      "sourceBottom": 311,
+      "dx": -11,
+      "dy": 4,
+      "baseline": 315
+    },
+    {
+      "frame": 9,
+      "sourceBottom": 311,
+      "dx": -12,
+      "dy": 4,
+      "baseline": 315
+    },
+    {
+      "frame": 10,
+      "sourceBottom": 309,
+      "dx": -11,
+      "dy": 6,
+      "baseline": 315
+    },
+    {
+      "frame": 11,
+      "sourceBottom": 311,
+      "dx": -11,
+      "dy": 4,
+      "baseline": 315
+    }
+  ]
+}

@@ -1,31 +1,220 @@
-import { getSection } from '../config/sections'
-import { Link } from 'react-router-dom'
-import SEO from '../components/SEO'
-import EntryList from '../components/EntryList'
-import { siteConfig } from '../config/site.config'
-import { getEntries } from '../lib/posts'
+import { Link } from "react-router-dom";
+import {
+  ArrowDown,
+  ArrowUpRight,
+  BookOpen,
+  NotebookPen,
+  FlaskConical,
+  Leaf,
+  Sprout,
+} from "lucide-react";
+import SEO from "../components/SEO";
+import EntryList from "../components/EntryList";
+import ForestScene from "../components/ForestScene";
+import { siteConfig } from "../config/site.config";
+import { sections } from "../config/sections";
+import { getEntries, entryURL } from "../lib/posts";
+const icons = {
+  notes: NotebookPen,
+  posts: BookOpen,
+  experiments: FlaskConical,
+};
+const subtitles = {
+  notes: "强化学习、数学基础与论文阅读，按主题持续整理。",
+  posts: "围绕一个问题展开推导、分析和完整的思考。",
+  experiments: "记录实现与复现过程，查看结果与可体验作品。",
+};
 export default function Home() {
-  const noteTopics = getSection('notes')?.topics ?? []
-  const entries = getEntries()
-  const featured = entries.filter(entry => entry.featured)
-  return <>
-    <SEO title="首页" description={siteConfig.description} />
-    <section className="home-intro">
-      <div className="eyebrow"><span className="status-dot" /> PERSONAL NOTEBOOK</div>
-      <h1>学习，记录，<br /><span>慢慢理解。</span></h1>
-      <div className="intro-bottom"><p>我是 DyHamster，南京大学在读学生。<br />目前对强化学习比较感兴趣，这里记录学习笔记、实验和一些思考。</p><Link className="text-link" to="/about">关于我 <span>↗</span></Link></div>
-    </section>
-    <section className="home-section">
-      <div className="section-heading"><div><span className="eyebrow">01 / NOTEBOOK</span><h2>沿着问题，积累笔记</h2></div><Link className="text-link" to="/notes">全部笔记 ↗</Link></div>
-      <div className="topic-grid">{noteTopics.map((topic, index) => {
-        const count = getEntries('notes').filter(note => note.topic === topic.title).length
-        return <Link key={topic.id} className="topic-link" to={`/notes?topic=${encodeURIComponent(topic.title)}`}><span className="topic-number">0{index + 1}</span><div><span className="topic-en">{topic.subtitle}</span><h3>{topic.title}</h3><p>{topic.description}</p><span className="topic-count">{count ? `${count} 篇笔记` : '等待第一篇记录'}</span></div><span className="topic-arrow" aria-hidden="true">↗</span></Link>
-      })}</div>
-    </section>
-    {featured.length > 0 && <section className="home-section"><div className="section-heading"><div><span className="eyebrow">SELECTED</span><h2>值得回看的记录</h2></div></div><EntryList entries={featured.slice(0, 3)} /></section>}
-    <section className="home-section"><div className="section-heading"><div><span className="eyebrow">02 / RECENT</span><h2>最近更新</h2></div><Link className="text-link" to="/posts">文章归档 ↗</Link></div>
-      {entries.length ? <EntryList entries={entries.slice(0, 5)} /> : <div className="empty-state"><span className="empty-mark">—</span><h3>留一点空白，给接下来的学习。</h3><p>新的笔记、文章和实验记录，会在这里陆续出现。</p></div>}
-    </section>
-    <aside className="home-colophon"><span>ON THIS SITE</span><p>不必每次都有结论。把问题记下来，也是一种进展。</p></aside>
-  </>
+  const entries = getEntries();
+  const selected = [
+    ...entries.filter((entry) => entry.featured),
+    ...entries.filter((entry) => !entry.featured),
+  ].slice(0, 3);
+  return (
+    <>
+      <SEO title="首页" description={siteConfig.description} />
+      <section
+        className="forest-hero hero"
+        data-enter="off"
+        data-big-scene="forest"
+        aria-labelledby="home-title"
+      >
+        <ForestScene priority />
+        <div className="hero-light" />
+        <div className="hero-content shell">
+          <div className="hero-copy">
+            <div className="eyebrow">
+              <span className="tiny-leaf" /> DyHamster · 南京大学学生
+            </div>
+            <h1 id="home-title">
+              把日子，
+              <br />
+              写进<span className="forest-word">森林</span>里
+              <span className="title-period">。</span>
+            </h1>
+            <p className="hero-intro">
+              你好，我是 <strong>DyHamster</strong>。<br />
+              一名对强化学习感兴趣的南京大学学生。
+              <br />
+              整理数学基础、论文阅读、实验与思考。
+            </p>
+            <div className="hero-actions">
+              <Link className="btn button primary" to="/notes">
+                <NotebookPen size={17} /> 阅读笔记 <ArrowUpRight size={16} />
+              </Link>
+              <Link className="btn button glass" to="/about">
+                了解作者 <ArrowUpRight size={16} />
+              </Link>
+            </div>
+            <div className="hero-footnote">
+              <span /> 不急着抵达，先在这里坐一会儿。
+            </div>
+          </div>
+        </div>
+        <div className="scene-caption">
+          <span>风经过树梢</span>
+          <span>也翻过一页笔记</span>
+          <Leaf size={15} strokeWidth={1} />
+        </div>
+        <div className="hero-bottom shell">
+          <button
+            className="scroll-invite"
+            onClick={() =>
+              document.getElementById("forest-paths")?.scrollIntoView({
+                behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+                  ? "instant"
+                  : "smooth",
+              })
+            }
+          >
+            <span>沿着小径，往里走走</span>
+            <ArrowDown size={14} />
+          </button>
+          <span className="scene-index">
+            01 <i /> 午后的森林
+          </span>
+        </div>
+      </section>
+      <section className="paths-section shell" id="forest-paths">
+        <div className="section-heading">
+          <div>
+            <span className="eyebrow">THREE PATHS THROUGH THE WOODS</span>
+            <h2>笔记、文章与实验</h2>
+          </div>
+          <p>按学习主题查找笔记，阅读长文，查看实验过程。</p>
+        </div>
+        <div className="path-grid">
+          {sections.map((section, i) => {
+            const Icon = icons[section.id] ?? BookOpen;
+            return (
+              <Link
+                className={`card path-card path-${section.id}`}
+                to={`/${section.id}`}
+                key={section.id}
+              >
+                <div className="path-card-top">
+                  <span className="path-icon">
+                    <Icon size={24} strokeWidth={1.25} />
+                  </span>
+                  <span className="path-number">0{i + 1}</span>
+                </div>
+                <span className="eyebrow">{section.english}</span>
+                <h3>{section.navTitle ?? section.title}</h3>
+                <p>{subtitles[section.id] ?? section.description}</p>
+                <div className="path-card-bottom">
+                  <span>
+                    {getEntries(section.id).length
+                      ? `${getEntries(section.id).length} 篇记录`
+                      : "暂无公开记录"}
+                  </span>
+                  <ArrowUpRight size={19} />
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+      <section className="updates-section shell">
+        <div className="section-heading">
+          <div>
+            <span className="eyebrow">RECENT GROWTH</span>
+            <h2>最近更新</h2>
+          </div>
+          <Link className="text-link" to="/posts">
+            去文章里看看 <ArrowUpRight size={15} />
+          </Link>
+        </div>
+        {selected.length ? (
+          <>
+            <div className="featured-grid">
+              {selected
+                .filter((entry) => entry.featured)
+                .map((entry) => (
+                  <Link
+                    to={entryURL(entry)}
+                    className="featured-card"
+                    key={entry.kind + entry.slug}
+                  >
+                    {entry.coverImage && (
+                      <img src={entry.coverImage} alt="" loading="lazy" />
+                    )}
+                    <span className="eyebrow">精选 · {entry.topic}</span>
+                    <h3>{entry.title}</h3>
+                    <p>{entry.excerpt}</p>
+                    <span className="entry-meta">{entry.updated} ↗</span>
+                  </Link>
+                ))}
+            </div>
+            <EntryList entries={entries.slice(0, 4)} />
+          </>
+        ) : (
+          <div className="growth-empty">
+            <span className="seed-icon">
+              <Sprout size={36} strokeWidth={1} />
+            </span>
+            <div>
+              <h3>目前关注：强化学习、数学与论文阅读</h3>
+              <p>公开记录尚在整理。可以先按主题浏览，或了解我的学习方向。</p>
+              <nav className="focus-topics" aria-label="当前学习主题">
+                {sections
+                  .find((section) => section.id === "notes")
+                  ?.topics?.map((topic) => (
+                    <Link
+                      key={topic.id}
+                      to={`/notes?topic=${encodeURIComponent(topic.title)}`}
+                    >
+                      {topic.title} ↗
+                    </Link>
+                  ))}
+              </nav>
+            </div>
+            <Link className="text-link" to="/about">
+              关于我 <ArrowUpRight size={16} />
+            </Link>
+          </div>
+        )}
+      </section>
+      <section className="cottage-section">
+        <ForestScene scene="cottage" />
+        <div className="cottage-shade" />
+        <div className="shell cottage-content">
+          <span className="eyebrow">A LIGHT IN THE WOODS</span>
+          <h2>
+            林间有一盏灯，
+            <br />
+            为好奇的人亮着。
+          </h2>
+          <p>
+            关于强化学习、数学、阅读，或是一个没想明白的问题。
+            <br />
+            很高兴在这片森林里，与你相遇。
+          </p>
+          <Link to="/about" className="btn button warm">
+            了解作者 <ArrowUpRight size={17} />
+          </Link>
+          <span className="cottage-coordinate">02 — 傍晚，灯亮了。</span>
+        </div>
+      </section>
+    </>
+  );
 }

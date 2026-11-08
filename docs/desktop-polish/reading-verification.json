@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "music panel, volume, Escape, pause",
+    "temporary Markdown: formula, code, image, TOC, stable reading, neighbors, search, classification, tags, pagination, experiment entry",
+    "skip link, actual keyboard focus and visible 2px ring",
+    "1024 desktop, 390/320 basic routes and no horizontal overflow; reduced motion",
+    "image / atlas failure retains navigation and vector character fallback",
+    "no browser runtime errors"
+  ],
+  "viewports": [],
+  "errors": []
+}

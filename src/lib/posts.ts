@@ -4,6 +4,7 @@ import type { Post } from '../data/content'
 
 const files = import.meta.glob(['../content/**/*.md', '!../content/**/README.md'], { eager: true, query: '?raw', import: 'default' }) as Record<string, string>
 const text = (value: unknown, fallback = '') => typeof value === 'string' ? value : fallback
+const link = (value: unknown) => typeof value === 'string' && /^(https?:\/\/|\/(?!\/)|#\/)/.test(value) ? value : undefined
 const date = (value: unknown, fallback: string) => {
   const input = value instanceof Date ? value.toISOString().slice(0, 10) : text(value)
   return /^\d{4}-\d{2}-\d{2}$/.test(input) && !Number.isNaN(Date.parse(input)) ? input : fallback
@@ -31,6 +32,7 @@ const entries: Post[] = Object.entries(files).flatMap(([path, raw]) => {
       topic: text(data.topic, '未分类'), status: text(data.status, '持续更新'),
       coverImage: text(data.coverImage, text(data.cover)) || undefined,
       featured: data.featured === true,
+      demoUrl: link(data.demoUrl), sourceUrl: link(data.sourceUrl ?? data.githubUrl),
     }]
   } catch (error) {
     console.warn(`Could not parse ${path}`, error)

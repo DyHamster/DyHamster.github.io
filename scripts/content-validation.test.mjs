@@ -30,3 +30,7 @@ test('aliases cannot collide with sections or fixed pages', () => {
   assert.throws(() => validateSections([...sections, { ...sections[0], id: 'about' }]))
   assert.throws(() => validateSections([{ ...sections[0], aliases: ['notes'] }]))
 })
+test('experiment links allow web and local entries, reject executable URLs', () => {
+  for (const url of ['https://example.com/demo', '/#/notes', '#/experiments/demo']) validateEntry(note(`demoUrl: '${url}'`), 'notes/link.md', sections, new Set())
+  for (const url of ['javascript:alert(1)', '//example.com', 'data:text/html,example']) assert.throws(() => validateEntry(note(`demoUrl: '${url}'`), 'notes/link.md', sections, new Set()), /invalid demoUrl/)
+})
