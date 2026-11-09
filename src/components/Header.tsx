@@ -7,7 +7,13 @@ export default function Header() {
       <div className="site-header shell wrap">
         <Link className="wordmark" to="/" aria-label="DyHamster 首页">
           <span className="brand-leaf">
-            <img src="/favicon.svg?v=leaf-2" width="40" height="40" alt="" />
+            <img
+              src="/brand/mooncrest-64.png"
+              srcSet="/brand/mooncrest-96.png 2x"
+              width="40"
+              height="40"
+              alt=""
+            />
           </span>
           <span>
             DyHamster<small>学习与思考</small>

@@ -4,7 +4,13 @@ export default function Footer() {
   return (
     <footer className="site-footer shell wrap">
       <div>
-        <img src="/favicon.svg?v=leaf-2" width="20" height="20" alt="" />
+        <img
+          src="/brand/mooncrest-32.png"
+          srcSet="/brand/mooncrest-64.png 2x"
+          width="20"
+          height="20"
+          alt=""
+        />
         <span>© {new Date().getFullYear()} DyHamster</span>
       </div>
       <div>
