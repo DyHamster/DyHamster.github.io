@@ -1,0 +1,734 @@
+[
+ {
+  "vw": 1440,
+  "vh": 900,
+  "L": 96,
+  "R": 1344,
+  "nav": 0,
+  "screen": 900,
+  "hero": {
+   "height": 900,
+   "h1": {
+    "size": 61.2,
+    "leading": 1.42,
+    "lines": 2,
+    "x": 96,
+    "y": 308,
+    "w": 600,
+    "h": 174
+   },
+   "lead": null,
+   "buttons": {
+    "n": 2,
+    "h": 52,
+    "first": {
+     "x": 96,
+     "y": 600,
+     "w": 163,
+     "h": 52
+    }
+   },
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "section.forest-hero.hero section.forest-hero.hero \"DyHamster · 南京大学学生把日子，写进森林里。我在学强\"",
+    "top": 0,
+    "height": 900,
+    "content": 900,
+    "frame": 0
+   },
+   {
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "top": 900,
+    "height": 473,
+    "content": 369,
+    "frame": 900
+   },
+   {
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "top": 1373,
+    "height": 175,
+    "content": 78,
+    "frame": 1373
+   },
+   {
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "top": 1548,
+    "height": 580,
+    "content": 580,
+    "frame": 1548
+   }
+  ],
+  "findings": [
+   {
+    "rule": "screen-short",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "473px tall; one screen under the nav is 900px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "473px, 0.53 screens; a section is exactly one or two (--h)"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "framed, 44px of section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\" shows"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "framed, 252px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "175px tall; one screen under the nav is 900px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "175px, 0.19 screens; a section is exactly one or two (--h)"
+   },
+   {
+    "rule": "sparse",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "its content fills 45% of its screen; merge it or give it its visual (0.55 is the aim)"
+   },
+   {
+    "rule": "neighbour",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "framed, 580px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "detail": "580px tall; one screen under the nav is 900px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "detail": "580px, 0.64 screens; a section is exactly one or two (--h)"
+   }
+  ],
+  "size": "1440x900",
+  "overflowX": false
+ },
+ {
+  "vw": 1366,
+  "vh": 768,
+  "L": 96,
+  "R": 1270,
+  "nav": 0,
+  "screen": 768,
+  "hero": {
+   "height": 768,
+   "h1": {
+    "size": 49.152,
+    "leading": 1.42,
+    "lines": 2,
+    "x": 96,
+    "y": 267,
+    "w": 600,
+    "h": 140
+   },
+   "lead": null,
+   "buttons": {
+    "n": 2,
+    "h": 52,
+    "first": {
+     "x": 96,
+     "y": 513,
+     "w": 163,
+     "h": 52
+    }
+   },
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "section.forest-hero.hero section.forest-hero.hero \"DyHamster · 南京大学学生把日子，写进森林里。我在学强\"",
+    "top": 0,
+    "height": 768,
+    "content": 768,
+    "frame": 0
+   },
+   {
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "top": 768,
+    "height": 473,
+    "content": 369,
+    "frame": 768
+   },
+   {
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "top": 1241,
+    "height": 175,
+    "content": 78,
+    "frame": 1241
+   },
+   {
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "top": 1416,
+    "height": 580,
+    "content": 580,
+    "frame": 1416
+   }
+  ],
+  "findings": [
+   {
+    "rule": "screen-short",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "473px tall; one screen under the nav is 768px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "473px, 0.62 screens; a section is exactly one or two (--h)"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "framed, 44px of section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\" shows"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "framed, 120px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "175px tall; one screen under the nav is 768px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "175px, 0.23 screens; a section is exactly one or two (--h)"
+   },
+   {
+    "rule": "sparse",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "its content fills 45% of its screen; merge it or give it its visual (0.55 is the aim)"
+   },
+   {
+    "rule": "neighbour",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "framed, 580px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "detail": "580px tall; one screen under the nav is 768px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "detail": "580px, 0.76 screens; a section is exactly one or two (--h)"
+   }
+  ],
+  "size": "1366x768",
+  "overflowX": false
+ },
+ {
+  "vw": 1920,
+  "vh": 1080,
+  "L": 320,
+  "R": 1600,
+  "nav": 0,
+  "screen": 1080,
+  "hero": {
+   "height": 1080,
+   "h1": {
+    "size": 71.28,
+    "leading": 1.42,
+    "lines": 2,
+    "x": 320,
+    "y": 382,
+    "w": 600,
+    "h": 202
+   },
+   "lead": null,
+   "buttons": {
+    "n": 2,
+    "h": 52,
+    "first": {
+     "x": 320,
+     "y": 707,
+     "w": 163,
+     "h": 52
+    }
+   },
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "section.forest-hero.hero section.forest-hero.hero \"DyHamster · 南京大学学生把日子，写进森林里。我在学强\"",
+    "top": 0,
+    "height": 1080,
+    "content": 1080,
+    "frame": 0
+   },
+   {
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "top": 1080,
+    "height": 473,
+    "content": 369,
+    "frame": 1080
+   },
+   {
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "top": 1553,
+    "height": 175,
+    "content": 78,
+    "frame": 1553
+   },
+   {
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "top": 1728,
+    "height": 580,
+    "content": 580,
+    "frame": 1728
+   }
+  ],
+  "findings": [
+   {
+    "rule": "screen-short",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "473px tall; one screen under the nav is 1080px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "473px, 0.44 screens; a section is exactly one or two (--h)"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "framed, 44px of section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\" shows"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "framed, 432px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "175px tall; one screen under the nav is 1080px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "175px, 0.16 screens; a section is exactly one or two (--h)"
+   },
+   {
+    "rule": "sparse",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "its content fills 45% of its screen; merge it or give it its visual (0.55 is the aim)"
+   },
+   {
+    "rule": "neighbour",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "framed, 580px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "detail": "580px tall; one screen under the nav is 1080px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "detail": "580px, 0.54 screens; a section is exactly one or two (--h)"
+   }
+  ],
+  "size": "1920x1080",
+  "overflowX": false
+ },
+ {
+  "vw": 1024,
+  "vh": 768,
+  "L": 96,
+  "R": 928,
+  "nav": 0,
+  "screen": 768,
+  "hero": {
+   "height": 768,
+   "h1": {
+    "size": 50,
+    "leading": 1.42,
+    "lines": 2,
+    "x": 96,
+    "y": 266,
+    "w": 499,
+    "h": 142
+   },
+   "lead": null,
+   "buttons": {
+    "n": 2,
+    "h": 52,
+    "first": {
+     "x": 96,
+     "y": 515,
+     "w": 163,
+     "h": 52
+    }
+   },
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "section.forest-hero.hero section.forest-hero.hero \"DyHamster · 南京大学学生把日子，写进森林里。我在学强\"",
+    "top": 0,
+    "height": 768,
+    "content": 768,
+    "frame": 0
+   },
+   {
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "top": 768,
+    "height": 469,
+    "content": 365,
+    "frame": 768
+   },
+   {
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "top": 1237,
+    "height": 175,
+    "content": 78,
+    "frame": 1237
+   },
+   {
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "top": 1412,
+    "height": 580,
+    "content": 580,
+    "frame": 1412
+   }
+  ],
+  "findings": [
+   {
+    "rule": "screen-short",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "469px tall; one screen under the nav is 768px"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "framed, 44px of section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\" shows"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "framed, 124px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "175px tall; one screen under the nav is 768px"
+   },
+   {
+    "rule": "sparse",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "its content fills 45% of its screen; merge it or give it its visual (0.55 is the aim)"
+   },
+   {
+    "rule": "neighbour",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "framed, 580px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "detail": "580px tall; one screen under the nav is 768px"
+   }
+  ],
+  "size": "1024x768",
+  "overflowX": false
+ },
+ {
+  "vw": 820,
+  "vh": 1180,
+  "L": 96,
+  "R": 724,
+  "nav": 0,
+  "screen": 1180,
+  "hero": {
+   "height": 1180,
+   "h1": {
+    "size": 50,
+    "leading": 1.42,
+    "lines": 2,
+    "x": 96,
+    "y": 450,
+    "w": 377,
+    "h": 142
+   },
+   "lead": null,
+   "buttons": {
+    "n": 2,
+    "h": 52,
+    "first": {
+     "x": 96,
+     "y": 738,
+     "w": 163,
+     "h": 52
+    }
+   },
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "section.forest-hero.hero section.forest-hero.hero \"DyHamster · 南京大学学生把日子，写进森林里。我在学强\"",
+    "top": 0,
+    "height": 1180,
+    "content": 1180,
+    "frame": 0
+   },
+   {
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "top": 1180,
+    "height": 497,
+    "content": 393,
+    "frame": 1180
+   },
+   {
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "top": 1677,
+    "height": 204,
+    "content": 107,
+    "frame": 1677
+   },
+   {
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "top": 1882,
+    "height": 580,
+    "content": 580,
+    "frame": 1882
+   }
+  ],
+  "findings": [
+   {
+    "rule": "screen-short",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "497px tall; one screen under the nav is 1180px"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "framed, 58px of section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\" shows"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "framed, 478px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "204px tall; one screen under the nav is 1180px"
+   },
+   {
+    "rule": "neighbour",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "framed, 580px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "detail": "580px tall; one screen under the nav is 1180px"
+   }
+  ],
+  "size": "820x1180",
+  "overflowX": false
+ },
+ {
+  "vw": 768,
+  "vh": 1024,
+  "L": 96,
+  "R": 672,
+  "nav": 0,
+  "screen": 1024,
+  "hero": {
+   "height": 1024,
+   "h1": {
+    "size": 50,
+    "leading": 1.42,
+    "lines": 2,
+    "x": 96,
+    "y": 372,
+    "w": 346,
+    "h": 142
+   },
+   "lead": null,
+   "buttons": {
+    "n": 2,
+    "h": 52,
+    "first": {
+     "x": 96,
+     "y": 660,
+     "w": 163,
+     "h": 52
+    }
+   },
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "section.forest-hero.hero section.forest-hero.hero \"DyHamster · 南京大学学生把日子，写进森林里。我在学强\"",
+    "top": 0,
+    "height": 1024,
+    "content": 1024,
+    "frame": 0
+   },
+   {
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "top": 1024,
+    "height": 497,
+    "content": 393,
+    "frame": 1024
+   },
+   {
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "top": 1521,
+    "height": 204,
+    "content": 107,
+    "frame": 1521
+   },
+   {
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "top": 1726,
+    "height": 580,
+    "content": 580,
+    "frame": 1726
+   }
+  ],
+  "findings": [
+   {
+    "rule": "screen-short",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "497px tall; one screen under the nav is 1024px"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "framed, 58px of section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\" shows"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "detail": "framed, 322px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "204px tall; one screen under the nav is 1024px"
+   },
+   {
+    "rule": "neighbour",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "framed, 580px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "detail": "580px tall; one screen under the nav is 1024px"
+   }
+  ],
+  "size": "768x1024",
+  "overflowX": false
+ },
+ {
+  "vw": 390,
+  "vh": 844,
+  "L": 20,
+  "R": 370,
+  "nav": 0,
+  "screen": 844,
+  "hero": {
+   "height": 844,
+   "h1": {
+    "size": 42,
+    "leading": 1.42,
+    "lines": 2,
+    "x": 20,
+    "y": 194,
+    "w": 350,
+    "h": 119
+   },
+   "lead": null,
+   "buttons": {
+    "n": 2,
+    "h": 50,
+    "first": {
+     "x": 20,
+     "y": 444,
+     "w": 147,
+     "h": 50
+    }
+   },
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "section.forest-hero.hero section.forest-hero.hero \"DyHamster · 南京大学学生把日子，写进森林里。我在学强\"",
+    "top": 0,
+    "height": 844,
+    "content": 844,
+    "frame": 0
+   },
+   {
+    "where": "#forest-paths section.paths-section.shell \"笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔\"",
+    "top": 844,
+    "height": 852,
+    "content": 788,
+    "frame": 844
+   },
+   {
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "top": 1696,
+    "height": 254,
+    "content": 185,
+    "frame": 1696
+   },
+   {
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "top": 1950,
+    "height": 640,
+    "content": 640,
+    "frame": 1950
+   }
+  ],
+  "findings": [
+   {
+    "rule": "screen-short",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "254px tall; one screen under the nav is 844px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "254px, 0.30 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills"
+   },
+   {
+    "rule": "neighbour",
+    "where": "section.home-topics.shell section.home-topics.shell \"按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习\"",
+    "detail": "framed, 590px of section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "detail": "640px tall; one screen under the nav is 844px"
+   },
+   {
+    "rule": "screen-height",
+    "where": "section.cottage-section section.cottage-section \"林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏\"",
+    "detail": "640px, 0.76 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills"
+   }
+  ],
+  "size": "390x844",
+  "overflowX": false
+ }
+]

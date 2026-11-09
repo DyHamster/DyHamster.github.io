@@ -1,0 +1,135 @@
+gate: rounds used up; 42 FAIL open (page unchanged since the last run)
+  FAIL nav              div.site-layout > header.header-wrap > div.site-header.shell > a.wordmark "DyHamster 学习与思考  [1440]
+       nav link wraps to a second line
+       fix: make the nav one bar from the content's left edge to its right edge, with every link and action inside it
+  FAIL no-visual        section#forest-paths "笔记、文章与实验"  [1440, 390]
+       no picture, effect or mock in this section; a feature section needs a visual
+       fix: give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits
+  FAIL links            div.site-layout > header.header-wrap > div.site-header.shell > a.wordmark "DyHamster 学习与思考  [1440]
+       "DyHamster 学习与思考" goes to #/, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            header.header-wrap > div.site-header.shell > nav > a.active "首页"  [1440]
+       "首页" goes to #/, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            header.header-wrap > div.site-header.shell > nav > a:nth-of-type(2) "笔记"  [1440]
+       "笔记" goes to #/notes, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            header.header-wrap > div.site-header.shell > nav > a:nth-of-type(3) "文章"  [1440]
+       "文章" goes to #/posts, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            header.header-wrap > div.site-header.shell > nav > a:nth-of-type(4) "实验"  [1440]
+       "实验" goes to #/experiments, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            header.header-wrap > div.site-header.shell > nav > a:nth-of-type(5) "关于"  [1440]
+       "关于" goes to #/about, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            div.hero-content.shell > div.hero-copy > div.hero-actions > a.btn.button:nth-of-type(1) "阅  [1440]
+       "阅读笔记" goes to #/notes, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            div.hero-content.shell > div.hero-copy > div.hero-actions > a.btn.button:nth-of-type(2) "关  [1440]
+       "关于我" goes to #/about, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            section#forest-paths > div.path-grid > a.card.path-card:nth-of-type(1) "学习笔记 概念、推导与阅读摘记，按主  [1440]
+       "学习笔记 概念、推导与阅读摘记，按主题查找。 查看笔记" goes to #/notes, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            section#forest-paths > div.path-grid > a.card.path-card:nth-of-type(2) "文章 围绕一个问题，写完整的分析与思  [1440]
+       "文章 围绕一个问题，写完整的分析与思考。 查看文章" goes to #/posts, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            section#forest-paths > div.path-grid > a.card.path-card:nth-of-type(3) "实验 实现、复现与结果，也记下过程中  [1440]
+       "实验 实现、复现与结果，也记下过程中的问题。 查看实验" goes to #/experiments, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            main#main > section.home-topics.shell > nav.focus-topics > a:nth-of-type(1) "强化学习"  [1440]
+       "强化学习" goes to #/notes?topic=%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            main#main > section.home-topics.shell > nav.focus-topics > a:nth-of-type(2) "机器学习"  [1440]
+       "机器学习" goes to #/notes?topic=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            main#main > section.home-topics.shell > nav.focus-topics > a:nth-of-type(3) "数学基础"  [1440]
+       "数学基础" goes to #/notes?topic=%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            main#main > section.home-topics.shell > nav.focus-topics > a:nth-of-type(4) "论文与阅读"  [1440]
+       "论文与阅读" goes to #/notes?topic=%E8%AE%BA%E6%96%87%E4%B8%8E%E9%98%85%E8%AF%BB, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL links            main#main > section.cottage-section > div.shell.wrap > a.btn.button "关于我"  [1440]
+       "关于我" goes to #/about, which is not on this page
+       fix: point every link at a real section, page or file
+  FAIL section-height   div#root > div.journey-shell.journey-idle > div.site-layout > footer.site-footer.shell "©   [1440]
+       the section is 132px tall (0.1 screens), 768px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+       fix: set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit
+  FAIL section-height   main#main > section.home-topics.shell "按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习数学基础论文与阅"  [1440]
+       the section is 175px tall (0.2 screens), 725px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+       fix: set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit
+  FAIL section-height (screen-short, screen-height) section#forest-paths "笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔记文章围绕一个问"  [1440]
+       the section is 473px tall (0.5 screens), 427px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 1 more like it: "林间有一盏灯，为好奇的人亮着。有想讨论的问题，或") (SR-2)
+       fix: set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit
+  FAIL section-air      main#main > section.home-topics.shell "按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习数学基础论文与阅"  [1440]
+       the content fills 38.5% of the section's height (68 of 175px): 55% or more (40% WARN) (SR-3)
+       fix: fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block
+  FAIL one-section      h2#topics-title "按主题阅读"  [1440]
+       the screen at scroll 900px (stride 1) shows 252px of section 4 and the heading of section 3 whole and the content of 3 sections, over 24px each beside section 2: a screen shows one section (another may peek 8px, 24px WAR
+       fix: make each section exactly one screen or two, so a screen shows one section and no neighbour peeks
+  FAIL one-section      div#root > div.journey-shell.journey-idle > div.site-layout > footer.site-footer.shell "©   [1440]
+       the screen at scroll 1360px (the top of section 3) shows 132px of section 5 and the content of 3 sections, over 24px each beside section 4: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+       fix: make each section exactly one screen or two, so a screen shows one section and no neighbour peeks
+  FAIL one-heading      h2#topics-title "按主题阅读"  [1440]
+       headings of two sections show whole on one screen at 14 of 28 scroll positions (50%; at scroll 600, 650, 700, 750px), here with "笔记、文章与实验": at most 3% on a desktop (SR-5)
+       fix: make the sections one screen tall so their headings sit a screen apart and two never share one
+  FAIL container-edges  div#root "跳到正文DyHamster学习与思考首页笔记文章实验关于 DyHamster ·"  [1440]
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  main#main > section.forest-hero.hero > div.forest-scene.afternoon-clean  [1440]
+       a child of section 1 beside its .wrap is no valid background layer: not img, picture, video or canvas; z-index auto, not 0 (SR-6)
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  main#main > section.forest-hero.hero > div.hero-light  [1440]
+       a child of section 1 beside its .wrap is no valid background layer: not img, picture, video or canvas; z-index auto, not 0; a hero layer with neither alt nor aria-hidden="true" (and 10 more like it: "浏览栏目01 午后的森林", "DyHa
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  main#main > section.cottage-section > div.forest-scene.cottage-clean  [1440]
+       a box runs 0-1440px, outside the container lines of section 4 at 96-1344px: full width is for background layers and grounds only (SR-6)
+       fix: keep it inside the container lines (.wrap): full width is for background layers and grounds only
+  FAIL container-edges  main#main > section.cottage-section > div.forest-scene.cottage-clean > div.sun-haze  [1440]
+       a box runs 0-1440px, outside the container lines of section 4 at 96-1344px: full width is for background layers and grounds only (and 4 more like it: main#main > section.cottage-section > div.cottage-shade, main#main > s
+       fix: keep it inside the container lines (.wrap): full width is for background layers and grounds only
+  FAIL container-edges  div.site-layout > footer.site-footer.shell > div:nth-of-type(1) > span "© 2026 DyHamster"  [1440]
+       1 text block starts on a left line at x 136, 40px from the container's left: text starts on the container's left, or on one split line (x 626, 732, 838) (SR-6)
+       fix: start the text on the container's left, or on the one split line every split shares
+  FAIL container-edges  main#main > section.cottage-section > div.cottage-shade  [1440]
+       a box over half the container wide runs 0-1440px, not on the container's lines at 96-1344px (and 2 more like it: main#main > section.forest-hero.hero > div.forest-scene.afternoon-clean, main#main > section.forest-hero.he
+       fix: run the picture or box from the container's left line to its right line, or put it in a row or a split
+  FAIL collide          div#root > div.journey-shell.journey-idle > div.site-layout > header.header-wrap "DyHamste  [390]
+       at the top of the page the fixed bar covers the picture "img: afternoon-clean-small.webp": nothing scrolls it out from under the bar
+       fix: on a phone nothing lies on anything else: let the section grow with its content (min-height for its screens, never a fixed height; --hm: 2 when it needs two) or cut what it holds; keep pictures and cards off the buttons;
+  FAIL contrast         main#main > section.cottage-section > div.shell.wrap > p "有想讨论的问题，或者发现笔记里的疏漏，都欢迎告诉我。"  [390]
+       body text over a effect reads at 4.2:1 at its worst tenth (needs 4.5:1), on a busy ground
+       fix: put the text on a calm part of the picture, or on a solid panel
+  FAIL photo-upscale    section.forest-hero.hero > div.forest-scene.afternoon-clean > picture > img.scene-art "img  [390]
+       afternoon-clean-small.webp: 900x507 shown at 390x844, blown up 1.66x
+       fix: use a source at least as wide as the picture is shown (twice that for sharp screens)
+  FAIL neighbour        #forest-paths section.paths-section.shell "笔记、文章与实验学习笔记概念、推导与阅读摘记，按主题查找。查看笔"  [1440]
+       framed, 44px of section.home-topics.shell section.home-topics.shell "按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习" shows
+       fix: keep the next section's heading and picture out of this screen
+  FAIL screen-short     section.home-topics.shell section.home-topics.shell "按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习"  [1440, 390]
+       175px tall; one screen under the nav is 900px
+       fix: make the section one full screen (--h: 1, layout-v4.md section 2)
+  FAIL screen-height    section.home-topics.shell section.home-topics.shell "按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习"  [1440, 390]
+       175px, 0.19 screens; a section is exactly one or two (--h)
+       fix: make the section exactly one or two screens (--h: 1 or 2)
+  FAIL sparse           section.home-topics.shell section.home-topics.shell "按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习"  [1440]
+       its content fills 45% of its screen; merge it or give it its visual (0.55 is the aim)
+       fix: fill the section or make it a screen shorter
+  FAIL neighbour        section.home-topics.shell section.home-topics.shell "按主题阅读公开笔记还在整理，可以先看看主题分类。强化学习机器学习"  [1440, 390]
+       framed, 580px of section.cottage-section section.cottage-section "林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏" shows
+       fix: keep the next section's heading and picture out of this screen
+  FAIL screen-short     section.cottage-section section.cottage-section "林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏"  [1440, 390]
+       580px tall; one screen under the nav is 900px
+       fix: make the section one full screen (--h: 1, layout-v4.md section 2)
+  FAIL screen-height    section.cottage-section section.cottage-section "林间有一盏灯，为好奇的人亮着。有想讨论的问题，或者发现笔记里的疏"  [1440, 390]
+       580px, 0.64 screens; a section is exactly one or two (--h)
+       fix: make the section exactly one or two screens (--h: 1 or 2)
+  WAIVED gaming-suspect dist/assets/index-DRKV_itZ.js: the kit's motion.js shot() test, ported unchanged into the Vite bundle; no application-specific automation detection
+  WAIVED copy-headline h1#home-title "把日子， 写进森林里。": The user explicitly asks to preserve the poetic main title of this personal blog; the author, Nanjing University and research interests are immediately below/above, and there is no product being sold.
+  WAIVED motion-layer html[data-motion]: The unchanged skill motion.css is imported through Vite and bundled in index CSS; actual button/card hover is active rather than a standalone link href.
+  WAIVED moment-none (the page): The user explicitly asks to retain the existing persistent forest journey and sprite controller. Its complete home-to-notes narrative is the live scene; replacing it with a newly dealt commercial module would conflict with the incremental scope.
+  WAIVED menu-toggle div.site-layout:nth-of-type(3) > header.header-wrap > div.site-header.shell > bu: This is the labeled color scheme control. The five mobile navigation links are always visible, so the theme button does not open a menu or have an expanded state.
+  17 WARN (not blocking), first: nav div.site-layout > header.header-wrap > d; cut-text section.forest-hero.hero > div.hero-bott; button-styles (the page); copy-headline h1#home-title "把日子， 写进森林里。"; heading-scale section#forest-paths > div.section-headi
+Stop fixing: put these open FAILs and the waivers in your report, then finish.
+GATE: OPEN 42 (rounds used up)

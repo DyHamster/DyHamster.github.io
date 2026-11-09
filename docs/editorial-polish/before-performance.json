@@ -1,0 +1,5436 @@
+{
+  "environment": {
+    "browser": "156.0.4314.58",
+    "viewport": "1440x900",
+    "cpu": "native, no throttle",
+    "samples": 5,
+    "recordingSeparate": true
+  },
+  "runs": [
+    {
+      "samples": [
+        {
+          "time": 926.3,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00115, 0, 0)"
+        },
+        {
+          "time": 943,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00121, 0, 0)"
+        },
+        {
+          "time": 959.6,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00127, 0, 0)"
+        },
+        {
+          "time": 976.2,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00133, 0, 0)"
+        },
+        {
+          "time": 992.9,
+          "phase": "respond",
+          "progress": 0,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1026.3,
+          "phase": "respond",
+          "progress": 0.009,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1042.9,
+          "phase": "respond",
+          "progress": 0.031,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1059.6,
+          "phase": "respond",
+          "progress": 0.041,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1076.3,
+          "phase": "respond",
+          "progress": 0.052,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1092.9,
+          "phase": "respond",
+          "progress": 0.063,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1109.6,
+          "phase": "respond",
+          "progress": 0.074,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1126.3,
+          "phase": "respond",
+          "progress": 0.085,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1142.9,
+          "phase": "respond",
+          "progress": 0.096,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1159.6,
+          "phase": "respond",
+          "progress": 0.107,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1176.2,
+          "phase": "respond",
+          "progress": 0.118,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1193,
+          "phase": "respond",
+          "progress": 0.129,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1209.6,
+          "phase": "respond",
+          "progress": 0.14,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1226.3,
+          "phase": "respond",
+          "progress": 0.151,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1242.9,
+          "phase": "respond",
+          "progress": 0.162,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1259.5,
+          "phase": "respond",
+          "progress": 0.173,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1276.3,
+          "phase": "respond",
+          "progress": 0.184,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1293,
+          "phase": "travel",
+          "progress": 0.195,
+          "frame": 4,
+          "x": 1004.375,
+          "y": 422.96875,
+          "size": 323.96875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1309.6,
+          "phase": "travel",
+          "progress": 0.206,
+          "frame": 4,
+          "x": 1004.1953125,
+          "y": 422.703125,
+          "size": 323.765625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1326.3,
+          "phase": "travel",
+          "progress": 0.217,
+          "frame": 4,
+          "x": 1003.84375,
+          "y": 422.171875,
+          "size": 323.34375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1342.9,
+          "phase": "travel",
+          "progress": 0.228,
+          "frame": 4,
+          "x": 1003.328125,
+          "y": 421.359375,
+          "size": 322.71875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1359.6,
+          "phase": "travel",
+          "progress": 0.239,
+          "frame": 4,
+          "x": 1002.6640625,
+          "y": 420.3125,
+          "size": 321.890625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1376.2,
+          "phase": "travel",
+          "progress": 0.25,
+          "frame": 4,
+          "x": 1001.84375,
+          "y": 419,
+          "size": 320.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1392.9,
+          "phase": "travel",
+          "progress": 0.261,
+          "frame": 4,
+          "x": 1000.90625,
+          "y": 417.453125,
+          "size": 319.6875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1409.6,
+          "phase": "travel",
+          "progress": 0.272,
+          "frame": 4,
+          "x": 999.8515625,
+          "y": 415.640625,
+          "size": 318.328125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1426.3,
+          "phase": "travel",
+          "progress": 0.283,
+          "frame": 4,
+          "x": 998.71875,
+          "y": 413.609375,
+          "size": 316.78125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1442.9,
+          "phase": "travel",
+          "progress": 0.294,
+          "frame": 4,
+          "x": 997.5,
+          "y": 411.3125,
+          "size": 315.09375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1459.6,
+          "phase": "travel",
+          "progress": 0.305,
+          "frame": 5,
+          "x": 996.234375,
+          "y": 408.828125,
+          "size": 313.25,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1476.2,
+          "phase": "travel",
+          "progress": 0.316,
+          "frame": 5,
+          "x": 994.8984375,
+          "y": 406.078125,
+          "size": 311.265625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1492.9,
+          "phase": "travel",
+          "progress": 0.327,
+          "frame": 5,
+          "x": 993.5703125,
+          "y": 403.15625,
+          "size": 309.140625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1509.6,
+          "phase": "travel",
+          "progress": 0.337,
+          "frame": 5,
+          "x": 992.234375,
+          "y": 399.984375,
+          "size": 306.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1526.3,
+          "phase": "travel",
+          "progress": 0.348,
+          "frame": 6,
+          "x": 990.890625,
+          "y": 396.609375,
+          "size": 304.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1542.9,
+          "phase": "travel",
+          "progress": 0.359,
+          "frame": 6,
+          "x": 989.578125,
+          "y": 393.03125,
+          "size": 302,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1559.5,
+          "phase": "travel",
+          "progress": 0.37,
+          "frame": 6,
+          "x": 988.2890625,
+          "y": 389.28125,
+          "size": 299.421875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1576.2,
+          "phase": "travel",
+          "progress": 0.381,
+          "frame": 6,
+          "x": 987.0859375,
+          "y": 385.34375,
+          "size": 296.734375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1592.9,
+          "phase": "travel",
+          "progress": 0.392,
+          "frame": 7,
+          "x": 985.921875,
+          "y": 381.234375,
+          "size": 293.9375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1609.6,
+          "phase": "travel",
+          "progress": 0.403,
+          "frame": 7,
+          "x": 984.828125,
+          "y": 376.9375,
+          "size": 291.0625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1626.2,
+          "phase": "travel",
+          "progress": 0.414,
+          "frame": 7,
+          "x": 983.8203125,
+          "y": 372.484375,
+          "size": 288.109375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1642.9,
+          "phase": "travel",
+          "progress": 0.425,
+          "frame": 8,
+          "x": 982.921875,
+          "y": 367.9375,
+          "size": 285.09375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1659.6,
+          "phase": "travel",
+          "progress": 0.436,
+          "frame": 8,
+          "x": 982.1015625,
+          "y": 363.21875,
+          "size": 282.015625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1676.2,
+          "phase": "travel",
+          "progress": 0.447,
+          "frame": 8,
+          "x": 981.390625,
+          "y": 358.375,
+          "size": 278.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1692.9,
+          "phase": "travel",
+          "progress": 0.458,
+          "frame": 9,
+          "x": 980.7890625,
+          "y": 353.484375,
+          "size": 275.703125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1709.6,
+          "phase": "travel",
+          "progress": 0.469,
+          "frame": 9,
+          "x": 980.3046875,
+          "y": 348.4375,
+          "size": 272.484375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1726.3,
+          "phase": "travel",
+          "progress": 0.48,
+          "frame": 9,
+          "x": 979.921875,
+          "y": 343.34375,
+          "size": 269.21875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1742.9,
+          "phase": "travel",
+          "progress": 0.491,
+          "frame": 10,
+          "x": 979.671875,
+          "y": 338.171875,
+          "size": 265.9375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1759.5,
+          "phase": "travel",
+          "progress": 0.502,
+          "frame": 10,
+          "x": 979.515625,
+          "y": 332.984375,
+          "size": 262.65625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1776.2,
+          "phase": "travel",
+          "progress": 0.513,
+          "frame": 10,
+          "x": 979.46875,
+          "y": 327.734375,
+          "size": 259.375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1792.9,
+          "phase": "travel",
+          "progress": 0.524,
+          "frame": 11,
+          "x": 979.546875,
+          "y": 322.46875,
+          "size": 256.0625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1809.6,
+          "phase": "travel",
+          "progress": 0.535,
+          "frame": 11,
+          "x": 979.7109375,
+          "y": 317.171875,
+          "size": 252.765625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1826.2,
+          "phase": "travel",
+          "progress": 0.546,
+          "frame": 4,
+          "x": 979.9921875,
+          "y": 311.875,
+          "size": 249.484375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1842.9,
+          "phase": "travel",
+          "progress": 0.557,
+          "frame": 4,
+          "x": 980.3515625,
+          "y": 306.640625,
+          "size": 246.234375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1859.6,
+          "phase": "travel",
+          "progress": 0.568,
+          "frame": 4,
+          "x": 980.8203125,
+          "y": 301.40625,
+          "size": 242.984375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1876.2,
+          "phase": "travel",
+          "progress": 0.579,
+          "frame": 5,
+          "x": 981.3515625,
+          "y": 296.203125,
+          "size": 239.796875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1892.9,
+          "phase": "travel",
+          "progress": 0.59,
+          "frame": 5,
+          "x": 981.96875,
+          "y": 291.109375,
+          "size": 236.65625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1909.6,
+          "phase": "travel",
+          "progress": 0.601,
+          "frame": 5,
+          "x": 982.6640625,
+          "y": 286.0625,
+          "size": 233.546875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1926.2,
+          "phase": "travel",
+          "progress": 0.612,
+          "frame": 6,
+          "x": 983.40625,
+          "y": 281.09375,
+          "size": 230.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1942.9,
+          "phase": "travel",
+          "progress": 0.623,
+          "frame": 6,
+          "x": 984.203125,
+          "y": 276.265625,
+          "size": 227.53125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1959.6,
+          "phase": "travel",
+          "progress": 0.634,
+          "frame": 6,
+          "x": 985.046875,
+          "y": 271.515625,
+          "size": 224.625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1976.2,
+          "phase": "travel",
+          "progress": 0.645,
+          "frame": 6,
+          "x": 985.9296875,
+          "y": 266.90625,
+          "size": 221.796875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1992.9,
+          "phase": "travel",
+          "progress": 0.655,
+          "frame": 7,
+          "x": 986.8203125,
+          "y": 262.453125,
+          "size": 219.078125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2009.6,
+          "phase": "travel",
+          "progress": 0.666,
+          "frame": 7,
+          "x": 987.75,
+          "y": 258.125,
+          "size": 216.4375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2026.2,
+          "phase": "travel",
+          "progress": 0.677,
+          "frame": 7,
+          "x": 988.6796875,
+          "y": 253.984375,
+          "size": 213.890625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2042.9,
+          "phase": "travel",
+          "progress": 0.688,
+          "frame": 8,
+          "x": 989.6015625,
+          "y": 250.03125,
+          "size": 211.484375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2059.5,
+          "phase": "travel",
+          "progress": 0.699,
+          "frame": 8,
+          "x": 990.515625,
+          "y": 246.234375,
+          "size": 209.1875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2076.2,
+          "phase": "travel",
+          "progress": 0.71,
+          "frame": 8,
+          "x": 991.4140625,
+          "y": 242.6875,
+          "size": 207.015625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2092.9,
+          "phase": "travel",
+          "progress": 0.721,
+          "frame": 8,
+          "x": 992.296875,
+          "y": 239.328125,
+          "size": 204.96875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2109.6,
+          "phase": "travel",
+          "progress": 0.732,
+          "frame": 8,
+          "x": 993.125,
+          "y": 236.203125,
+          "size": 203.0625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2126.2,
+          "phase": "travel",
+          "progress": 0.743,
+          "frame": 9,
+          "x": 993.90625,
+          "y": 233.328125,
+          "size": 201.3125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2142.9,
+          "phase": "travel",
+          "progress": 0.754,
+          "frame": 9,
+          "x": 994.640625,
+          "y": 230.734375,
+          "size": 199.71875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2159.5,
+          "phase": "travel",
+          "progress": 0.765,
+          "frame": 9,
+          "x": 995.3125,
+          "y": 228.375,
+          "size": 198.28125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2176.2,
+          "phase": "travel",
+          "progress": 0.776,
+          "frame": 9,
+          "x": 995.90625,
+          "y": 226.3125,
+          "size": 197.03125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2192.9,
+          "phase": "travel",
+          "progress": 0.787,
+          "frame": 9,
+          "x": 996.4296875,
+          "y": 224.53125,
+          "size": 195.953125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2209.6,
+          "phase": "travel",
+          "progress": 0.798,
+          "frame": 9,
+          "x": 996.8828125,
+          "y": 223.078125,
+          "size": 195.046875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2226.2,
+          "phase": "travel",
+          "progress": 0.809,
+          "frame": 9,
+          "x": 997.2109375,
+          "y": 221.90625,
+          "size": 194.359375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2242.8,
+          "phase": "travel",
+          "progress": 0.82,
+          "frame": 9,
+          "x": 997.4609375,
+          "y": 221.09375,
+          "size": 193.859375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2259.5,
+          "phase": "travel",
+          "progress": 0.831,
+          "frame": 10,
+          "x": 997.609375,
+          "y": 220.640625,
+          "size": 193.5625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2276.3,
+          "phase": "arrive",
+          "progress": 0.842,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2292.8,
+          "phase": "arrive",
+          "progress": 0.853,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2309.5,
+          "phase": "arrive",
+          "progress": 0.864,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2326.2,
+          "phase": "arrive",
+          "progress": 0.875,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2342.9,
+          "phase": "arrive",
+          "progress": 0.886,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2359.6,
+          "phase": "arrive",
+          "progress": 0.897,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2376.2,
+          "phase": "arrive",
+          "progress": 0.908,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2392.8,
+          "phase": "arrive",
+          "progress": 0.919,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2409.6,
+          "phase": "arrive",
+          "progress": 0.93,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2426.2,
+          "phase": "arrive",
+          "progress": 0.941,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2442.9,
+          "phase": "arrive",
+          "progress": 0.952,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2459.5,
+          "phase": "arrive",
+          "progress": 0.962,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2476.2,
+          "phase": "arrive",
+          "progress": 0.973,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2492.9,
+          "phase": "arrive",
+          "progress": 0.984,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2509.6,
+          "phase": "arrive",
+          "progress": 0.995,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2526.2,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2542.9,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2559.5,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2576.2,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2592.9,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00001, 0, 0)"
+        },
+        {
+          "time": 2609.5,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00001, 0, 0)"
+        },
+        {
+          "time": 2626.2,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00002, 0, 0)"
+        },
+        {
+          "time": 2642.9,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00002, 0, 0)"
+        },
+        {
+          "time": 2659.5,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00003, 0, 0)"
+        },
+        {
+          "time": 2676.2,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00004, 0, 0)"
+        }
+      ],
+      "longTasks": [],
+      "reactCommits": 94,
+      "resources": [
+        {
+          "name": "http://127.0.0.1:5190/forest/guide/totoro-atlas-aligned.webp",
+          "duration": 7.300000190734863,
+          "responseEnd": 208.30000019073486,
+          "actionStart": 924.6999998092651
+        }
+      ],
+      "metrics": {
+        "LayoutCount": 64,
+        "RecalcStyleCount": 173,
+        "LayoutDuration": 0.005468000000000001,
+        "RecalcStyleDuration": 0.054393000000000004,
+        "ScriptDuration": 0.093981,
+        "TaskDuration": 0.270521
+      },
+      "summary": {
+        "count": 91,
+        "p50": 16.699999999999818,
+        "p95": 16.799999999999727,
+        "max": 33.39999999999998,
+        "over25": 1,
+        "longTasks": 0,
+        "reactCommits": 94
+      }
+    },
+    {
+      "samples": [
+        {
+          "time": 739.1,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00109, 0, 0)"
+        },
+        {
+          "time": 755.7,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00115, 0, 0)"
+        },
+        {
+          "time": 772.4,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00121, 0, 0)"
+        },
+        {
+          "time": 789,
+          "phase": "respond",
+          "progress": 0,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 805.7,
+          "phase": "respond",
+          "progress": 0.009,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 822.3,
+          "phase": "respond",
+          "progress": 0.02,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 839,
+          "phase": "respond",
+          "progress": 0.031,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 855.7,
+          "phase": "respond",
+          "progress": 0.042,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 872.4,
+          "phase": "respond",
+          "progress": 0.053,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 889,
+          "phase": "respond",
+          "progress": 0.064,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 905.7,
+          "phase": "respond",
+          "progress": 0.075,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 922.4,
+          "phase": "respond",
+          "progress": 0.086,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 939,
+          "phase": "respond",
+          "progress": 0.097,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 955.7,
+          "phase": "respond",
+          "progress": 0.108,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 972.4,
+          "phase": "respond",
+          "progress": 0.119,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 989,
+          "phase": "respond",
+          "progress": 0.13,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1005.7,
+          "phase": "respond",
+          "progress": 0.141,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1022.4,
+          "phase": "respond",
+          "progress": 0.152,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1039,
+          "phase": "respond",
+          "progress": 0.163,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1055.7,
+          "phase": "respond",
+          "progress": 0.173,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1072.4,
+          "phase": "respond",
+          "progress": 0.184,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1089,
+          "phase": "travel",
+          "progress": 0.195,
+          "frame": 4,
+          "x": 1004.375,
+          "y": 422.96875,
+          "size": 323.96875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1105.7,
+          "phase": "travel",
+          "progress": 0.206,
+          "frame": 4,
+          "x": 1004.1875,
+          "y": 422.6875,
+          "size": 323.75,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1122.3,
+          "phase": "travel",
+          "progress": 0.217,
+          "frame": 4,
+          "x": 1003.828125,
+          "y": 422.140625,
+          "size": 323.3125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1139,
+          "phase": "travel",
+          "progress": 0.228,
+          "frame": 4,
+          "x": 1003.3125,
+          "y": 421.328125,
+          "size": 322.6875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1155.7,
+          "phase": "travel",
+          "progress": 0.239,
+          "frame": 4,
+          "x": 1002.6171875,
+          "y": 420.265625,
+          "size": 321.859375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1172.3,
+          "phase": "travel",
+          "progress": 0.25,
+          "frame": 4,
+          "x": 1001.8046875,
+          "y": 418.9375,
+          "size": 320.828125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1189,
+          "phase": "travel",
+          "progress": 0.261,
+          "frame": 4,
+          "x": 1000.8671875,
+          "y": 417.375,
+          "size": 319.640625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1205.7,
+          "phase": "travel",
+          "progress": 0.272,
+          "frame": 4,
+          "x": 999.8046875,
+          "y": 415.5625,
+          "size": 318.265625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1222.4,
+          "phase": "travel",
+          "progress": 0.283,
+          "frame": 4,
+          "x": 998.671875,
+          "y": 413.5,
+          "size": 316.71875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1239,
+          "phase": "travel",
+          "progress": 0.294,
+          "frame": 4,
+          "x": 997.4453125,
+          "y": 411.21875,
+          "size": 315.015625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1255.7,
+          "phase": "travel",
+          "progress": 0.305,
+          "frame": 5,
+          "x": 996.1796875,
+          "y": 408.71875,
+          "size": 313.171875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1272.4,
+          "phase": "travel",
+          "progress": 0.316,
+          "frame": 5,
+          "x": 994.8515625,
+          "y": 405.96875,
+          "size": 311.171875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1289,
+          "phase": "travel",
+          "progress": 0.327,
+          "frame": 5,
+          "x": 993.515625,
+          "y": 403.015625,
+          "size": 309.03125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1305.7,
+          "phase": "travel",
+          "progress": 0.338,
+          "frame": 5,
+          "x": 992.171875,
+          "y": 399.84375,
+          "size": 306.78125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1322.4,
+          "phase": "travel",
+          "progress": 0.349,
+          "frame": 6,
+          "x": 990.8359375,
+          "y": 396.46875,
+          "size": 304.390625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1339,
+          "phase": "travel",
+          "progress": 0.36,
+          "frame": 6,
+          "x": 989.5234375,
+          "y": 392.875,
+          "size": 301.890625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1355.7,
+          "phase": "travel",
+          "progress": 0.371,
+          "frame": 6,
+          "x": 988.25,
+          "y": 389.109375,
+          "size": 299.3125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1372.4,
+          "phase": "travel",
+          "progress": 0.382,
+          "frame": 6,
+          "x": 987.03125,
+          "y": 385.171875,
+          "size": 296.59375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1389,
+          "phase": "travel",
+          "progress": 0.393,
+          "frame": 7,
+          "x": 985.8671875,
+          "y": 381.03125,
+          "size": 293.796875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1405.6,
+          "phase": "travel",
+          "progress": 0.404,
+          "frame": 7,
+          "x": 984.78125,
+          "y": 376.75,
+          "size": 290.9375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1422.4,
+          "phase": "travel",
+          "progress": 0.415,
+          "frame": 7,
+          "x": 983.78125,
+          "y": 372.328125,
+          "size": 288,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1439,
+          "phase": "travel",
+          "progress": 0.426,
+          "frame": 8,
+          "x": 982.8671875,
+          "y": 367.703125,
+          "size": 284.953125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1455.7,
+          "phase": "travel",
+          "progress": 0.437,
+          "frame": 8,
+          "x": 982.078125,
+          "y": 363.03125,
+          "size": 281.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1472.3,
+          "phase": "travel",
+          "progress": 0.448,
+          "frame": 8,
+          "x": 981.3671875,
+          "y": 358.1875,
+          "size": 278.734375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1489,
+          "phase": "travel",
+          "progress": 0.459,
+          "frame": 9,
+          "x": 980.7734375,
+          "y": 353.265625,
+          "size": 275.578125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1505.7,
+          "phase": "travel",
+          "progress": 0.47,
+          "frame": 9,
+          "x": 980.28125,
+          "y": 348.234375,
+          "size": 272.34375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1522.3,
+          "phase": "travel",
+          "progress": 0.481,
+          "frame": 9,
+          "x": 979.9140625,
+          "y": 343.125,
+          "size": 269.078125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1539,
+          "phase": "travel",
+          "progress": 0.491,
+          "frame": 10,
+          "x": 979.6484375,
+          "y": 337.96875,
+          "size": 265.828125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1555.7,
+          "phase": "travel",
+          "progress": 0.502,
+          "frame": 10,
+          "x": 979.5,
+          "y": 332.75,
+          "size": 262.53125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1572.3,
+          "phase": "travel",
+          "progress": 0.513,
+          "frame": 10,
+          "x": 979.46875,
+          "y": 327.484375,
+          "size": 259.21875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1589,
+          "phase": "travel",
+          "progress": 0.524,
+          "frame": 11,
+          "x": 979.5546875,
+          "y": 322.25,
+          "size": 255.921875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1605.6,
+          "phase": "travel",
+          "progress": 0.535,
+          "frame": 11,
+          "x": 979.734375,
+          "y": 316.953125,
+          "size": 252.625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1622.3,
+          "phase": "travel",
+          "progress": 0.546,
+          "frame": 4,
+          "x": 980.0078125,
+          "y": 311.6875,
+          "size": 249.359375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1639,
+          "phase": "travel",
+          "progress": 0.557,
+          "frame": 4,
+          "x": 980.375,
+          "y": 306.421875,
+          "size": 246.09375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1655.6,
+          "phase": "travel",
+          "progress": 0.568,
+          "frame": 4,
+          "x": 980.8359375,
+          "y": 301.1875,
+          "size": 242.859375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1672.4,
+          "phase": "travel",
+          "progress": 0.579,
+          "frame": 5,
+          "x": 981.3828125,
+          "y": 296.03125,
+          "size": 239.671875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1689,
+          "phase": "travel",
+          "progress": 0.59,
+          "frame": 5,
+          "x": 982,
+          "y": 290.875,
+          "size": 236.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1705.6,
+          "phase": "travel",
+          "progress": 0.601,
+          "frame": 5,
+          "x": 982.6796875,
+          "y": 285.84375,
+          "size": 233.421875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1722.3,
+          "phase": "travel",
+          "progress": 0.612,
+          "frame": 6,
+          "x": 983.4296875,
+          "y": 280.921875,
+          "size": 230.390625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1739,
+          "phase": "travel",
+          "progress": 0.623,
+          "frame": 6,
+          "x": 984.234375,
+          "y": 276.0625,
+          "size": 227.40625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1755.7,
+          "phase": "travel",
+          "progress": 0.634,
+          "frame": 6,
+          "x": 985.078125,
+          "y": 271.328125,
+          "size": 224.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1772.4,
+          "phase": "travel",
+          "progress": 0.645,
+          "frame": 6,
+          "x": 985.953125,
+          "y": 266.703125,
+          "size": 221.6875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1789,
+          "phase": "travel",
+          "progress": 0.656,
+          "frame": 7,
+          "x": 986.8671875,
+          "y": 262.234375,
+          "size": 218.953125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1805.7,
+          "phase": "travel",
+          "progress": 0.667,
+          "frame": 7,
+          "x": 987.7890625,
+          "y": 257.953125,
+          "size": 216.328125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1822.4,
+          "phase": "travel",
+          "progress": 0.678,
+          "frame": 7,
+          "x": 988.7109375,
+          "y": 253.796875,
+          "size": 213.796875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1839,
+          "phase": "travel",
+          "progress": 0.689,
+          "frame": 8,
+          "x": 989.640625,
+          "y": 249.84375,
+          "size": 211.375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1855.6,
+          "phase": "travel",
+          "progress": 0.7,
+          "frame": 8,
+          "x": 990.5625,
+          "y": 246.078125,
+          "size": 209.09375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1872.4,
+          "phase": "travel",
+          "progress": 0.711,
+          "frame": 8,
+          "x": 991.4609375,
+          "y": 242.546875,
+          "size": 206.921875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1888.9,
+          "phase": "travel",
+          "progress": 0.722,
+          "frame": 8,
+          "x": 992.328125,
+          "y": 239.171875,
+          "size": 204.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1905.7,
+          "phase": "travel",
+          "progress": 0.733,
+          "frame": 9,
+          "x": 993.15625,
+          "y": 236.09375,
+          "size": 203,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1922.3,
+          "phase": "travel",
+          "progress": 0.744,
+          "frame": 9,
+          "x": 993.9453125,
+          "y": 233.21875,
+          "size": 201.234375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1939,
+          "phase": "travel",
+          "progress": 0.755,
+          "frame": 9,
+          "x": 994.671875,
+          "y": 230.625,
+          "size": 199.65625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1955.6,
+          "phase": "travel",
+          "progress": 0.766,
+          "frame": 9,
+          "x": 995.3359375,
+          "y": 228.28125,
+          "size": 198.234375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1972.3,
+          "phase": "travel",
+          "progress": 0.777,
+          "frame": 9,
+          "x": 995.9296875,
+          "y": 226.234375,
+          "size": 196.984375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1989,
+          "phase": "travel",
+          "progress": 0.788,
+          "frame": 9,
+          "x": 996.453125,
+          "y": 224.46875,
+          "size": 195.90625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2005.7,
+          "phase": "travel",
+          "progress": 0.798,
+          "frame": 9,
+          "x": 996.8984375,
+          "y": 223.015625,
+          "size": 195.015625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2022.3,
+          "phase": "travel",
+          "progress": 0.809,
+          "frame": 9,
+          "x": 997.2265625,
+          "y": 221.875,
+          "size": 194.328125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2039,
+          "phase": "travel",
+          "progress": 0.82,
+          "frame": 9,
+          "x": 997.46875,
+          "y": 221.078125,
+          "size": 193.84375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2055.7,
+          "phase": "travel",
+          "progress": 0.831,
+          "frame": 10,
+          "x": 997.609375,
+          "y": 220.609375,
+          "size": 193.5625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2072.4,
+          "phase": "arrive",
+          "progress": 0.842,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2089,
+          "phase": "arrive",
+          "progress": 0.853,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2105.6,
+          "phase": "arrive",
+          "progress": 0.864,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2122.3,
+          "phase": "arrive",
+          "progress": 0.875,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2139,
+          "phase": "arrive",
+          "progress": 0.886,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2155.7,
+          "phase": "arrive",
+          "progress": 0.897,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2172.3,
+          "phase": "arrive",
+          "progress": 0.908,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2189,
+          "phase": "arrive",
+          "progress": 0.919,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2205.7,
+          "phase": "arrive",
+          "progress": 0.93,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2222.3,
+          "phase": "arrive",
+          "progress": 0.941,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2238.9,
+          "phase": "arrive",
+          "progress": 0.952,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2255.6,
+          "phase": "arrive",
+          "progress": 0.963,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2272.3,
+          "phase": "arrive",
+          "progress": 0.974,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2289,
+          "phase": "arrive",
+          "progress": 0.985,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2305.6,
+          "phase": "arrive",
+          "progress": 0.996,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2322.3,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2338.9,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2355.6,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2372.3,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00001, 0, 0)"
+        },
+        {
+          "time": 2389,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00001, 0, 0)"
+        },
+        {
+          "time": 2405.6,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00002, 0, 0)"
+        },
+        {
+          "time": 2422.3,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00002, 0, 0)"
+        },
+        {
+          "time": 2439,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00003, 0, 0)"
+        },
+        {
+          "time": 2455.6,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00004, 0, 0)"
+        },
+        {
+          "time": 2472.3,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00005, 0, 0)"
+        }
+      ],
+      "longTasks": [],
+      "reactCommits": 95,
+      "resources": [
+        {
+          "name": "http://127.0.0.1:5190/forest/guide/totoro-atlas-aligned.webp",
+          "duration": 1.8000001907348633,
+          "responseEnd": 49,
+          "actionStart": 723.5999999046326
+        }
+      ],
+      "metrics": {
+        "LayoutCount": 64,
+        "RecalcStyleCount": 174,
+        "LayoutDuration": 0.003136,
+        "RecalcStyleDuration": 0.047883999999999996,
+        "ScriptDuration": 0.06135,
+        "TaskDuration": 0.172134
+      },
+      "summary": {
+        "count": 92,
+        "p50": 16.700000000000045,
+        "p95": 16.700000000000273,
+        "max": 16.800000000000182,
+        "over25": 0,
+        "longTasks": 0,
+        "reactCommits": 95
+      }
+    },
+    {
+      "samples": [
+        {
+          "time": 698.6,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00104, 0, 0)"
+        },
+        {
+          "time": 715.2,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00109, 0, 0)"
+        },
+        {
+          "time": 731.8,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00115, 0, 0)"
+        },
+        {
+          "time": 748.5,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00121, 0, 0)"
+        },
+        {
+          "time": 765.2,
+          "phase": "respond",
+          "progress": 0,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 781.9,
+          "phase": "respond",
+          "progress": 0.009,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 798.5,
+          "phase": "respond",
+          "progress": 0.02,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 815.2,
+          "phase": "respond",
+          "progress": 0.031,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 831.9,
+          "phase": "respond",
+          "progress": 0.042,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 848.5,
+          "phase": "respond",
+          "progress": 0.053,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 865.2,
+          "phase": "respond",
+          "progress": 0.064,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 881.9,
+          "phase": "respond",
+          "progress": 0.075,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 898.5,
+          "phase": "respond",
+          "progress": 0.086,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 915.2,
+          "phase": "respond",
+          "progress": 0.097,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 931.9,
+          "phase": "respond",
+          "progress": 0.107,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 948.6,
+          "phase": "respond",
+          "progress": 0.118,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 965.2,
+          "phase": "respond",
+          "progress": 0.129,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 981.8,
+          "phase": "respond",
+          "progress": 0.14,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 998.5,
+          "phase": "respond",
+          "progress": 0.151,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1015.2,
+          "phase": "respond",
+          "progress": 0.162,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1031.9,
+          "phase": "respond",
+          "progress": 0.173,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1048.5,
+          "phase": "respond",
+          "progress": 0.184,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1065.2,
+          "phase": "travel",
+          "progress": 0.195,
+          "frame": 4,
+          "x": 1004.375,
+          "y": 422.96875,
+          "size": 323.96875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1081.9,
+          "phase": "travel",
+          "progress": 0.206,
+          "frame": 4,
+          "x": 1004.203125,
+          "y": 422.703125,
+          "size": 323.75,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1098.5,
+          "phase": "travel",
+          "progress": 0.217,
+          "frame": 4,
+          "x": 1003.8359375,
+          "y": 422.15625,
+          "size": 323.328125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1115.2,
+          "phase": "travel",
+          "progress": 0.228,
+          "frame": 4,
+          "x": 1003.3203125,
+          "y": 421.34375,
+          "size": 322.703125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1131.9,
+          "phase": "travel",
+          "progress": 0.239,
+          "frame": 4,
+          "x": 1002.640625,
+          "y": 420.28125,
+          "size": 321.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1148.5,
+          "phase": "travel",
+          "progress": 0.25,
+          "frame": 4,
+          "x": 1001.8203125,
+          "y": 418.953125,
+          "size": 320.859375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1165.2,
+          "phase": "travel",
+          "progress": 0.261,
+          "frame": 4,
+          "x": 1000.890625,
+          "y": 417.40625,
+          "size": 319.65625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1181.8,
+          "phase": "travel",
+          "progress": 0.272,
+          "frame": 4,
+          "x": 999.8203125,
+          "y": 415.59375,
+          "size": 318.296875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1198.5,
+          "phase": "travel",
+          "progress": 0.283,
+          "frame": 4,
+          "x": 998.703125,
+          "y": 413.5625,
+          "size": 316.75,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1215.2,
+          "phase": "travel",
+          "progress": 0.294,
+          "frame": 4,
+          "x": 997.46875,
+          "y": 411.265625,
+          "size": 315.0625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1231.8,
+          "phase": "travel",
+          "progress": 0.305,
+          "frame": 5,
+          "x": 996.1953125,
+          "y": 408.765625,
+          "size": 313.203125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1248.5,
+          "phase": "travel",
+          "progress": 0.316,
+          "frame": 5,
+          "x": 994.890625,
+          "y": 406.046875,
+          "size": 311.21875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1265.2,
+          "phase": "travel",
+          "progress": 0.327,
+          "frame": 5,
+          "x": 993.546875,
+          "y": 403.078125,
+          "size": 309.09375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1281.8,
+          "phase": "travel",
+          "progress": 0.338,
+          "frame": 5,
+          "x": 992.1953125,
+          "y": 399.90625,
+          "size": 306.828125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1298.6,
+          "phase": "travel",
+          "progress": 0.349,
+          "frame": 6,
+          "x": 990.8671875,
+          "y": 396.546875,
+          "size": 304.453125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1315.2,
+          "phase": "travel",
+          "progress": 0.36,
+          "frame": 6,
+          "x": 989.546875,
+          "y": 392.953125,
+          "size": 301.9375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1331.8,
+          "phase": "travel",
+          "progress": 0.371,
+          "frame": 6,
+          "x": 988.2734375,
+          "y": 389.1875,
+          "size": 299.359375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1348.6,
+          "phase": "travel",
+          "progress": 0.382,
+          "frame": 6,
+          "x": 987.0546875,
+          "y": 385.25,
+          "size": 296.671875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1365.2,
+          "phase": "travel",
+          "progress": 0.393,
+          "frame": 7,
+          "x": 985.8828125,
+          "y": 381.09375,
+          "size": 293.859375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1381.9,
+          "phase": "travel",
+          "progress": 0.404,
+          "frame": 7,
+          "x": 984.8046875,
+          "y": 376.84375,
+          "size": 290.984375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1398.5,
+          "phase": "travel",
+          "progress": 0.415,
+          "frame": 7,
+          "x": 983.796875,
+          "y": 372.390625,
+          "size": 288.03125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1415.1,
+          "phase": "travel",
+          "progress": 0.425,
+          "frame": 8,
+          "x": 982.890625,
+          "y": 367.8125,
+          "size": 285.03125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1431.8,
+          "phase": "travel",
+          "progress": 0.436,
+          "frame": 8,
+          "x": 982.0859375,
+          "y": 363.140625,
+          "size": 281.953125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1448.5,
+          "phase": "travel",
+          "progress": 0.447,
+          "frame": 8,
+          "x": 981.375,
+          "y": 358.296875,
+          "size": 278.8125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1465.2,
+          "phase": "travel",
+          "progress": 0.458,
+          "frame": 9,
+          "x": 980.78125,
+          "y": 353.359375,
+          "size": 275.625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1481.9,
+          "phase": "travel",
+          "progress": 0.469,
+          "frame": 9,
+          "x": 980.296875,
+          "y": 348.328125,
+          "size": 272.40625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1498.5,
+          "phase": "travel",
+          "progress": 0.48,
+          "frame": 9,
+          "x": 979.9140625,
+          "y": 343.21875,
+          "size": 269.140625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1515.1,
+          "phase": "travel",
+          "progress": 0.491,
+          "frame": 10,
+          "x": 979.65625,
+          "y": 338.078125,
+          "size": 265.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1531.8,
+          "phase": "travel",
+          "progress": 0.502,
+          "frame": 10,
+          "x": 979.5078125,
+          "y": 332.875,
+          "size": 262.609375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1548.5,
+          "phase": "travel",
+          "progress": 0.513,
+          "frame": 10,
+          "x": 979.4765625,
+          "y": 327.609375,
+          "size": 259.296875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1565.2,
+          "phase": "travel",
+          "progress": 0.524,
+          "frame": 11,
+          "x": 979.5546875,
+          "y": 322.34375,
+          "size": 255.984375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1581.8,
+          "phase": "travel",
+          "progress": 0.535,
+          "frame": 11,
+          "x": 979.71875,
+          "y": 317.03125,
+          "size": 252.6875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1598.5,
+          "phase": "travel",
+          "progress": 0.546,
+          "frame": 4,
+          "x": 979.9921875,
+          "y": 311.78125,
+          "size": 249.421875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1615.2,
+          "phase": "travel",
+          "progress": 0.557,
+          "frame": 4,
+          "x": 980.359375,
+          "y": 306.515625,
+          "size": 246.15625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1631.8,
+          "phase": "travel",
+          "progress": 0.568,
+          "frame": 4,
+          "x": 980.8203125,
+          "y": 301.28125,
+          "size": 242.921875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1648.5,
+          "phase": "travel",
+          "progress": 0.579,
+          "frame": 5,
+          "x": 981.3671875,
+          "y": 296.125,
+          "size": 239.734375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1665.1,
+          "phase": "travel",
+          "progress": 0.59,
+          "frame": 5,
+          "x": 981.9921875,
+          "y": 291,
+          "size": 236.578125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1681.8,
+          "phase": "travel",
+          "progress": 0.601,
+          "frame": 5,
+          "x": 982.6796875,
+          "y": 285.984375,
+          "size": 233.484375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1698.5,
+          "phase": "travel",
+          "progress": 0.612,
+          "frame": 6,
+          "x": 983.421875,
+          "y": 281.015625,
+          "size": 230.4375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1715.2,
+          "phase": "travel",
+          "progress": 0.623,
+          "frame": 6,
+          "x": 984.2265625,
+          "y": 276.15625,
+          "size": 227.453125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1731.8,
+          "phase": "travel",
+          "progress": 0.634,
+          "frame": 6,
+          "x": 985.0703125,
+          "y": 271.40625,
+          "size": 224.546875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1748.5,
+          "phase": "travel",
+          "progress": 0.645,
+          "frame": 6,
+          "x": 985.9375,
+          "y": 266.8125,
+          "size": 221.75,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1765.1,
+          "phase": "travel",
+          "progress": 0.656,
+          "frame": 7,
+          "x": 986.8515625,
+          "y": 262.34375,
+          "size": 219.015625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1781.9,
+          "phase": "travel",
+          "progress": 0.667,
+          "frame": 7,
+          "x": 987.7578125,
+          "y": 258.046875,
+          "size": 216.390625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1798.5,
+          "phase": "travel",
+          "progress": 0.678,
+          "frame": 7,
+          "x": 988.703125,
+          "y": 253.875,
+          "size": 213.84375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1815.2,
+          "phase": "travel",
+          "progress": 0.689,
+          "frame": 8,
+          "x": 989.625,
+          "y": 249.921875,
+          "size": 211.4375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1831.9,
+          "phase": "travel",
+          "progress": 0.7,
+          "frame": 8,
+          "x": 990.546875,
+          "y": 246.15625,
+          "size": 209.125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1848.5,
+          "phase": "travel",
+          "progress": 0.711,
+          "frame": 8,
+          "x": 991.4453125,
+          "y": 242.578125,
+          "size": 206.953125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1865.2,
+          "phase": "travel",
+          "progress": 0.722,
+          "frame": 8,
+          "x": 992.3046875,
+          "y": 239.25,
+          "size": 204.921875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1881.8,
+          "phase": "travel",
+          "progress": 0.732,
+          "frame": 8,
+          "x": 993.1484375,
+          "y": 236.140625,
+          "size": 203.015625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1898.5,
+          "phase": "travel",
+          "progress": 0.743,
+          "frame": 9,
+          "x": 993.921875,
+          "y": 233.28125,
+          "size": 201.28125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1915.2,
+          "phase": "travel",
+          "progress": 0.754,
+          "frame": 9,
+          "x": 994.65625,
+          "y": 230.671875,
+          "size": 199.6875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1931.8,
+          "phase": "travel",
+          "progress": 0.765,
+          "frame": 9,
+          "x": 995.328125,
+          "y": 228.328125,
+          "size": 198.25,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1948.4,
+          "phase": "travel",
+          "progress": 0.776,
+          "frame": 9,
+          "x": 995.921875,
+          "y": 226.28125,
+          "size": 197,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1965.2,
+          "phase": "travel",
+          "progress": 0.787,
+          "frame": 9,
+          "x": 996.4375,
+          "y": 224.5,
+          "size": 195.9375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1981.8,
+          "phase": "travel",
+          "progress": 0.798,
+          "frame": 9,
+          "x": 996.890625,
+          "y": 223.046875,
+          "size": 195.03125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1998.5,
+          "phase": "travel",
+          "progress": 0.809,
+          "frame": 9,
+          "x": 997.21875,
+          "y": 221.90625,
+          "size": 194.34375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2015.1,
+          "phase": "travel",
+          "progress": 0.82,
+          "frame": 9,
+          "x": 997.46875,
+          "y": 221.09375,
+          "size": 193.84375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2031.8,
+          "phase": "travel",
+          "progress": 0.831,
+          "frame": 10,
+          "x": 997.609375,
+          "y": 220.625,
+          "size": 193.5625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2048.5,
+          "phase": "arrive",
+          "progress": 0.842,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2065.1,
+          "phase": "arrive",
+          "progress": 0.853,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2081.8,
+          "phase": "arrive",
+          "progress": 0.864,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2098.5,
+          "phase": "arrive",
+          "progress": 0.875,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2115.1,
+          "phase": "arrive",
+          "progress": 0.886,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2131.9,
+          "phase": "arrive",
+          "progress": 0.897,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2148.5,
+          "phase": "arrive",
+          "progress": 0.908,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2165.2,
+          "phase": "arrive",
+          "progress": 0.919,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2181.8,
+          "phase": "arrive",
+          "progress": 0.93,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2198.5,
+          "phase": "arrive",
+          "progress": 0.941,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2215.1,
+          "phase": "arrive",
+          "progress": 0.952,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2231.8,
+          "phase": "arrive",
+          "progress": 0.963,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2248.5,
+          "phase": "arrive",
+          "progress": 0.974,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2265.2,
+          "phase": "arrive",
+          "progress": 0.985,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2281.8,
+          "phase": "arrive",
+          "progress": 0.996,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2298.5,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2315.1,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2331.9,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2348.4,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00001, 0, 0)"
+        },
+        {
+          "time": 2365.1,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00001, 0, 0)"
+        },
+        {
+          "time": 2381.8,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00002, 0, 0)"
+        },
+        {
+          "time": 2398.5,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00002, 0, 0)"
+        },
+        {
+          "time": 2415.1,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00003, 0, 0)"
+        },
+        {
+          "time": 2431.8,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00004, 0, 0)"
+        },
+        {
+          "time": 2448.5,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00005, 0, 0)"
+        }
+      ],
+      "longTasks": [],
+      "reactCommits": 95,
+      "resources": [
+        {
+          "name": "http://127.0.0.1:5190/forest/guide/totoro-atlas-aligned.webp",
+          "duration": 1.5,
+          "responseEnd": 28.5,
+          "actionStart": 694.9000000953674
+        }
+      ],
+      "metrics": {
+        "LayoutCount": 64,
+        "RecalcStyleCount": 175,
+        "LayoutDuration": 0.004185,
+        "RecalcStyleDuration": 0.061538999999999996,
+        "ScriptDuration": 0.086842,
+        "TaskDuration": 0.255701
+      },
+      "summary": {
+        "count": 92,
+        "p50": 16.700000000000045,
+        "p95": 16.799999999999955,
+        "max": 16.800000000000182,
+        "over25": 0,
+        "longTasks": 0,
+        "reactCommits": 95
+      }
+    },
+    {
+      "samples": [
+        {
+          "time": 705.9,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00104, 0, 0)"
+        },
+        {
+          "time": 722.5,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00109, 0, 0)"
+        },
+        {
+          "time": 739.2,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00115, 0, 0)"
+        },
+        {
+          "time": 755.9,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00121, 0, 0)"
+        },
+        {
+          "time": 772.6,
+          "phase": "respond",
+          "progress": 0,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 789.2,
+          "phase": "respond",
+          "progress": 0.009,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 805.9,
+          "phase": "respond",
+          "progress": 0.02,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 822.5,
+          "phase": "respond",
+          "progress": 0.031,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 839.2,
+          "phase": "respond",
+          "progress": 0.042,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 855.9,
+          "phase": "respond",
+          "progress": 0.053,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 872.6,
+          "phase": "respond",
+          "progress": 0.064,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 889.2,
+          "phase": "respond",
+          "progress": 0.075,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 905.8,
+          "phase": "respond",
+          "progress": 0.086,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 922.5,
+          "phase": "respond",
+          "progress": 0.097,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 939.2,
+          "phase": "respond",
+          "progress": 0.107,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 955.9,
+          "phase": "respond",
+          "progress": 0.118,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 972.5,
+          "phase": "respond",
+          "progress": 0.129,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 989.2,
+          "phase": "respond",
+          "progress": 0.14,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1005.8,
+          "phase": "respond",
+          "progress": 0.151,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1022.5,
+          "phase": "respond",
+          "progress": 0.162,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1039.2,
+          "phase": "respond",
+          "progress": 0.173,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1055.9,
+          "phase": "respond",
+          "progress": 0.184,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1072.6,
+          "phase": "travel",
+          "progress": 0.195,
+          "frame": 4,
+          "x": 1004.375,
+          "y": 422.96875,
+          "size": 323.96875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1089.2,
+          "phase": "travel",
+          "progress": 0.206,
+          "frame": 4,
+          "x": 1004.1875,
+          "y": 422.703125,
+          "size": 323.75,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1105.9,
+          "phase": "travel",
+          "progress": 0.217,
+          "frame": 4,
+          "x": 1003.8359375,
+          "y": 422.15625,
+          "size": 323.328125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1122.5,
+          "phase": "travel",
+          "progress": 0.228,
+          "frame": 4,
+          "x": 1003.3046875,
+          "y": 421.34375,
+          "size": 322.703125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1139.2,
+          "phase": "travel",
+          "progress": 0.239,
+          "frame": 4,
+          "x": 1002.640625,
+          "y": 420.28125,
+          "size": 321.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1155.9,
+          "phase": "travel",
+          "progress": 0.25,
+          "frame": 4,
+          "x": 1001.8203125,
+          "y": 418.953125,
+          "size": 320.859375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1172.6,
+          "phase": "travel",
+          "progress": 0.261,
+          "frame": 4,
+          "x": 1000.875,
+          "y": 417.390625,
+          "size": 319.65625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1189.2,
+          "phase": "travel",
+          "progress": 0.272,
+          "frame": 4,
+          "x": 999.828125,
+          "y": 415.578125,
+          "size": 318.28125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1205.9,
+          "phase": "travel",
+          "progress": 0.283,
+          "frame": 4,
+          "x": 998.6875,
+          "y": 413.546875,
+          "size": 316.75,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1222.5,
+          "phase": "travel",
+          "progress": 0.294,
+          "frame": 4,
+          "x": 997.4609375,
+          "y": 411.265625,
+          "size": 315.046875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1239.2,
+          "phase": "travel",
+          "progress": 0.305,
+          "frame": 5,
+          "x": 996.1953125,
+          "y": 408.765625,
+          "size": 313.203125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1255.8,
+          "phase": "travel",
+          "progress": 0.316,
+          "frame": 5,
+          "x": 994.8828125,
+          "y": 406.03125,
+          "size": 311.203125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1272.5,
+          "phase": "travel",
+          "progress": 0.327,
+          "frame": 5,
+          "x": 993.546875,
+          "y": 403.078125,
+          "size": 309.09375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1289.2,
+          "phase": "travel",
+          "progress": 0.338,
+          "frame": 5,
+          "x": 992.1953125,
+          "y": 399.90625,
+          "size": 306.828125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1305.8,
+          "phase": "travel",
+          "progress": 0.349,
+          "frame": 6,
+          "x": 990.859375,
+          "y": 396.53125,
+          "size": 304.4375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1322.5,
+          "phase": "travel",
+          "progress": 0.36,
+          "frame": 6,
+          "x": 989.5546875,
+          "y": 392.96875,
+          "size": 301.953125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1339.1,
+          "phase": "travel",
+          "progress": 0.371,
+          "frame": 6,
+          "x": 988.2734375,
+          "y": 389.1875,
+          "size": 299.359375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1355.8,
+          "phase": "travel",
+          "progress": 0.382,
+          "frame": 6,
+          "x": 987.0546875,
+          "y": 385.25,
+          "size": 296.671875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1372.5,
+          "phase": "travel",
+          "progress": 0.393,
+          "frame": 7,
+          "x": 985.890625,
+          "y": 381.125,
+          "size": 293.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1389.2,
+          "phase": "travel",
+          "progress": 0.404,
+          "frame": 7,
+          "x": 984.8046875,
+          "y": 376.84375,
+          "size": 290.984375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1405.9,
+          "phase": "travel",
+          "progress": 0.415,
+          "frame": 7,
+          "x": 983.796875,
+          "y": 372.390625,
+          "size": 288.03125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1422.5,
+          "phase": "travel",
+          "progress": 0.426,
+          "frame": 8,
+          "x": 982.890625,
+          "y": 367.796875,
+          "size": 285,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1439.2,
+          "phase": "travel",
+          "progress": 0.436,
+          "frame": 8,
+          "x": 982.078125,
+          "y": 363.109375,
+          "size": 281.9375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1455.8,
+          "phase": "travel",
+          "progress": 0.447,
+          "frame": 8,
+          "x": 981.3828125,
+          "y": 358.265625,
+          "size": 278.796875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1472.5,
+          "phase": "travel",
+          "progress": 0.458,
+          "frame": 9,
+          "x": 980.78125,
+          "y": 353.359375,
+          "size": 275.625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1489.2,
+          "phase": "travel",
+          "progress": 0.469,
+          "frame": 9,
+          "x": 980.296875,
+          "y": 348.328125,
+          "size": 272.40625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1505.8,
+          "phase": "travel",
+          "progress": 0.48,
+          "frame": 9,
+          "x": 979.9140625,
+          "y": 343.21875,
+          "size": 269.140625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1522.5,
+          "phase": "travel",
+          "progress": 0.491,
+          "frame": 10,
+          "x": 979.65625,
+          "y": 338.078125,
+          "size": 265.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1539.2,
+          "phase": "travel",
+          "progress": 0.502,
+          "frame": 10,
+          "x": 979.5078125,
+          "y": 332.859375,
+          "size": 262.578125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1555.8,
+          "phase": "travel",
+          "progress": 0.513,
+          "frame": 10,
+          "x": 979.46875,
+          "y": 327.578125,
+          "size": 259.28125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1572.5,
+          "phase": "travel",
+          "progress": 0.524,
+          "frame": 11,
+          "x": 979.5546875,
+          "y": 322.34375,
+          "size": 255.984375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1589.1,
+          "phase": "travel",
+          "progress": 0.535,
+          "frame": 11,
+          "x": 979.71875,
+          "y": 317.03125,
+          "size": 252.6875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1605.9,
+          "phase": "travel",
+          "progress": 0.546,
+          "frame": 4,
+          "x": 979.9921875,
+          "y": 311.78125,
+          "size": 249.421875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1622.5,
+          "phase": "travel",
+          "progress": 0.557,
+          "frame": 4,
+          "x": 980.3671875,
+          "y": 306.484375,
+          "size": 246.140625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1639.2,
+          "phase": "travel",
+          "progress": 0.568,
+          "frame": 4,
+          "x": 980.8203125,
+          "y": 301.28125,
+          "size": 242.921875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1655.9,
+          "phase": "travel",
+          "progress": 0.579,
+          "frame": 5,
+          "x": 981.375,
+          "y": 296.09375,
+          "size": 239.71875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1672.5,
+          "phase": "travel",
+          "progress": 0.59,
+          "frame": 5,
+          "x": 981.984375,
+          "y": 290.96875,
+          "size": 236.5625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1689.1,
+          "phase": "travel",
+          "progress": 0.601,
+          "frame": 5,
+          "x": 982.671875,
+          "y": 285.953125,
+          "size": 233.46875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1705.9,
+          "phase": "travel",
+          "progress": 0.612,
+          "frame": 6,
+          "x": 983.421875,
+          "y": 281.015625,
+          "size": 230.4375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1722.5,
+          "phase": "travel",
+          "progress": 0.623,
+          "frame": 6,
+          "x": 984.234375,
+          "y": 276.125,
+          "size": 227.4375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1739.2,
+          "phase": "travel",
+          "progress": 0.634,
+          "frame": 6,
+          "x": 985.0703125,
+          "y": 271.40625,
+          "size": 224.546875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1755.8,
+          "phase": "travel",
+          "progress": 0.645,
+          "frame": 6,
+          "x": 985.9453125,
+          "y": 266.78125,
+          "size": 221.734375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1772.5,
+          "phase": "travel",
+          "progress": 0.656,
+          "frame": 7,
+          "x": 986.8515625,
+          "y": 262.34375,
+          "size": 219.015625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1789.1,
+          "phase": "travel",
+          "progress": 0.667,
+          "frame": 7,
+          "x": 987.765625,
+          "y": 258.03125,
+          "size": 216.375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1805.8,
+          "phase": "travel",
+          "progress": 0.678,
+          "frame": 7,
+          "x": 988.6953125,
+          "y": 253.890625,
+          "size": 213.859375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1822.5,
+          "phase": "travel",
+          "progress": 0.689,
+          "frame": 8,
+          "x": 989.625,
+          "y": 249.921875,
+          "size": 211.4375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1839.2,
+          "phase": "travel",
+          "progress": 0.7,
+          "frame": 8,
+          "x": 990.546875,
+          "y": 246.15625,
+          "size": 209.125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1855.8,
+          "phase": "travel",
+          "progress": 0.711,
+          "frame": 8,
+          "x": 991.4453125,
+          "y": 242.578125,
+          "size": 206.953125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1872.5,
+          "phase": "travel",
+          "progress": 0.722,
+          "frame": 8,
+          "x": 992.3046875,
+          "y": 239.25,
+          "size": 204.921875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1889.2,
+          "phase": "travel",
+          "progress": 0.732,
+          "frame": 8,
+          "x": 993.1484375,
+          "y": 236.140625,
+          "size": 203.015625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1905.9,
+          "phase": "travel",
+          "progress": 0.743,
+          "frame": 9,
+          "x": 993.9296875,
+          "y": 233.265625,
+          "size": 201.265625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1922.5,
+          "phase": "travel",
+          "progress": 0.754,
+          "frame": 9,
+          "x": 994.6640625,
+          "y": 230.65625,
+          "size": 199.671875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1939.2,
+          "phase": "travel",
+          "progress": 0.765,
+          "frame": 9,
+          "x": 995.328125,
+          "y": 228.328125,
+          "size": 198.25,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1955.8,
+          "phase": "travel",
+          "progress": 0.776,
+          "frame": 9,
+          "x": 995.921875,
+          "y": 226.25,
+          "size": 197,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1972.5,
+          "phase": "travel",
+          "progress": 0.787,
+          "frame": 9,
+          "x": 996.4453125,
+          "y": 224.5,
+          "size": 195.921875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1989.2,
+          "phase": "travel",
+          "progress": 0.798,
+          "frame": 9,
+          "x": 996.890625,
+          "y": 223.046875,
+          "size": 195.03125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2005.8,
+          "phase": "travel",
+          "progress": 0.809,
+          "frame": 9,
+          "x": 997.21875,
+          "y": 221.890625,
+          "size": 194.34375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2022.5,
+          "phase": "travel",
+          "progress": 0.82,
+          "frame": 9,
+          "x": 997.46875,
+          "y": 221.09375,
+          "size": 193.84375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2039.2,
+          "phase": "travel",
+          "progress": 0.831,
+          "frame": 10,
+          "x": 997.609375,
+          "y": 220.625,
+          "size": 193.5625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2055.8,
+          "phase": "arrive",
+          "progress": 0.842,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2072.5,
+          "phase": "arrive",
+          "progress": 0.853,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2089.1,
+          "phase": "arrive",
+          "progress": 0.864,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2105.9,
+          "phase": "arrive",
+          "progress": 0.875,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2122.5,
+          "phase": "arrive",
+          "progress": 0.886,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2139.1,
+          "phase": "arrive",
+          "progress": 0.897,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2155.8,
+          "phase": "arrive",
+          "progress": 0.908,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2172.5,
+          "phase": "arrive",
+          "progress": 0.919,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2189.2,
+          "phase": "arrive",
+          "progress": 0.93,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2205.9,
+          "phase": "arrive",
+          "progress": 0.941,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2222.5,
+          "phase": "arrive",
+          "progress": 0.952,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2239.2,
+          "phase": "arrive",
+          "progress": 0.963,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2255.8,
+          "phase": "arrive",
+          "progress": 0.974,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2272.5,
+          "phase": "arrive",
+          "progress": 0.985,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2289.1,
+          "phase": "arrive",
+          "progress": 0.996,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2305.8,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2322.5,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2339.2,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2355.8,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00001, 0, 0)"
+        },
+        {
+          "time": 2372.5,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00001, 0, 0)"
+        },
+        {
+          "time": 2389.1,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00002, 0, 0)"
+        },
+        {
+          "time": 2405.9,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00002, 0, 0)"
+        },
+        {
+          "time": 2422.5,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00003, 0, 0)"
+        },
+        {
+          "time": 2439.1,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00004, 0, 0)"
+        },
+        {
+          "time": 2455.8,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00005, 0, 0)"
+        }
+      ],
+      "longTasks": [],
+      "reactCommits": 95,
+      "resources": [
+        {
+          "name": "http://127.0.0.1:5190/forest/guide/totoro-atlas-aligned.webp",
+          "duration": 1.5,
+          "responseEnd": 31.600000381469727,
+          "actionStart": 703.5
+        }
+      ],
+      "metrics": {
+        "LayoutCount": 64,
+        "RecalcStyleCount": 175,
+        "LayoutDuration": 0.004599000000000001,
+        "RecalcStyleDuration": 0.055577,
+        "ScriptDuration": 0.083773,
+        "TaskDuration": 0.23476600000000003
+      },
+      "summary": {
+        "count": 92,
+        "p50": 16.700000000000045,
+        "p95": 16.700000000000273,
+        "max": 16.800000000000182,
+        "over25": 0,
+        "longTasks": 0,
+        "reactCommits": 95
+      }
+    },
+    {
+      "samples": [
+        {
+          "time": 852.8,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00109, 0, 0)"
+        },
+        {
+          "time": 869.4,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00115, 0, 0)"
+        },
+        {
+          "time": 886.1,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(1, 0, 0, 1.00121, 0, 0)"
+        },
+        {
+          "time": 902.7,
+          "phase": "respond",
+          "progress": 0,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 919.4,
+          "phase": "respond",
+          "progress": 0.009,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 936.1,
+          "phase": "respond",
+          "progress": 0.02,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 952.7,
+          "phase": "respond",
+          "progress": 0.031,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 969.4,
+          "phase": "respond",
+          "progress": 0.042,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 986.1,
+          "phase": "respond",
+          "progress": 0.053,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1002.7,
+          "phase": "respond",
+          "progress": 0.064,
+          "frame": 0,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1019.4,
+          "phase": "respond",
+          "progress": 0.075,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1036.1,
+          "phase": "respond",
+          "progress": 0.086,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1052.8,
+          "phase": "respond",
+          "progress": 0.097,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1069.4,
+          "phase": "respond",
+          "progress": 0.108,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1086.1,
+          "phase": "respond",
+          "progress": 0.118,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1102.7,
+          "phase": "respond",
+          "progress": 0.129,
+          "frame": 1,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1119.4,
+          "phase": "respond",
+          "progress": 0.14,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1136,
+          "phase": "respond",
+          "progress": 0.151,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1152.8,
+          "phase": "respond",
+          "progress": 0.162,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1169.4,
+          "phase": "respond",
+          "progress": 0.173,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1186.1,
+          "phase": "respond",
+          "progress": 0.184,
+          "frame": 2,
+          "x": 1004.390625,
+          "y": 423,
+          "size": 324,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1202.7,
+          "phase": "travel",
+          "progress": 0.195,
+          "frame": 4,
+          "x": 1004.375,
+          "y": 422.96875,
+          "size": 323.96875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1219.4,
+          "phase": "travel",
+          "progress": 0.206,
+          "frame": 4,
+          "x": 1004.203125,
+          "y": 422.703125,
+          "size": 323.75,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1236.1,
+          "phase": "travel",
+          "progress": 0.217,
+          "frame": 4,
+          "x": 1003.8359375,
+          "y": 422.15625,
+          "size": 323.328125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1252.7,
+          "phase": "travel",
+          "progress": 0.228,
+          "frame": 4,
+          "x": 1003.3046875,
+          "y": 421.34375,
+          "size": 322.703125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1269.4,
+          "phase": "travel",
+          "progress": 0.239,
+          "frame": 4,
+          "x": 1002.640625,
+          "y": 420.28125,
+          "size": 321.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1286.1,
+          "phase": "travel",
+          "progress": 0.25,
+          "frame": 4,
+          "x": 1001.8203125,
+          "y": 418.953125,
+          "size": 320.859375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1302.8,
+          "phase": "travel",
+          "progress": 0.261,
+          "frame": 4,
+          "x": 1000.875,
+          "y": 417.390625,
+          "size": 319.65625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1319.4,
+          "phase": "travel",
+          "progress": 0.272,
+          "frame": 4,
+          "x": 999.828125,
+          "y": 415.578125,
+          "size": 318.28125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1336.1,
+          "phase": "travel",
+          "progress": 0.283,
+          "frame": 4,
+          "x": 998.6875,
+          "y": 413.546875,
+          "size": 316.75,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1352.8,
+          "phase": "travel",
+          "progress": 0.294,
+          "frame": 4,
+          "x": 997.4609375,
+          "y": 411.265625,
+          "size": 315.046875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1369.4,
+          "phase": "travel",
+          "progress": 0.305,
+          "frame": 5,
+          "x": 996.1875,
+          "y": 408.75,
+          "size": 313.1875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1386.1,
+          "phase": "travel",
+          "progress": 0.316,
+          "frame": 5,
+          "x": 994.8828125,
+          "y": 406.03125,
+          "size": 311.203125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1402.8,
+          "phase": "travel",
+          "progress": 0.327,
+          "frame": 5,
+          "x": 993.5390625,
+          "y": 403.0625,
+          "size": 309.078125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1419.4,
+          "phase": "travel",
+          "progress": 0.338,
+          "frame": 5,
+          "x": 992.1875,
+          "y": 399.875,
+          "size": 306.8125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1436,
+          "phase": "travel",
+          "progress": 0.349,
+          "frame": 6,
+          "x": 990.859375,
+          "y": 396.53125,
+          "size": 304.4375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1452.7,
+          "phase": "travel",
+          "progress": 0.36,
+          "frame": 6,
+          "x": 989.5546875,
+          "y": 392.96875,
+          "size": 301.953125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1469.4,
+          "phase": "travel",
+          "progress": 0.371,
+          "frame": 6,
+          "x": 988.2734375,
+          "y": 389.1875,
+          "size": 299.359375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1486,
+          "phase": "travel",
+          "progress": 0.382,
+          "frame": 6,
+          "x": 987.046875,
+          "y": 385.21875,
+          "size": 296.65625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1502.8,
+          "phase": "travel",
+          "progress": 0.393,
+          "frame": 7,
+          "x": 985.890625,
+          "y": 381.125,
+          "size": 293.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1519.4,
+          "phase": "travel",
+          "progress": 0.404,
+          "frame": 7,
+          "x": 984.796875,
+          "y": 376.8125,
+          "size": 290.96875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1536,
+          "phase": "travel",
+          "progress": 0.415,
+          "frame": 7,
+          "x": 983.796875,
+          "y": 372.390625,
+          "size": 288.03125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1552.7,
+          "phase": "travel",
+          "progress": 0.425,
+          "frame": 8,
+          "x": 982.890625,
+          "y": 367.8125,
+          "size": 285.03125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1569.4,
+          "phase": "travel",
+          "progress": 0.436,
+          "frame": 8,
+          "x": 982.078125,
+          "y": 363.109375,
+          "size": 281.9375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1586,
+          "phase": "travel",
+          "progress": 0.447,
+          "frame": 8,
+          "x": 981.3828125,
+          "y": 358.265625,
+          "size": 278.796875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1602.7,
+          "phase": "travel",
+          "progress": 0.458,
+          "frame": 9,
+          "x": 980.78125,
+          "y": 353.359375,
+          "size": 275.625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1619.4,
+          "phase": "travel",
+          "progress": 0.469,
+          "frame": 9,
+          "x": 980.296875,
+          "y": 348.328125,
+          "size": 272.40625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1636,
+          "phase": "travel",
+          "progress": 0.48,
+          "frame": 9,
+          "x": 979.9140625,
+          "y": 343.21875,
+          "size": 269.140625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1652.8,
+          "phase": "travel",
+          "progress": 0.491,
+          "frame": 10,
+          "x": 979.65625,
+          "y": 338.078125,
+          "size": 265.875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1669.4,
+          "phase": "travel",
+          "progress": 0.502,
+          "frame": 10,
+          "x": 979.515625,
+          "y": 332.8125,
+          "size": 262.5625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1686,
+          "phase": "travel",
+          "progress": 0.513,
+          "frame": 10,
+          "x": 979.46875,
+          "y": 327.578125,
+          "size": 259.28125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1702.7,
+          "phase": "travel",
+          "progress": 0.524,
+          "frame": 11,
+          "x": 979.5546875,
+          "y": 322.34375,
+          "size": 255.984375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1719.4,
+          "phase": "travel",
+          "progress": 0.535,
+          "frame": 11,
+          "x": 979.71875,
+          "y": 317.03125,
+          "size": 252.6875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1736,
+          "phase": "travel",
+          "progress": 0.546,
+          "frame": 4,
+          "x": 980,
+          "y": 311.75,
+          "size": 249.40625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1752.8,
+          "phase": "travel",
+          "progress": 0.557,
+          "frame": 4,
+          "x": 980.359375,
+          "y": 306.515625,
+          "size": 246.15625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1769.4,
+          "phase": "travel",
+          "progress": 0.568,
+          "frame": 4,
+          "x": 980.8359375,
+          "y": 301.25,
+          "size": 242.890625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1786.1,
+          "phase": "travel",
+          "progress": 0.579,
+          "frame": 5,
+          "x": 981.375,
+          "y": 296.09375,
+          "size": 239.71875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1802.7,
+          "phase": "travel",
+          "progress": 0.59,
+          "frame": 5,
+          "x": 981.984375,
+          "y": 290.96875,
+          "size": 236.5625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1819.4,
+          "phase": "travel",
+          "progress": 0.601,
+          "frame": 5,
+          "x": 982.671875,
+          "y": 285.953125,
+          "size": 233.46875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1836.1,
+          "phase": "travel",
+          "progress": 0.612,
+          "frame": 6,
+          "x": 983.4296875,
+          "y": 280.984375,
+          "size": 230.421875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1852.8,
+          "phase": "travel",
+          "progress": 0.623,
+          "frame": 6,
+          "x": 984.234375,
+          "y": 276.125,
+          "size": 227.4375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1869.4,
+          "phase": "travel",
+          "progress": 0.634,
+          "frame": 6,
+          "x": 985.078125,
+          "y": 271.390625,
+          "size": 224.53125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1886.1,
+          "phase": "travel",
+          "progress": 0.645,
+          "frame": 6,
+          "x": 985.9453125,
+          "y": 266.78125,
+          "size": 221.734375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1902.7,
+          "phase": "travel",
+          "progress": 0.656,
+          "frame": 7,
+          "x": 986.84375,
+          "y": 262.3125,
+          "size": 219,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1919.4,
+          "phase": "travel",
+          "progress": 0.667,
+          "frame": 7,
+          "x": 987.765625,
+          "y": 258.03125,
+          "size": 216.375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1936.1,
+          "phase": "travel",
+          "progress": 0.678,
+          "frame": 7,
+          "x": 988.703125,
+          "y": 253.875,
+          "size": 213.84375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1952.8,
+          "phase": "travel",
+          "progress": 0.689,
+          "frame": 8,
+          "x": 989.6328125,
+          "y": 249.90625,
+          "size": 211.421875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1969.4,
+          "phase": "travel",
+          "progress": 0.7,
+          "frame": 8,
+          "x": 990.5546875,
+          "y": 246.140625,
+          "size": 209.109375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 1986,
+          "phase": "travel",
+          "progress": 0.711,
+          "frame": 8,
+          "x": 991.4453125,
+          "y": 242.578125,
+          "size": 206.953125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2002.7,
+          "phase": "travel",
+          "progress": 0.722,
+          "frame": 8,
+          "x": 992.3046875,
+          "y": 239.25,
+          "size": 204.921875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2019.4,
+          "phase": "travel",
+          "progress": 0.732,
+          "frame": 8,
+          "x": 993.1484375,
+          "y": 236.140625,
+          "size": 203.015625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2036.1,
+          "phase": "travel",
+          "progress": 0.743,
+          "frame": 9,
+          "x": 993.9296875,
+          "y": 233.265625,
+          "size": 201.265625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2052.7,
+          "phase": "travel",
+          "progress": 0.754,
+          "frame": 9,
+          "x": 994.6640625,
+          "y": 230.65625,
+          "size": 199.671875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2069.3,
+          "phase": "travel",
+          "progress": 0.765,
+          "frame": 9,
+          "x": 995.328125,
+          "y": 228.328125,
+          "size": 198.25,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2086.1,
+          "phase": "travel",
+          "progress": 0.776,
+          "frame": 9,
+          "x": 995.921875,
+          "y": 226.28125,
+          "size": 197,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2102.7,
+          "phase": "travel",
+          "progress": 0.787,
+          "frame": 9,
+          "x": 996.4453125,
+          "y": 224.484375,
+          "size": 195.921875,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2119.4,
+          "phase": "travel",
+          "progress": 0.798,
+          "frame": 9,
+          "x": 996.890625,
+          "y": 223.046875,
+          "size": 195.03125,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2136.1,
+          "phase": "travel",
+          "progress": 0.809,
+          "frame": 9,
+          "x": 997.21875,
+          "y": 221.890625,
+          "size": 194.34375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2152.7,
+          "phase": "travel",
+          "progress": 0.82,
+          "frame": 9,
+          "x": 997.46875,
+          "y": 221.078125,
+          "size": 193.84375,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2169.4,
+          "phase": "travel",
+          "progress": 0.831,
+          "frame": 10,
+          "x": 997.609375,
+          "y": 220.625,
+          "size": 193.5625,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2186.1,
+          "phase": "arrive",
+          "progress": 0.842,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2202.7,
+          "phase": "arrive",
+          "progress": 0.853,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2219.4,
+          "phase": "arrive",
+          "progress": 0.864,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2236,
+          "phase": "arrive",
+          "progress": 0.875,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2252.7,
+          "phase": "arrive",
+          "progress": 0.886,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2269.4,
+          "phase": "arrive",
+          "progress": 0.897,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2286,
+          "phase": "arrive",
+          "progress": 0.908,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2302.7,
+          "phase": "arrive",
+          "progress": 0.919,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2319.3,
+          "phase": "arrive",
+          "progress": 0.93,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2336.1,
+          "phase": "arrive",
+          "progress": 0.941,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2352.7,
+          "phase": "arrive",
+          "progress": 0.952,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2369.3,
+          "phase": "arrive",
+          "progress": 0.963,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2386.1,
+          "phase": "arrive",
+          "progress": 0.974,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2402.7,
+          "phase": "arrive",
+          "progress": 0.985,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2419.4,
+          "phase": "arrive",
+          "progress": 0.996,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(-1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2436,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2452.7,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2469.4,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2486,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "time": 2502.7,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00001, 0, 0)"
+        },
+        {
+          "time": 2519.4,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00001, 0, 0)"
+        },
+        {
+          "time": 2536,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00002, 0, 0)"
+        },
+        {
+          "time": 2552.7,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00002, 0, 0)"
+        },
+        {
+          "time": 2569.3,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00003, 0, 0)"
+        },
+        {
+          "time": 2586.1,
+          "phase": "idle",
+          "progress": 1,
+          "frame": 2,
+          "x": 997.640625,
+          "y": 220.5,
+          "size": 193.5,
+          "facing": "matrix(1, 0, 0, 1.00004, 0, 0)"
+        }
+      ],
+      "longTasks": [],
+      "reactCommits": 95,
+      "resources": [
+        {
+          "name": "http://127.0.0.1:5190/forest/guide/totoro-atlas-aligned.webp",
+          "duration": 1.6999998092651367,
+          "responseEnd": 146.59999990463257,
+          "actionStart": 843.3000001907349
+        }
+      ],
+      "metrics": {
+        "LayoutCount": 64,
+        "RecalcStyleCount": 174,
+        "LayoutDuration": 0.004341000000000001,
+        "RecalcStyleDuration": 0.06437699999999999,
+        "ScriptDuration": 0.098995,
+        "TaskDuration": 0.269853
+      },
+      "summary": {
+        "count": 92,
+        "p50": 16.699999999999818,
+        "p95": 16.799999999999727,
+        "max": 16.799999999999955,
+        "over25": 0,
+        "longTasks": 0,
+        "reactCommits": 95
+      }
+    }
+  ]
+}

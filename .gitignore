@@ -10,3 +10,5 @@ node_modules/
 
 # Local design checker workspace
 .taste-skill/
+# Raw browser screencast frames for the editorial polish comparison
+/docs/editorial-polish/*-frames/

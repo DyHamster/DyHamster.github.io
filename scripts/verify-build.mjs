@@ -25,6 +25,10 @@ for (const asset of [
   "forest/cottage-clean-small.webp",
   "forest/guide/totoro-atlas.webp",
   "forest/guide/totoro-atlas-aligned.webp",
+  "forest/guide/totoro-bridges-v2.webp",
+  "forest/props/desk-v2.webp",
+  "forest/props/shelf-v2.webp",
+  "forest/props/bench-v2.webp",
   "musics/天空之城-宫崎骏.mp3",
 ])
   await access(resolve("dist", asset));

@@ -1,0 +1,304 @@
+{
+ "page": "http://127.0.0.1:5190/",
+ "partial": false,
+ "results": [
+  {
+   "w": 1440,
+   "rows": [
+    {
+     "name": "host CPU load (before/after)",
+     "value": "23/22 %",
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "total transfer",
+     "value": "1709.4 KiB",
+     "verdict": "WARN",
+     "note": "html 1K  css 18.2K  js 142.8K  img 1544.1K  other 3.4K"
+    },
+    {
+     "name": "requests",
+     "value": 17,
+     "verdict": "PASS",
+     "note": "16 by load"
+    },
+    {
+     "name": "images bytes",
+     "value": "1544.1 KiB",
+     "verdict": "WARN",
+     "note": "8 files"
+    },
+    {
+     "name": "largest image",
+     "value": "394.5 KiB",
+     "verdict": "WARN",
+     "note": "guide/totoro-atlas-aligned.webp"
+    },
+    {
+     "name": "JS parsed",
+     "value": "438.2 KiB",
+     "verdict": "PASS",
+     "note": "3 files, 142.8K gz"
+    },
+    {
+     "name": "CSS",
+     "value": "18.2 KiB",
+     "verdict": "PASS",
+     "note": "1 files"
+    },
+    {
+     "name": "font families",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "font files",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "0K"
+    },
+    {
+     "name": "images without width+height",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "below-fold images not lazy",
+     "value": 8,
+     "verdict": "FAIL",
+     "note": "afternoon-clean.webp, desk-v2.webp, cottage-clean.webp"
+    },
+    {
+     "name": "below-fold photos as CSS/SVG background",
+     "value": 1,
+     "verdict": "WARN",
+     "note": "cannot be lazy: use <img loading=\"lazy\">; bg totoro-atlas-aligned.webp"
+    },
+    {
+     "name": "oversized images (natural > 2.2x shown)",
+     "value": 3,
+     "verdict": "WARN",
+     "note": "desk-v2.webp 720px for 250; bench-v2.webp 720px for 262; bg totoro-atlas-aligned.webp 1280px for 72"
+    },
+    {
+     "name": "WebGL live at load",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at bottom",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL peak live",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "0 contexts made in all"
+    },
+    {
+     "name": "long tasks",
+     "value": 0.5,
+     "verdict": "PASS",
+     "note": "runs 2, 0..1, max 71ms"
+    },
+    {
+     "name": "blocking time",
+     "value": "10.5 ms",
+     "verdict": "PASS",
+     "note": "runs 2, 0..21 ms; at load 10.5ms"
+    },
+    {
+     "name": "FCP (CPU, relative)",
+     "value": "140 ms",
+     "verdict": "PASS",
+     "note": "runs 2, 108..172"
+    },
+    {
+     "name": "LCP (CPU, relative)",
+     "value": "202 ms",
+     "verdict": "PASS",
+     "note": "runs 2, 172..232, div.totoro-sprite"
+    },
+    {
+     "name": "layout shift",
+     "value": "0.000",
+     "verdict": "PASS",
+     "note": "runs 2, 0.000..0.000; at load 0.000"
+    },
+    {
+     "name": "modules loaded, never mounted",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "broken requests",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "page height",
+     "value": "2.5 screens",
+     "verdict": "PASS",
+     "note": "DOM 364 nodes"
+    }
+   ]
+  },
+  {
+   "w": 390,
+   "rows": [
+    {
+     "name": "host CPU load (before/after)",
+     "value": "23/22 %",
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "total transfer",
+     "value": "1246.8 KiB",
+     "verdict": "PASS",
+     "note": "html 1K  css 18.2K  js 142.8K  img 1082.1K  other 2.7K"
+    },
+    {
+     "name": "requests",
+     "value": 16,
+     "verdict": "PASS",
+     "note": "15 by load"
+    },
+    {
+     "name": "images bytes",
+     "value": "1082.1 KiB",
+     "verdict": "PASS",
+     "note": "8 files"
+    },
+    {
+     "name": "largest image",
+     "value": "394.5 KiB",
+     "verdict": "WARN",
+     "note": "guide/totoro-atlas-aligned.webp"
+    },
+    {
+     "name": "JS parsed",
+     "value": "438.2 KiB",
+     "verdict": "PASS",
+     "note": "3 files, 142.8K gz"
+    },
+    {
+     "name": "CSS",
+     "value": "18.2 KiB",
+     "verdict": "PASS",
+     "note": "1 files"
+    },
+    {
+     "name": "font families",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "font files",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "0K"
+    },
+    {
+     "name": "images without width+height",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "below-fold images not lazy",
+     "value": 10,
+     "verdict": "FAIL",
+     "note": "afternoon-clean-small.webp, afternoon-clean-small.webp, desk-v2.webp"
+    },
+    {
+     "name": "below-fold photos as CSS/SVG background",
+     "value": 1,
+     "verdict": "WARN",
+     "note": "cannot be lazy: use <img loading=\"lazy\">; bg totoro-atlas-aligned.webp"
+    },
+    {
+     "name": "oversized images (natural > 2.2x shown)",
+     "value": 8,
+     "verdict": "FAIL",
+     "note": "afternoon-clean-small.webp 900px for 390; desk-v2.webp 720px for 170; shelf-v2.webp 480px for 170"
+    },
+    {
+     "name": "WebGL live at load",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at bottom",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL peak live",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "0 contexts made in all"
+    },
+    {
+     "name": "long tasks",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "runs 2, 0..0, max 0ms"
+    },
+    {
+     "name": "blocking time",
+     "value": "0 ms",
+     "verdict": "PASS",
+     "note": "runs 2, 0..0 ms; at load 0ms"
+    },
+    {
+     "name": "FCP (CPU, relative)",
+     "value": "92 ms",
+     "verdict": "PASS",
+     "note": "runs 2, 88..96"
+    },
+    {
+     "name": "LCP (CPU, relative)",
+     "value": "92 ms",
+     "verdict": "PASS",
+     "note": "runs 2, 88..96, h1"
+    },
+    {
+     "name": "layout shift",
+     "value": "0.000",
+     "verdict": "PASS",
+     "note": "runs 2, 0.000..0.000; at load 0.000"
+    },
+    {
+     "name": "modules loaded, never mounted",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "broken requests",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "page height",
+     "value": "3.3 screens",
+     "verdict": "PASS",
+     "note": "DOM 364 nodes"
+    }
+   ]
+  }
+ ]
+}

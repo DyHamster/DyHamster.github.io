@@ -1,4 +1,5 @@
-import { Leaf, Search } from "lucide-react";
+import { Search } from "lucide-react";
+import SectionIcon from "../components/SectionIcon";
 import ExperimentGrid from "../components/ExperimentGrid";
 import { useSearchParams } from "react-router-dom";
 import { getEntries } from "../lib/posts";
@@ -50,12 +51,13 @@ export default function Posts({ kind = "posts" }: { kind?: Post["kind"] }) {
     <>
       <SEO title={section.title} description={section.description} />
       <header className="page-heading">
-        <span className="eyebrow">
+        <span className="eyebrow section-kicker">
+          <SectionIcon kind={kind} size={22} />
           {kind === "notes"
-            ? "树荫笔记桌 · 按主题查找"
+            ? "学习记录"
             : kind === "posts"
-              ? "林间书屋 · 完整的思考"
-              : "树根工作台 · 实现与验证"}
+              ? "完整讨论"
+              : "动手实践"}
         </span>
         <h1>{section.title}</h1>
         <p>{section.description}</p>
@@ -101,18 +103,17 @@ export default function Posts({ kind = "posts" }: { kind?: Post["kind"] }) {
           )
         ) : (
           <div className="empty-state">
-            <span className="empty-mark">
-              <Leaf size={34} strokeWidth={1} />
-            </span>
-            <h2>{query || tag ? "没有找到匹配的记录。" : section.empty}</h2>
-            <p>
+            <h2>
               {query || tag
-                ? "试试其他关键词，或清除筛选条件。"
-                : "公开记录会按最后修改日期显示。"}
-            </p>
+                ? "没有找到匹配的记录。"
+                : topic
+                  ? "这个主题下还没有公开笔记。"
+                  : section.empty}
+            </h2>
+            {(query || tag || topic) && <p>换个关键词，或清除筛选后再试。</p>}
             {(query || topic || tag) && (
               <button className="text-link" onClick={() => setParams({})}>
-                查看全部
+                清除筛选
               </button>
             )}
           </div>

@@ -1,0 +1,64 @@
+{
+  "columns": 3,
+  "rows": 2,
+  "cell": 320,
+  "baseline": 315,
+  "poses": [
+    "seated-awake",
+    "rising",
+    "front-standing",
+    "looking",
+    "crouching",
+    "seated-asleep"
+  ],
+  "normalization": [
+    {
+      "f": 0,
+      "dx": -23,
+      "dy": -5,
+      "scale": 0.655982905982906,
+      "foot": 488,
+      "top": 48
+    },
+    {
+      "f": 1,
+      "dx": -12,
+      "dy": -2,
+      "scale": 0.655982905982906,
+      "foot": 484,
+      "top": 43
+    },
+    {
+      "f": 2,
+      "dx": 2,
+      "dy": -3,
+      "scale": 0.655982905982906,
+      "foot": 485,
+      "top": 17
+    },
+    {
+      "f": 3,
+      "dx": -26,
+      "dy": -4,
+      "scale": 0.655982905982906,
+      "foot": 487,
+      "top": 8
+    },
+    {
+      "f": 4,
+      "dx": -8,
+      "dy": -3,
+      "scale": 0.655982905982906,
+      "foot": 485,
+      "top": 50
+    },
+    {
+      "f": 5,
+      "dx": -1,
+      "dy": -6,
+      "scale": 0.655982905982906,
+      "foot": 490,
+      "top": 43
+    }
+  ]
+}

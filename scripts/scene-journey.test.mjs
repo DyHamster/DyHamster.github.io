@@ -21,9 +21,9 @@ test("all 20 directed routes prepare, travel, commit content, arrive and idle", 
       for (let time = 300; time < 1160; time += 33)
         frames.add(advanceJourney(state, time).frame);
       assert([...frames].some((frame) => frame >= 4 && frame < 12));
-      state = advanceJourney(state, 780);
+      state = advanceJourney(state, 850);
       assert.equal(state.displayPath, b);
-      state = advanceJourney(state, 1520);
+      state = advanceJourney(state, state.duration);
       assert.equal(state.phase, "idle");
       assert.equal(state.current, to);
       assert.equal(state.displayPath, b);
@@ -47,7 +47,7 @@ test("changing to another detail in the same destination preserves progress", ()
   const version = state.version;
   state = requestJourney(state, "/posts/paper?q=one");
   assert.equal(state.version, version);
-  assert.equal(state.progress, 850 / 1520);
+  assert.equal(state.progress, 850 / state.duration);
   assert.equal(state.displayPath, "/posts/paper?q=one");
 });
 test("query, tags and detail navigation do not replay a journey", () => {
@@ -110,4 +110,40 @@ test("home to notes completes a distance-driven gait and each stop has a separat
     const paperRight = width - Math.max(96, (width - 1280) / 2);
     assert(left > paperRight, `reading guide must clear the paper at ${width}`);
   }
+});
+
+test("a seated arrival has stance, turn, crouch and seated frames rather than a direct walk-to-sit cut", () => {
+  const trip = requestJourney(createScene("/notes"), "/about");
+  const sequence = [0.75, 0.8, 0.84, 0.9, 0.94, 0.97, 1].map((p) =>
+    advanceJourney(trip, p * trip.duration),
+  );
+  assert.equal(sequence[0].frame, 5);
+  assert(sequence.some((s) => s.atlas === "bridge" && s.frame === 2));
+  assert(sequence.some((s) => s.atlas === "bridge" && s.frame === 4));
+  assert.equal(sequence.at(-1).frame, 0);
+  assert.equal(sequence.at(-1).facing, PLACES.about.facing);
+});
+test("retargeting a walking guide preserves its drawn pose and facing during the response", () => {
+  let trip = requestJourney(createScene("/"), "/notes");
+  trip = advanceJourney(trip, 800);
+  const next = requestJourney(trip, "/posts");
+  const start = advanceJourney(next, 0);
+  assert.equal(start.frame, trip.frame);
+  assert.equal(start.atlas, trip.atlas);
+  assert.equal(start.facing, trip.facing);
+  assert.equal(next.wasResting, false);
+  assert.deepEqual(start.pose, trip.pose);
+});
+test("turns pass through the frontal drawing; final resting direction is settled before idle", () => {
+  const trip = requestJourney(createScene("/"), "/notes");
+  const states = Array.from({ length: 169 }, (_, i) =>
+    advanceJourney(trip, i * 10),
+  );
+  for (let i = 1; i < states.length; i++)
+    if (states[i].facing !== states[i - 1].facing)
+      assert(states[i].atlas === "bridge" || states[i - 1].atlas === "bridge");
+  const settled = advanceJourney(trip, trip.duration - 5),
+    idle = advanceJourney(trip, trip.duration);
+  assert.equal(settled.facing, idle.facing);
+  assert.equal(settled.frame, idle.frame);
 });

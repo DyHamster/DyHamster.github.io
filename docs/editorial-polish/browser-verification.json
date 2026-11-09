@@ -1,0 +1,421 @@
+{
+  "checks": [
+    "favicon variants, touch icon and manifest assets 200",
+    "20 directed routes, persistent guide and playing audio",
+    "rapid retarget, back/forward, direct reload",
+    "music play/pause, settings, volume, Escape, and both themes",
+    "isolated local fixtures: formula, code, TOC, stable reading, related entry, search, category, tag, pagination, experiment demo",
+    "keyboard skip link, visible focus",
+    "mobile basic routes, no overflow, reduced motion",
+    "missing bridge leaves base available; total art failure keeps navigation",
+    "final prop scale bounds, actual local monospace font, dark browser theme color, complete screencast",
+    "mobile cottage paragraph: background pixel contrast confirmed after gradient adjustment"
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "bottom": 900,
+        "right": 1440
+      },
+      "intro": {
+        "x": 96,
+        "y": 505.75,
+        "width": 576,
+        "bottom": 572.34375,
+        "right": 672
+      },
+      "actions": {
+        "x": 96,
+        "y": 600.34375,
+        "width": 600,
+        "bottom": 651.84375,
+        "right": 696
+      },
+      "guide": {
+        "x": 1004.4000244140625,
+        "y": 423,
+        "width": 324,
+        "bottom": 747,
+        "right": 1328.4000244140625
+      },
+      "scroll": {
+        "x": 96,
+        "y": 828,
+        "width": 1248,
+        "bottom": 872,
+        "right": 1344
+      },
+      "title": {
+        "x": 96,
+        "y": 307.9375,
+        "width": 600,
+        "bottom": 481.75,
+        "right": 696
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1366,
+        "bottom": 768,
+        "right": 1366
+      },
+      "intro": {
+        "x": 96,
+        "y": 426.5,
+        "width": 544,
+        "bottom": 489.375,
+        "right": 640
+      },
+      "actions": {
+        "x": 96,
+        "y": 513.375,
+        "width": 600,
+        "bottom": 564.875,
+        "right": 696
+      },
+      "guide": {
+        "x": 968.219970703125,
+        "y": 360.9599914550781,
+        "width": 276.47998046875,
+        "bottom": 637.4400024414062,
+        "right": 1244.699951171875
+      },
+      "scroll": {
+        "x": 96,
+        "y": 704,
+        "width": 1174,
+        "bottom": 748,
+        "right": 1270
+      },
+      "title": {
+        "x": 96,
+        "y": 266.90625,
+        "width": 600,
+        "bottom": 406.5,
+        "right": 696
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "bottom": 1080,
+        "right": 1920
+      },
+      "intro": {
+        "x": 320,
+        "y": 608.21875,
+        "width": 600,
+        "bottom": 678.5,
+        "right": 920
+      },
+      "actions": {
+        "x": 320,
+        "y": 706.5,
+        "width": 600,
+        "bottom": 758,
+        "right": 920
+      },
+      "guide": {
+        "x": 1385.199951171875,
+        "y": 556.4000244140625,
+        "width": 340,
+        "bottom": 896.4000244140625,
+        "right": 1725.199951171875
+      },
+      "scroll": {
+        "x": 320,
+        "y": 1008,
+        "width": 1280,
+        "bottom": 1052,
+        "right": 1600
+      },
+      "title": {
+        "x": 320,
+        "y": 381.78125,
+        "width": 600,
+        "bottom": 584.21875,
+        "right": 920
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "bottom": 768,
+        "right": 1024
+      },
+      "intro": {
+        "x": 96,
+        "y": 427.703125,
+        "width": 499.1875,
+        "bottom": 490.578125,
+        "right": 595.1875
+      },
+      "actions": {
+        "x": 96,
+        "y": 514.578125,
+        "width": 499.1875,
+        "bottom": 566.078125,
+        "right": 595.1875
+      },
+      "guide": {
+        "x": 691.2000122070312,
+        "y": 360.9599914550781,
+        "width": 276.48004150390625,
+        "bottom": 637.4400024414062,
+        "right": 967.6800537109375
+      },
+      "scroll": {
+        "x": 96,
+        "y": 704,
+        "width": 832,
+        "bottom": 748,
+        "right": 928
+      },
+      "title": {
+        "x": 96,
+        "y": 265.703125,
+        "width": 499.1875,
+        "bottom": 407.703125,
+        "right": 595.1875
+      }
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 820,
+        "bottom": 1180,
+        "right": 820
+      },
+      "intro": {
+        "x": 96,
+        "y": 615.984375,
+        "width": 376.796875,
+        "bottom": 710.296875,
+        "right": 472.796875
+      },
+      "actions": {
+        "x": 96,
+        "y": 738.296875,
+        "width": 376.796875,
+        "bottom": 789.796875,
+        "right": 472.796875
+      },
+      "guide": {
+        "x": 494.20001220703125,
+        "y": 639.4000244140625,
+        "width": 340,
+        "bottom": 979.4000244140625,
+        "right": 834.2000122070312
+      },
+      "scroll": {
+        "x": 96,
+        "y": 1108,
+        "width": 628,
+        "bottom": 1152,
+        "right": 724
+      },
+      "title": {
+        "x": 96,
+        "y": 449.984375,
+        "width": 376.796875,
+        "bottom": 591.984375,
+        "right": 472.796875
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "bottom": 1024,
+        "right": 768
+      },
+      "intro": {
+        "x": 96,
+        "y": 537.984375,
+        "width": 345.59375,
+        "bottom": 632.296875,
+        "right": 441.59375
+      },
+      "actions": {
+        "x": 96,
+        "y": 660.296875,
+        "width": 345.59375,
+        "bottom": 711.796875,
+        "right": 441.59375
+      },
+      "guide": {
+        "x": 452.08001708984375,
+        "y": 509.91998291015625,
+        "width": 340,
+        "bottom": 849.9199829101562,
+        "right": 792.0800170898438
+      },
+      "scroll": {
+        "x": 96,
+        "y": 952,
+        "width": 576,
+        "bottom": 996,
+        "right": 672
+      },
+      "title": {
+        "x": 96,
+        "y": 371.984375,
+        "width": 345.59375,
+        "bottom": 513.984375,
+        "right": 441.59375
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "bottom": 844,
+        "right": 390
+      },
+      "intro": {
+        "x": 20,
+        "y": 331.34375,
+        "width": 350,
+        "bottom": 420.125,
+        "right": 370
+      },
+      "actions": {
+        "x": 20,
+        "y": 444.125,
+        "width": 350,
+        "bottom": 493.921875,
+        "right": 370
+      },
+      "guide": {
+        "x": 202.79998779296875,
+        "y": 613.9599609375,
+        "width": 179.4000244140625,
+        "bottom": 793.3599853515625,
+        "right": 382.20001220703125
+      },
+      "scroll": {
+        "x": 20,
+        "y": 780,
+        "width": 350,
+        "bottom": 824,
+        "right": 370
+      },
+      "title": {
+        "x": 20,
+        "y": 194.09375,
+        "width": 350,
+        "bottom": 313.34375,
+        "right": 370
+      }
+    }
+  ],
+  "fonts": {
+    "heroTitle": [
+      {
+        "familyName": "Songti SC",
+        "postScriptName": "STSongti-SC-Regular",
+        "isCustomFont": false,
+        "glyphCount": 10
+      }
+    ],
+    "body": [
+      {
+        "familyName": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "isCustomFont": false,
+        "glyphCount": 43
+      }
+    ],
+    "brand": [
+      {
+        "familyName": "Georgia",
+        "postScriptName": "Georgia-Bold",
+        "isCustomFont": false,
+        "glyphCount": 9
+      },
+      {
+        "familyName": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "isCustomFont": false,
+        "glyphCount": 5
+      }
+    ],
+    "articleBody": [
+      {
+        "familyName": "PingFang SC",
+        "postScriptName": "PingFangSC-Regular",
+        "isCustomFont": false,
+        "glyphCount": 67
+      }
+    ],
+    "code": [
+      {
+        "familyName": "Menlo",
+        "postScriptName": "Menlo-Regular",
+        "isCustomFont": false,
+        "glyphCount": 121
+      }
+    ],
+    "math": [
+      {
+        "familyName": "KaTeX_Math",
+        "postScriptName": "KaTeX_Math-Italic",
+        "isCustomFont": true,
+        "glyphCount": 1
+      }
+    ],
+    "aboutTitle": [
+      {
+        "familyName": "Georgia",
+        "postScriptName": "Georgia",
+        "isCustomFont": false,
+        "glyphCount": 10
+      },
+      {
+        "familyName": "Songti SC",
+        "postScriptName": "STSongti-SC-Regular",
+        "isCustomFont": false,
+        "glyphCount": 6
+      }
+    ]
+  },
+  "mobileCottageContrast": {
+    "viewport": "390x844",
+    "method": "Computed foreground versus all rendered background pixels in the paragraph box",
+    "minimum": 7.48
+  }
+}

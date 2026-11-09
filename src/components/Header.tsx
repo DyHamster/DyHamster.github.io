@@ -1,17 +1,16 @@
 import { sections } from "../config/sections";
 import { NavLink, Link } from "react-router-dom";
-import { Leaf } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 export default function Header() {
   return (
     <header className="header-wrap">
-      <div className="site-header shell">
+      <div className="site-header shell wrap">
         <Link className="wordmark" to="/" aria-label="DyHamster 首页">
           <span className="brand-leaf">
-            <Leaf size={21} strokeWidth={1.5} />
+            <img src="/favicon.svg?v=leaf-2" width="40" height="40" alt="" />
           </span>
           <span>
-            DyHamster<small>一处林间，慢慢生长</small>
+            DyHamster<small>学习与思考</small>
           </span>
         </Link>
         <nav aria-label="主导航">

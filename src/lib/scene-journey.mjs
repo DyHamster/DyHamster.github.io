@@ -63,6 +63,13 @@ export function placeForPath(path) {
       ? id
       : "home";
 }
+export const TIMING = {
+  depart: 0.23,
+  commit: 0.48,
+  land: 0.74,
+  turn: 0.88,
+  settle: 0.95,
+};
 const clamp = (value) => Math.max(0, Math.min(1, value));
 const lerp = (a, b, t) => a + (b - a) * t;
 const defaultViewport = { width: 1440, height: 900 };
@@ -145,6 +152,8 @@ function makeRoute(origin, destination, target, viewport) {
     control,
     points,
     length,
+    // Four drawings per planted step; short routes do not force a full stride.
+    steps: Math.max(1, Math.round(length / ((origin.size + destination.size) * 0.19))),
     direction: Math.abs(dx) > 0.2 ? Math.sign(dx) : PLACES[target].facing,
   };
 }
@@ -184,6 +193,10 @@ export function createScene(path, mobile = false, viewport = defaultViewport) {
     origin: restPose(place, mobile, false, viewport),
     destination: restPose(place, mobile, false, viewport),
     frame: PLACES[place].rest,
+    atlas: "base",
+    facing: PLACES[place].facing,
+    bodyScale: 1,
+    lean: 0,
     direction: PLACES[place].facing,
     viewport,
     duration: 0,
@@ -198,6 +211,7 @@ export function requestJourney(
     reduced = false,
     pose = state.pose,
     viewport = state.viewport ?? defaultViewport,
+    facing = state.facing ?? PLACES[state.current].facing,
   } = {},
 ) {
   const target = placeForPath(path);
@@ -212,11 +226,11 @@ export function requestJourney(
       targetPath: path,
       reduced: reduced || state.reduced,
       duration: reduced ? 110 : state.duration,
-      displayPath: state.progress >= 0.5 ? path : state.displayPath,
+      displayPath: state.progress >= TIMING.commit ? path : state.displayPath,
     };
   if (state.phase === "idle" && target === state.current)
     return { ...state, displayPath: path, targetPath: path };
-  const from = state.progress >= 0.5 ? state.target : state.from;
+  const from = state.progress >= TIMING.commit ? state.target : state.from;
   const destination = restPose(target, mobile, false, viewport);
   const route = makeRoute(pose, destination, target, viewport);
   return {
@@ -234,27 +248,47 @@ export function requestJourney(
     viewport,
     pose,
     direction: route.direction,
-    duration: reduced ? 110 : mobile ? 1160 : 1520,
+    duration: reduced ? 110 : mobile ? 1240 : 1680,
     reduced,
     frame: state.frame,
+    atlas: state.atlas ?? "base",
+    originAtlas: state.atlas ?? "base",
+    originFrame: state.frame,
+    originFacing: facing,
+    wasResting: state.phase === "idle" && PLACES[state.current].rest === 0,
+    facing,
+    bodyScale: state.bodyScale ?? 1,
+    lean: state.lean ?? 0,
   };
+}
+// A turn passes through a frontal drawing. The base atlas is only mirrored while
+// the symmetric front drawing is visible, never as an unexplained end-of-route flip.
+function turn(from, to, progress) {
+  if (from === to) return { frame: 2, atlas: "base", facing: to };
+  if (progress < 0.27) return { frame: 3, atlas: "base", facing: from };
+  if (progress < 0.73) return { frame: 2, atlas: "bridge", facing: to };
+  return { frame: 2, atlas: "base", facing: to };
 }
 export function advanceJourney(state, elapsed, version = state.version) {
   if (version !== state.version || state.phase === "idle") return state;
   const progress = clamp(elapsed / state.duration);
   const phase =
-    progress < 0.19
+    progress < TIMING.depart
       ? "respond"
-      : progress < 0.84
+      : progress < TIMING.land
         ? "travel"
         : progress < 1
           ? "arrive"
           : "idle";
-  const movement = clamp((progress - 0.19) / 0.65);
+  const movement = clamp(
+    (progress - TIMING.depart) / (TIMING.land - TIMING.depart),
+  );
   const eased = movement * movement * (3 - 2 * movement);
-  let pose = progress >= 0.84 ? state.destination : routeSample(state, eased);
-  if (state.reduced) pose = progress >= 0.5 ? state.destination : state.origin;
-  const mix = clamp((progress - 0.27) / 0.48);
+  let pose =
+    progress >= TIMING.land ? state.destination : routeSample(state, eased);
+  if (state.reduced)
+    pose = progress >= TIMING.commit ? state.destination : state.origin;
+  const mix = clamp((progress - 0.23) / 0.49);
   const weights = Object.fromEntries(
     Object.keys(PLACES).map((id) => [
       id,
@@ -262,34 +296,95 @@ export function advanceJourney(state, elapsed, version = state.version) {
         (id === state.target ? mix : 0),
     ]),
   );
-  let frame = PLACES[state.target].rest;
-  if (phase === "respond")
-    frame =
-      state.from === "home" || PLACES[state.from].rest === 0
-        ? Math.min(2, Math.floor(progress / 0.065))
-        : progress < 0.1
-          ? 3
-          : 2;
-  if (phase === "travel")
-    frame =
-      4 +
-      (Math.floor(
-        ((eased * state.route.length) /
-          ((state.origin.size + state.destination.size) * 0.38)) *
-          8,
-      ) %
-        8);
-  if (phase === "arrive")
-    frame = progress < 0.94 ? 2 : PLACES[state.target].rest;
-  if (state.reduced) frame = PLACES[state.target].rest;
+  let sprite = { frame: 2, atlas: "base", facing: state.direction };
+  let bodyScale = 1,
+    lean = 0;
+  if (phase === "respond") {
+    if (progress < 0.035)
+      sprite = {
+        frame: state.originFrame,
+        atlas: state.originAtlas,
+        facing: state.originFacing,
+      };
+    else if (state.wasResting && progress < 0.15) {
+      sprite =
+        progress < 0.075
+          ? { frame: 0, atlas: "bridge", facing: state.originFacing }
+          : progress < 0.105
+            ? { frame: 1, atlas: "base", facing: state.originFacing }
+            : progress < 0.135
+              ? { frame: 1, atlas: "bridge", facing: state.originFacing }
+              : { frame: 2, atlas: "base", facing: state.originFacing };
+      bodyScale =
+        1 - 0.012 * Math.sin(clamp((progress - 0.035) / 0.115) * Math.PI);
+    } else
+      sprite = turn(
+        state.originFacing,
+        state.direction,
+        clamp(
+          (progress - (state.wasResting ? 0.15 : 0.035)) /
+            (TIMING.depart - (state.wasResting ? 0.15 : 0.035)),
+        ),
+      );
+  }
+  const planted = 4 + ((state.route.steps * 4 + 1) % 8);
+  if (phase === "travel") {
+    const frame = movement > 0.975 ? planted : 4 + ((Math.floor(eased * state.route.steps * 4) + 1) % 8);
+    sprite = { frame, atlas: "base", facing: state.direction };
+    // Small weight transfer supplements the actual leg/arm drawings; feet stay anchored.
+    bodyScale = 1 + 0.005 * Math.sin(eased * state.route.steps * Math.PI * 2);
+    lean = state.direction * 0.5 * Math.sin(movement * Math.PI);
+  }
+  if (phase === "arrive") {
+    if (progress < 0.785)
+      sprite = { frame: planted, atlas: "base", facing: state.direction };
+    else if (progress < TIMING.turn)
+      sprite = turn(
+        state.direction,
+        PLACES[state.target].facing,
+        (progress - 0.785) / (TIMING.turn - 0.785),
+      );
+    else if (PLACES[state.target].rest === 0)
+      sprite =
+        progress < 0.925
+          ? { frame: 1, atlas: "bridge", facing: PLACES[state.target].facing }
+          : progress < TIMING.settle
+            ? { frame: 4, atlas: "bridge", facing: PLACES[state.target].facing }
+            : progress < 0.985
+              ? {
+                  frame: 0,
+                  atlas: "bridge",
+                  facing: PLACES[state.target].facing,
+                }
+              : {
+                  frame: 0,
+                  atlas: "base",
+                  facing: PLACES[state.target].facing,
+                };
+    else
+      sprite = { frame: 2, atlas: "base", facing: PLACES[state.target].facing };
+    bodyScale =
+      1 -
+      0.008 *
+        Math.sin(clamp((progress - TIMING.land) / (1 - TIMING.land)) * Math.PI);
+  }
+  if (phase === "idle" || state.reduced)
+    sprite = {
+      frame: PLACES[state.target].rest,
+      atlas: "base",
+      facing: PLACES[state.target].facing,
+    };
   return {
     ...state,
     weights,
     phase,
     progress,
     pose,
-    frame,
-    current: progress >= 0.5 ? state.target : state.current,
-    displayPath: progress >= 0.5 ? state.targetPath : state.displayPath,
+    ...sprite,
+    bodyScale,
+    lean,
+    current: progress >= TIMING.commit ? state.target : state.current,
+    displayPath:
+      progress >= TIMING.commit ? state.targetPath : state.displayPath,
   };
 }

@@ -1,0 +1,463 @@
+/* Editorial roles, shared across routes. All faces are local: no font download. */
+:root {
+  --font-display:
+    "Georgia", "Songti SC", "Noto Serif CJK SC",
+    "Source Han Serif SC", "SimSun", serif;
+  --font-body:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --font-code: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+  --serif: var(--font-display);
+  --icon-paper: #ede8d4;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.dark {
+  --icon-paper: #38483a;
+}
+body {
+  font-family: var(--font-body);
+  font-synthesis: none;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-synthesis: none;
+  text-wrap: pretty;
+}
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-body);
+}
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--font-code);
+  font-variant-ligatures: none;
+}
+.entry-meta,
+time,
+.scene-index {
+  font-variant-numeric: tabular-nums;
+}
+.hero-copy h1 {
+  letter-spacing: 0.025em;
+  line-height: 1.42;
+}
+.hero-intro {
+  line-height: 1.85;
+  max-width: 32em;
+  text-wrap: pretty;
+}
+.hero-copy > .eyebrow {
+  letter-spacing: 0.025em;
+}
+.wordmark > span:last-child {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+.wordmark small {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+.path-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.path-card-top {
+  margin-bottom: 22px;
+}
+.path-card h3 {
+  font-size: 24px;
+  letter-spacing: 0.01em;
+}
+.path-card p {
+  min-height: 3.6em;
+  line-height: 1.8;
+}
+.path-card-bottom {
+  color: var(--muted);
+}
+.section-heading > p {
+  max-width: 380px;
+}
+.section-icon {
+  color: var(--accent);
+  flex: none;
+  overflow: visible;
+}
+.home-topics {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 0 56px;
+  border-top: 1px solid var(--line);
+}
+.home-topics h2 {
+  font-size: 26px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+.home-topics p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.home-topics .focus-topics {
+  margin: 0;
+  gap: 8px 24px;
+  justify-content: flex-end;
+}
+.focus-topics a {
+  display: inline-flex;
+  gap: 8px;
+  min-height: 44px;
+  align-items: center;
+  font-size: 15px;
+  border-bottom: 1px solid transparent;
+}
+.focus-topics a:hover {
+  border-color: var(--accent);
+}
+.section-heading h2 {
+  letter-spacing: 0;
+}
+.page-heading h1 {
+  letter-spacing: 0.015em;
+}
+.page-heading > p {
+  max-width: 52%;
+  line-height: 1.85;
+}
+.page-heading > .eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.06em;
+}
+.about-heading h1 {
+  max-width: 60%;
+}
+.about-content.prose {
+  font-size: 18px;
+  line-height: 1.95;
+}
+.about-content h2:first-of-type {
+  margin-top: 20px;
+}
+.about-content p {
+  max-width: 36em;
+}
+.about-avatar {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+}
+.mailbox p {
+  margin-top: 14px;
+}
+.mailbox a {
+  gap: 10px;
+}
+.prose {
+  max-width: 43em;
+}
+.prose p {
+  margin-block: 1.15em;
+}
+.prose h2 {
+  margin-top: 1.8em;
+  margin-bottom: 0.8em;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+}
+.prose h3 {
+  margin-top: 1.4em;
+  line-height: 1.6;
+}
+.prose blockquote {
+  font-style: normal;
+}
+.prose pre {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.article-meta {
+  gap: 16px;
+  font-size: 13px;
+}
+.article-tags a {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+}
+.entry-row h3 {
+  letter-spacing: 0.01em;
+}
+.lucide {
+  stroke-width: 1.6;
+}
+.brand-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  flex: none;
+}
+@media (min-width: 1600px) {
+  .hero-intro {
+    font-size: 19px;
+  }
+}
+@media (max-width: 1100px) and (min-width: 701px) {
+  .home-topics {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .home-topics .focus-topics {
+    gap: 4px 16px;
+  }
+  .page-heading > p {
+    max-width: 54%;
+  }
+}
+@media (max-width: 700px) {
+  .hero-copy h1 {
+    letter-spacing: 0.015em;
+  }
+  .hero-intro {
+    font-size: 16px;
+  }
+  .path-card p {
+    min-height: 0;
+  }
+  .home-topics {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 28px 0 40px;
+  }
+  .home-topics h2 {
+    font-size: 25px;
+  }
+  .home-topics .focus-topics {
+    justify-content: flex-start;
+    gap: 4px 24px;
+  }
+  .focus-topics a {
+    font-size: 14px;
+  }
+  .page-heading > p,
+  .about-heading h1 {
+    max-width: 100%;
+  }
+  .about-content.prose {
+    font-size: 17px;
+  }
+  .cottage-shade {
+    background: linear-gradient(
+      180deg,
+      #203c2ee0,
+      #203c2ed6 44%,
+      #203c2e60 66%,
+      transparent 92%
+    );
+  }
+  .wordmark small {
+    display: none;
+  }
+}
+/* A single painter updates transforms; no positional transitions compete with it. */
+.journey-shell .forest-guide {
+  left: 0;
+  top: 0;
+  width: 320px;
+  height: 320px;
+  aspect-ratio: 1;
+  transform-origin: 0 0;
+  transition: none;
+  will-change: transform;
+  contain: layout style;
+}
+.journey-shell .guide-figure {
+  transform: scaleX(var(--facing, 1)) scaleY(var(--pose-scale, 1))
+    rotate(var(--pose-lean, 0deg));
+  transform-origin: 50% 98.4375%;
+}
+.journey-shell .guide-resting .guide-figure {
+  animation: editorial-breath 5.8s ease-in-out infinite;
+}
+.journey-shell .guide-ui {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  z-index: 26;
+  pointer-events: none;
+  will-change: transform;
+}
+.guide-ui .guide-destination {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  bottom: 12px;
+  right: 0;
+  left: auto;
+  transform: none;
+  width: max-content;
+  max-width: 250px;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: normal;
+  box-shadow: none;
+}
+.guide-ui .guide-rest-control {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  width: 44px;
+  height: 44px;
+  min-height: 44px;
+  min-width: 44px;
+  transform: none;
+  pointer-events: auto;
+  font-family: var(--font-body);
+  font-size: 20px;
+}
+.totoro-sprite[hidden],
+.guide-figure [hidden] {
+  display: none;
+}
+.totoro-sprite {
+  background-image: url("/forest/guide/totoro-atlas-aligned.webp");
+}
+.journey-shell .world-place,
+.journey-shell .journey-mist {
+  transition: none;
+}
+.journey-shell .world-place picture,
+.journey-shell.journey-active .world-place picture {
+  transition: none;
+  transform: translate3d(calc(var(--camera-shift, 0) * 1px), var(--pan, 0vh), 0)
+    scale(calc(var(--zoom) + var(--camera-push, 0)));
+}
+@keyframes editorial-breath {
+  0%,
+  100% {
+    transform: scaleX(var(--facing, 1)) scaleY(1);
+  }
+  50% {
+    transform: scaleX(var(--facing, 1)) scaleY(1.006);
+  }
+}
+@media (max-width: 700px) {
+  .journey-shell .world-place picture,
+  .journey-shell.journey-active .world-place picture {
+    transform: translate3d(calc(var(--camera-shift, 0) * 0.4px), 0, 0)
+      scale(calc(var(--zoom) + var(--camera-push, 0) * 0.5));
+  }
+  .guide-ui .guide-destination {
+    font-size: 12px;
+    max-width: 220px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .journey-shell .guide-resting .guide-figure {
+    animation: none;
+  }
+  .journey-shell .forest-guide,
+  .guide-ui {
+    will-change: auto;
+  }
+}
+.guide-fallback-slot {
+  width: 100%;
+  height: 100%;
+}
+.world-place img.scene-landmark.prop-painted {
+  object-fit: contain;
+  object-position: center;
+  width: var(--prop-width);
+  height: auto;
+  right: auto;
+  bottom: auto;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 4px 3px #29381e22);
+  opacity: 1;
+}
+.world-place .landmark-notes.prop-painted {
+  left: 87%;
+  top: calc(var(--ground-notes) - var(--prop-width) * var(--prop-rise));
+  --prop-width: clamp(184px, 17.5vw, 250px);
+}
+.world-place .landmark-posts.prop-painted {
+  left: 74%;
+  top: calc(var(--ground-posts) - var(--prop-width) * var(--prop-rise));
+  --prop-width: clamp(180px, calc(25svh + 10px), 245px);
+}
+.world-place .landmark-experiments.prop-painted {
+  left: 88%;
+  top: calc(var(--ground-experiments) - var(--prop-width) * var(--prop-rise));
+  --prop-width: clamp(190px, 18.2vw, 270px);
+}
+.dark .world-place img.scene-landmark.prop-painted {
+  filter: brightness(0.78) saturate(0.8) drop-shadow(0 4px 3px #0c140b44);
+}
+@media (max-width: 700px) {
+  .world-place img.scene-landmark.prop-painted {
+    opacity: 0.45;
+    --prop-width: 170px;
+  }
+  .world-place .landmark-notes.prop-painted {
+    top: calc(44vh - 123px);
+  }
+  .world-place .landmark-experiments.prop-painted {
+    top: calc(44vh - 125px);
+  }
+  .world-place .landmark-posts.prop-painted {
+    top: calc(44vh - 209px);
+  }
+}
+.brand-leaf {
+  border: 0;
+}
+.brand-leaf img {
+  width: 100%;
+  height: 100%;
+}
+.site-footer a {
+  gap: 5px;
+}
+.github-mark {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex: none;
+  background: currentColor;
+  mask: url("/brand/github.svg") center/contain no-repeat;
+}
+.section-kicker {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+.empty-state {
+  padding: 24px 0;
+}
+.empty-state h2 {
+  margin-bottom: 0;
+}
+.empty-state p {
+  margin-top: 8px;
+}
+.archive-paper {
+  min-height: 0;
+}
+
+.prose :is(code, pre, kbd, samp), .prose pre code {font-family:var(--font-code);font-variant-ligatures:none}

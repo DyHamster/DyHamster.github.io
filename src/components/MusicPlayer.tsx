@@ -168,14 +168,14 @@ export default function MusicPlayer() {
           </span>
           <span>
             天空之城
-            <small>{playing ? "正在轻轻播放" : "让森林安静一会儿"}</small>
+            <small>{playing ? "正在播放" : "已暂停"}</small>
           </span>
         </button>
         {panel && (
           <div id="music-settings" className="music-panel">
             <div>
               <strong>
-                <Music2 size={15} /> 森林里的声音
+                <Music2 size={15} /> 音乐设置
               </strong>
               <button aria-label="关闭音乐设置" onClick={() => setPanel(false)}>
                 <X size={16} />
@@ -210,7 +210,7 @@ export default function MusicPlayer() {
                 setWelcome(true);
               }}
             >
-              重新选择进入方式
+              选择播放偏好
             </button>
           </div>
         )}
@@ -230,17 +230,8 @@ export default function MusicPlayer() {
         <div className="welcome-symbol">
           <Leaf size={26} strokeWidth={1.3} />
         </div>
-        <span className="eyebrow">A LITTLE FOREST, A LITTLE REST</span>
-        <h2 id="welcome-title">
-          欢迎来到，
-          <br />
-          这片小小的森林。
-        </h2>
-        <p>
-          把脚步放慢一点。
-          <br />
-          你想伴着音乐，还是安静地走进来？
-        </p>
+        <h2 id="welcome-title">背景音乐</h2>
+        <p>《天空之城》会轻声循环播放，音量可以随时调整。</p>
         <button
           className="button primary"
           autoFocus

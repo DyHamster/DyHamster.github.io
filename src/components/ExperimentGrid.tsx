@@ -1,5 +1,6 @@
+import SectionIcon from "./SectionIcon";
 import { Link } from "react-router-dom";
-import { ArrowUpRight, FlaskConical, Play, Github } from "lucide-react";
+import { ArrowUpRight, Play } from "lucide-react";
 import type { Post } from "../data/content";
 import { entryURL } from "../lib/posts";
 export default function ExperimentGrid({ entries }: { entries: Post[] }) {
@@ -13,7 +14,7 @@ export default function ExperimentGrid({ entries }: { entries: Post[] }) {
             ) : (
               <>
                 <span className="preview-grid" />
-                <FlaskConical size={48} strokeWidth={1} />
+                <SectionIcon kind="experiments" size={48} />
                 <span>实验过程与结果</span>
               </>
             )}
@@ -48,7 +49,7 @@ export default function ExperimentGrid({ entries }: { entries: Post[] }) {
                   rel="noreferrer"
                   aria-label={`${entry.title} 源码`}
                 >
-                  <Github size={16} />
+                  <span className="github-mark" aria-hidden="true" />
                 </a>
               )}
             </div>

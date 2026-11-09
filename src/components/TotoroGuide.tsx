@@ -1,6 +1,14 @@
-import { useEffect, useRef, useState } from "react";
+import {
+  forwardRef,
+  useCallback,
+  useEffect,
+  useImperativeHandle,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
 import { PLACES } from "../lib/scene-journey.mjs";
-
+import { GUIDE_ATLASES, warmGuide } from "../lib/guide-assets";
 function FallbackGuide({ walking }: { walking: boolean }) {
   return (
     <svg
@@ -40,111 +48,236 @@ function FallbackGuide({ walking }: { walking: boolean }) {
     </svg>
   );
 }
-export default function TotoroGuide({ state, pose, reduced, small, compact }) {
-  const { phase, current } = state;
-  const [ready, setReady] = useState(false);
-  const [failed, setFailed] = useState(false);
-  const [blink, setBlink] = useState(false);
-  const [collapsed, setCollapsed] = useState(false);
-  const useAtlas = useRef(false);
+export type GuidePose = { x: number; y: number; size: number };
+type Snapshot = {
+  phase: string;
+  current: string;
+  target: string;
+  frame: number;
+  atlas: string;
+  facing: number;
+  bodyScale: number;
+  lean: number;
+  version: number;
+};
+export type GuideHandle = {
+  paint: (state: Snapshot, pose: GuidePose) => void;
+  getPose: () => GuidePose | undefined;
+  getFacing: () => number;
+};
+type Props = {
+  state: Snapshot;
+  pose: GuidePose;
+  reduced: boolean;
+  small: boolean;
+  compact: boolean;
+};
+export default forwardRef<GuideHandle, Props>(function TotoroGuide(
+  { state, pose, reduced, small, compact },
+  ref,
+) {
+  const root = useRef<HTMLDivElement>(null),
+    ui = useRef<HTMLDivElement>(null),
+    sprite = useRef<HTMLDivElement>(null),
+    figure = useRef<HTMLDivElement>(null);
+  const ready = useRef({ base: false, bridge: false }),
+    enabled = useRef(false),
+    collapsedRef = useRef(false),
+    last = useRef({ state, pose }),
+    visualPose = useRef(pose);
+  const lastSprite = useRef("");
+  const bridgeLatch = useRef({ version: -1, available: false });
+  const idlePose = useRef<{ frame: number; atlas: string } | null>(null);
+  const [loaded, setLoaded] = useState(0),
+    [collapsed, setCollapsed] = useState(false);
+  const paint = useCallback((snapshot: Snapshot, anchor: GuidePose) => {
+    last.current = { state: snapshot, pose: anchor };
+    const size =
+      collapsedRef.current && snapshot.phase === "idle" && anchor.size < 100
+        ? 42
+        : anchor.size;
+    const width = window.innerWidth,
+      height = window.innerHeight,
+      x = (anchor.x * width) / 100,
+      y = (anchor.y * height) / 100;
+    visualPose.current = { ...anchor, size };
+    if (root.current) {
+      root.current.style.transform = `translate3d(${x}px,${y}px,0) scale(${size / 320}) translate(-50%,-100%)`;
+      root.current.dataset.facing = String(snapshot.facing);
+    }
+    if (ui.current)
+      ui.current.style.transform = `translate3d(${x + size / 2}px,${y - size}px,0)`;
+    if (figure.current) {
+      figure.current.style.setProperty("--facing", String(snapshot.facing));
+      figure.current.style.setProperty(
+        "--pose-scale",
+        String(snapshot.bodyScale),
+      );
+      figure.current.style.setProperty("--pose-lean", `${snapshot.lean}deg`);
+    }
+    let frame = snapshot.frame,
+      atlas = snapshot.atlas;
+    if (snapshot.phase === "idle" && idlePose.current) {
+      frame = idlePose.current.frame;
+      atlas = idlePose.current.atlas;
+    }
+    if (
+      snapshot.phase !== "idle" &&
+      snapshot.version !== bridgeLatch.current.version
+    )
+      bridgeLatch.current = {
+        version: snapshot.version,
+        available: ready.current.bridge,
+      };
+    if (
+      atlas === "bridge" &&
+      !(snapshot.phase === "idle"
+        ? ready.current.bridge
+        : bridgeLatch.current.available)
+    ) {
+      frame = [0, 1, 2, 2, 1, 0][frame] ?? 2;
+      atlas = "base";
+    }
+    if (root.current) {
+      root.current.dataset.frame = String(frame);
+      root.current.dataset.atlas = atlas;
+    }
+    const key = `${atlas}:${frame}`;
+    if (sprite.current && key !== lastSprite.current) {
+      const spec =
+        GUIDE_ATLASES[atlas as keyof typeof GUIDE_ATLASES] ??
+        GUIDE_ATLASES.base;
+      sprite.current.style.backgroundImage = `url("${spec.url}")`;
+      sprite.current.style.backgroundSize = `${spec.columns * 100}% ${spec.rows * 100}%`;
+      sprite.current.style.backgroundPosition = `${((frame % spec.columns) * 100) / (spec.columns - 1)}% ${(Math.floor(frame / spec.columns) * 100) / (spec.rows - 1)}%`;
+      lastSprite.current = key;
+    }
+  }, []);
+  useImperativeHandle(
+    ref,
+    () => ({
+      paint,
+      getPose: () => visualPose.current,
+      getFacing: () => last.current.state.facing,
+    }),
+    [paint],
+  );
   useEffect(() => {
-    const image = new Image();
     let active = true;
-    image.onload = () => {
-      if (active) setReady(true);
-    };
-    image.onerror = () => {
-      if (active) setFailed(true);
-    };
-    image.src = "/forest/guide/totoro-atlas-aligned.webp";
+    const assets = warmGuide();
+    for (const key of ["base", "bridge"] as const)
+      void assets[key].then((ok) => {
+        if (active) {
+          ready.current[key] = ok;
+          setLoaded((value) => value + 1);
+        }
+      });
     return () => {
       active = false;
     };
   }, []);
-  if (ready && phase === "idle") useAtlas.current = true;
+  if (loaded && ready.current.base && state.phase === "idle")
+    enabled.current = true;
+  useLayoutEffect(
+    () => paint(state, pose),
+    [state, pose, paint, loaded, collapsed],
+  );
+  const { phase, current, version } = state;
   useEffect(() => {
-    if (phase !== "idle" || reduced || PLACES[current].rest !== 2) return;
-    let close: ReturnType<typeof setTimeout>;
-    const interval = setInterval(() => {
-      setBlink(true);
-      close = setTimeout(() => setBlink(false), 160);
-    }, 6500);
-    return () => {
-      clearInterval(interval);
-      clearTimeout(close);
-      setBlink(false);
+    idlePose.current = null;
+    if (reduced || phase !== "idle" || !enabled.current) return;
+    const intervals = [6800, 8300, 7200, 9100];
+    let step = current.length % 4;
+    let timer: ReturnType<typeof setTimeout>,
+      close: ReturnType<typeof setTimeout>;
+    const next = () => {
+      timer = setTimeout(
+        () => {
+          if (last.current.state.phase !== "idle") return;
+          idlePose.current =
+            PLACES[current].rest === 2
+              ? { frame: 3, atlas: "base" }
+              : { frame: 0, atlas: ready.current.bridge ? "bridge" : "base" };
+          paint(last.current.state, last.current.pose);
+          close = setTimeout(
+            () => {
+              idlePose.current = null;
+              paint(last.current.state, last.current.pose);
+              next();
+            },
+            PLACES[current].rest === 2 ? 160 : 900,
+          );
+        },
+        intervals[step++ % intervals.length],
+      );
     };
-  }, [phase, current, reduced]);
-  const moving = phase !== "idle";
-  const frame = moving ? state.frame : blink ? 3 : PLACES[current].rest;
-  const restingSmall = compact;
-  const hide = collapsed && !moving && restingSmall;
-  const width = hide ? 42 : pose.size;
-  const name = PLACES[state.target].name;
+    next();
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(close);
+      idlePose.current = null;
+    };
+  }, [phase, current, version, reduced, loaded, paint]);
+  const moving = state.phase !== "idle",
+    hide = collapsed && !moving && compact;
   return (
-    <div
-      className={`forest-guide ${moving ? `guide-${phase}` : "guide-resting"} ${restingSmall ? "guide-reading" : "guide-at-home"} ${hide ? "guide-collapsed" : ""} ${small ? "guide-mobile" : ""}`}
-      data-testid="forest-guide"
-      data-frame={frame}
-      data-renderer={useAtlas.current && !failed ? "atlas" : "fallback"}
-      style={
-        {
-          left: `${pose.x}vw`,
-          top: `${pose.y}vh`,
-          width: `${width}px`,
-          "--facing": moving ? state.direction : PLACES[current].facing,
-        } as React.CSSProperties
-      }
-    >
-      <div className="guide-destination" aria-hidden="true">
-        {moving
-          ? `${phase === "respond" ? "出发吧" : phase === "arrive" ? "就到这里" : "跟上脚步"} · ${name}`
-          : `在${PLACES[current].name}歇一会儿`}
-      </div>
-      <div className="guide-shadow" aria-hidden="true" />
-      <div className="guide-figure" aria-hidden="true">
-        {useAtlas.current && !failed ? (
+    <>
+      <div
+        ref={root}
+        className={`forest-guide ${moving ? `guide-${state.phase}` : "guide-resting"} ${compact ? "guide-reading" : "guide-at-home"} ${hide ? "guide-collapsed" : ""} ${small ? "guide-mobile" : ""}`}
+        data-testid="forest-guide"
+        data-renderer={enabled.current ? "atlas" : "fallback"}
+      >
+        <div className="guide-shadow" aria-hidden="true" />
+        <div ref={figure} className="guide-figure" aria-hidden="true">
           <div
+            ref={sprite}
             className="totoro-sprite"
-            style={{
-              backgroundPosition: `${((frame % 4) * 100) / 3}% ${Math.floor(frame / 4) * 50}%`,
-            }}
+            hidden={!enabled.current}
           />
-        ) : (
-          <FallbackGuide walking={phase === "travel" && !reduced} />
+          <div className="guide-fallback-slot" hidden={enabled.current}>
+            <FallbackGuide walking={state.phase === "travel" && !reduced} />
+          </div>
+        </div>
+        {!compact && !moving && state.current !== "home" && (
+          <svg
+            className={`guide-ground ground-${state.current}`}
+            viewBox="0 0 300 26"
+            aria-hidden="true"
+          >
+            <path
+              d="m52 19 7-13 3 13m136 0 10-12-3 12m46 2 6-9 1 9"
+              stroke="#8e9b64"
+              fill="none"
+              strokeWidth="3"
+            />
+          </svg>
         )}
       </div>
-      {!compact && !moving && current !== "home" && (
-        <svg
-          className={`guide-ground ground-${current}`}
-          viewBox="0 0 300 26"
-          aria-hidden="true"
-        >
-          <path
-            d="M6 18q36-14 65-6 34-17 73-4 38-9 58 3 44-8 91 7l-5 8H10Z"
-            fill="#64784b"
-            fillOpacity=".15"
-          />
-          <path
-            d="m52 17 7-13 3 13m136 0 10-12-3 12m46 2 6-9 1 9"
-            stroke="#8e9b64"
-            fill="none"
-            strokeWidth="3"
-          />
-        </svg>
-      )}
-      {!moving && restingSmall && (
-        <button
-          className="guide-rest-control"
-          aria-label={collapsed ? "展开龙猫向导" : "收起龙猫向导"}
-          onClick={() => setCollapsed(!collapsed)}
-        >
-          {collapsed ? "↗" : "−"}
-        </button>
-      )}
-      <span className="sr-only">
-        {moving ? `龙猫正在前往${name}` : `龙猫在${name}休息`}
-      </span>
-    </div>
+      <div ref={ui} className={`guide-ui ${moving ? "guide-ui-moving" : ""}`}>
+        {moving && (
+          <div className="guide-destination" aria-hidden="true">
+            {state.phase === "respond"
+              ? "准备出发"
+              : state.phase === "arrive"
+                ? "到了"
+                : "前往"}{" "}
+            · {PLACES[state.target].name}
+          </div>
+        )}
+        {!moving && compact && (
+          <button
+            className="guide-rest-control"
+            aria-label={collapsed ? "展开龙猫向导" : "收起龙猫向导"}
+            onClick={() => {
+              collapsedRef.current = !collapsed;
+              setCollapsed(!collapsed);
+            }}
+          >
+            {collapsed ? "↗" : "−"}
+          </button>
+        )}
+      </div>
+    </>
   );
-}
+});

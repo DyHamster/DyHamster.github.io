@@ -1,6 +1,6 @@
 import { sections } from "./config/sections";
 import { HashRouter, Routes, Route, Navigate, Link } from "react-router-dom";
-import { useLayoutEffect, lazy, Suspense } from "react";
+import { useLayoutEffect, lazy, Suspense, memo } from "react";
 import Home from "./pages/Home";
 import Posts from "./pages/Posts";
 const PostDetail = lazy(() => import("./pages/PostDetail"));
@@ -11,8 +11,9 @@ import MusicPlayer from "./components/MusicPlayer";
 import SEO from "./components/SEO";
 import SceneJourney from "./components/SceneJourney";
 import "./desktop-polish.css";
+import "./editorial.css";
 import type { Location } from "react-router-dom";
-function SiteLayout({
+const SiteLayout = memo(function SiteLayout({
   location,
   phase,
   progress,
@@ -43,70 +44,63 @@ function SiteLayout({
       </a>
       <Header />
       <main
-        className={home ? "site-main home-main" : "shell site-main inner-main"}
+        className={`${home ? "site-main home-main" : "shell wrap site-main inner-main"} scene-content ${phase !== "idle" && progress < 0.5 ? "content-leaving" : "content-arriving"}`}
         id="main"
         tabIndex={-1}
       >
-        <div
-          className={`scene-content ${phase !== "idle" && progress < 0.5 ? "content-leaving" : "content-arriving"}`}
+        <Suspense
+          fallback={
+            <p className="page-heading" role="status">
+              正在打开记录…
+            </p>
+          }
         >
-          <div key={pathname} className="route-content">
-            <Suspense
-              fallback={
-                <p className="page-heading" role="status">
-                  正在翻开记录…
-                </p>
-              }
-            >
-              <Routes location={location}>
-                <Route path="/" element={<Home />} />
-                {sections.map((section) => (
-                  <Route
-                    key={section.id}
-                    path={`/${section.id}`}
-                    element={<Posts kind={section.id} />}
-                  />
-                ))}
-                {sections.map((section) => (
-                  <Route
-                    key={section.id + "-entry"}
-                    path={`/${section.id}/*`}
-                    element={<PostDetail kind={section.id} />}
-                  />
-                ))}
-                {sections.flatMap((section) =>
-                  (section.aliases ?? []).map((alias) => (
-                    <Route
-                      key={alias}
-                      path={`/${alias}`}
-                      element={<Navigate to={`/${section.id}`} replace />}
-                    />
-                  )),
-                )}
-                <Route path="/about" element={<About />} />
+          <Routes location={location}>
+            <Route path="/" element={<Home />} />
+            {sections.map((section) => (
+              <Route
+                key={section.id}
+                path={`/${section.id}`}
+                element={<Posts kind={section.id} />}
+              />
+            ))}
+            {sections.map((section) => (
+              <Route
+                key={section.id + "-entry"}
+                path={`/${section.id}/*`}
+                element={<PostDetail kind={section.id} />}
+              />
+            ))}
+            {sections.flatMap((section) =>
+              (section.aliases ?? []).map((alias) => (
                 <Route
-                  path="*"
-                  element={
-                    <div className="page-heading">
-                      <SEO title="页面未找到" noindex />
-                      <span className="eyebrow">OFF THE PATH</span>
-                      <h1>这条小径，还没有走到。</h1>
-                      <Link className="text-link" to="/">
-                        返回首页 ↗
-                      </Link>
-                    </div>
-                  }
+                  key={alias}
+                  path={`/${alias}`}
+                  element={<Navigate to={`/${section.id}`} replace />}
                 />
-              </Routes>
-            </Suspense>
-          </div>
-        </div>
+              )),
+            )}
+            <Route path="/about" element={<About />} />
+            <Route
+              path="*"
+              element={
+                <div className="page-heading">
+                  <SEO title="页面未找到" noindex />
+                  <h1>这个页面不存在。</h1>
+                  <Link className="text-link" to="/">
+                    返回首页 ↗
+                  </Link>
+                </div>
+              }
+            />
+          </Routes>
+        </Suspense>
       </main>
       <Footer />
       <MusicPlayer />
     </div>
   );
-}
+});
 export default function App() {
   return (
     <HashRouter>

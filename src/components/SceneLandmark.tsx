@@ -1,4 +1,5 @@
-// Small native-vector set dressing; the forest backgrounds remain hand-painted.
+import { useState } from "react";
+// Native drawings remain as a loading-failure fallback. Painted props share the plate's light and ground anchors.
 export function SceneGround({ place }: { place: string }) {
   if (place === "home") return null;
   const wooden = place === "posts" || place === "about";
@@ -61,7 +62,7 @@ export function SceneGround({ place }: { place: string }) {
     </svg>
   );
 }
-export default function SceneLandmark({ place }: { place: string }) {
+function FallbackLandmark({ place }: { place: string }) {
   if (place === "posts")
     return (
       <svg
@@ -104,50 +105,6 @@ export default function SceneLandmark({ place }: { place: string }) {
           strokeWidth="3"
         />
         <path d="M29 300q149-22 271 0l9 15H20Z" fill="#566c43" />
-      </svg>
-    );
-  if (place === "about")
-    return (
-      <svg
-        className="scene-landmark landmark-about"
-        viewBox="0 0 380 320"
-        aria-hidden="true"
-      >
-        <defs>
-          <radialGradient id="porch-light">
-            <stop stopColor="#ffe5a2" stopOpacity=".75" />
-            <stop offset="1" stopColor="#f8ce83" stopOpacity="0" />
-          </radialGradient>
-        </defs>
-        <ellipse cx="170" cy="164" rx="140" ry="140" fill="url(#porch-light)" />
-        <path
-          d="M53 285V44Q147-8 237 44v241Z"
-          fill="#52573a"
-          stroke="#414b31"
-          strokeWidth="8"
-        />
-        <path
-          d="M69 277V57q78-42 151 0v220Z"
-          fill="#aa8550"
-          stroke="#6a6440"
-          strokeWidth="4"
-        />
-        <path d="M84 69q65-27 123 0v106H84Z" fill="#edce84" />
-        <path d="M145 50v125m-62-53h125" stroke="#817148" strokeWidth="7" />
-        <path d="M72 195h143m-143 13h143" stroke="#8c744a" strokeWidth="3" />
-        <circle cx="200" cy="195" r="5" fill="#efdaa2" />
-        <path
-          d="m40 279 201-1 17 16-230 4Z"
-          fill="#a2a17a"
-          stroke="#66704c"
-          strokeWidth="3"
-        />
-        <path d="m26 298 234-4 20 21H7Z" fill="#838c64" />
-        <path d="m275 289-10-37h41l-5 37Z" fill="#8d7151" />
-        <path
-          d="M284 255q-37-19-22-35 21 4 22 35Zm0-1q25-39 37-21 0 17-37 21Z"
-          fill="#7b9258"
-        />
       </svg>
     );
   if (!["notes", "experiments"].includes(place)) return null;
@@ -220,5 +177,34 @@ export default function SceneLandmark({ place }: { place: string }) {
         strokeWidth="5"
       />
     </svg>
+  );
+}
+
+const props: Record<
+  string,
+  { name: string; width: number; height: number; rise: number }
+> = {
+  notes: { name: "desk", width: 720, height: 524, rise: 0.722222 },
+  posts: { name: "shelf", width: 480, height: 594, rise: 1.229167 },
+  experiments: { name: "bench", width: 720, height: 533, rise: 0.733333 },
+};
+export default function SceneLandmark({ place }: { place: string }) {
+  const [failed, setFailed] = useState(false);
+  const prop = props[place];
+  // The about scene already has a painted porch and door. No duplicate vector facade.
+  if (!prop) return null;
+  if (failed) return <FallbackLandmark place={place} />;
+  return (
+    <img
+      className={`scene-landmark landmark-${place} prop-painted`}
+      src={`/forest/props/${prop.name}-v2.webp`}
+      width={prop.width}
+      height={prop.height}
+      alt=""
+      loading="eager"
+      decoding="async"
+      style={{ "--prop-rise": prop.rise } as React.CSSProperties}
+      onError={() => setFailed(true)}
+    />
   );
 }

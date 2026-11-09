@@ -87,8 +87,7 @@ const SEO = ({
       </script>
       
       {/* 额外的 SEO 标签 */}
-      <meta name="theme-color" content="#3b82f6" />
-      <meta name="msapplication-TileColor" content="#3b82f6" />
+      <meta name="msapplication-TileColor" content="#41634f" />
       <link rel="canonical" href={url} />
       
     </Helmet>
